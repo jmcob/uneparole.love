@@ -14,7 +14,7 @@
     <button @click="toggleAbout()">A propos de ce site</button>
     <div class="about" v-if="aboutClick">
       <p>
-        148 paroles de Dieu // <br />
+        Bientôt 148 paroles de Dieu // <br />
         Les extraits ont été initialement choisis pour l'adoration
         eucharistique. <br />
         Pains de vie choisis sous la houlette et avec la participation active de
