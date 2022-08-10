@@ -15,9 +15,11 @@
     <div class="about" v-if="aboutClick">
       <p>
         148 paroles de Dieu // <br />
+        Les extraits ont été initialement choisis pour l'adoration
+        eucharistique. <br />
         Pains de vie choisis sous la houlette et avec la participation active de
-        Laurence-Eliane, coordinatrice de l’adoration perpétuelle au Sacré-Cœur
-        à Bordeaux. <br />
+        la coordinatrice de l’adoration perpétuelle au Sacré-Cœur à Bordeaux.
+        <br />
         Version août 2022 – 65 extraits courants de la Bible puis 83 extraits de
         psaumes, <strong>traduction liturgique</strong>. <br />
         // jeanmaxime
