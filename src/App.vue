@@ -1,6 +1,6 @@
 <template>
   <div class="cadre">
-    <h1>Une parole de Dieu aléatoire</h1>
+    <HeaderTitle />
     <p>{{ uneparole.parole }}</p>
     <p class="ref">
       <em>{{ uneparole.ref }}</em>
@@ -9,21 +9,31 @@
     <button class="button" @click="reload()">
       Je voudrais une nouvelle parole
     </button>
+    <br />
+    <br /><br />
+    <button @click="toggleAbout()">A propos de ce site</button>
+    <div class="about" v-if="aboutClick">
+      <p>
+        148 paroles de Dieu // <br />
+        Pains de vie choisis sous la houlette et avec la participation active de
+        Laurence-Eliane, coordinatrice de l’adoration perpétuelle au Sacré-Cœur
+        à Bordeaux. <br />
+        Version août 2022 – 65 extraits courants de la Bible puis 83 extraits de
+        psaumes, <strong>traduction liturgique</strong>. <br />
+        // jeanmaxime
+      </p>
+    </div>
   </div>
 </template>
 <script>
+import HeaderTitle from "./components/HeaderTitle.vue";
 export default {
   name: "app",
-  head() {
-    return { title: "Une Parole" };
+  components: {
+    HeaderTitle,
   },
   data() {
     return {
-      disclaimer: `148 pains de vie plus gros
-A découper pour l’adoration.
-Pour plus de renseignements, contacter Jean-Maxime sur ola@jmax.dev. Document fait sous la houlette et avec la participation active de Laurence-Eliane, coordinatrice de l’adoration perpétuelle au Sacré-Cœur à Bordeaux.
-Version juillet 2022 – 65 extraits courants de la Bible puis 83 extraits de psaumes, traduction liturgique – Police Arial 10,5
-Redistribuables à volonté dans les communautés religieuses.`,
       paroles: [
         {
           parole: `Voici que vient le jour du Seigneur, brûlant comme la fournaise. Tous les arrogants, tous ceux qui commettent l’impiété, seront de la paille. Le jour qui vient les consumera, – dit le Seigneur de l’univers –, il ne leur laissera ni racine ni branche.
@@ -152,7 +162,7 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
         },
       ],
       uneparole: {},
-      stopBis: {},
+      aboutClick: false,
     };
   },
   methods: {
@@ -167,6 +177,9 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
       const stopBis = this.uneparole;
       this.uneparole = this.GetRandomWordOfGod();
       if (this.uneparole === stopBis) this.reload();
+    },
+    toggleAbout() {
+      this.aboutClick = !this.aboutClick;
     },
   },
   created() {
@@ -194,16 +207,12 @@ p {
   font-size: large;
 }
 
-strong {
-  color: green;
-  font-size: larger;
-}
-
 .ref {
   color: midnightblue;
 }
 
 .button {
   width: 150px;
+  margin: 10px;
 }
 </style>
