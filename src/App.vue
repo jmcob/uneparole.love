@@ -1,14 +1,14 @@
 <template>
-  <div>
-    <div class="hello">
-      <div class="cadre">
-        <h1>Une parole de Dieu aléatoire</h1>
-        <p>{{ uneparole.parole }}</p>
-        <p class="ref">
-          <em>{{ uneparole.ref }}</em>
-        </p>
-      </div>
-    </div>
+  <div class="cadre">
+    <h1>Une parole de Dieu aléatoire</h1>
+    <p>{{ uneparole.parole }}</p>
+    <p class="ref">
+      <em>{{ uneparole.ref }}</em>
+    </p>
+    <br />
+    <button class="button" @click="reload()">
+      Je voudrais une nouvelle parole
+    </button>
   </div>
 </template>
 <script>
@@ -152,6 +152,7 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
         },
       ],
       uneparole: {},
+      stopBis: {},
     };
   },
   methods: {
@@ -161,6 +162,11 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
       const result = this.paroles[roundedIndex];
       console.log(result);
       return result;
+    },
+    reload() {
+      const stopBis = this.uneparole;
+      this.uneparole = this.GetRandomWordOfGod();
+      if (this.uneparole === stopBis) this.reload();
     },
   },
   created() {
@@ -180,7 +186,12 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   padding: 50px;
+}
+
+p {
+  font-size: large;
 }
 
 strong {
@@ -190,5 +201,9 @@ strong {
 
 .ref {
   color: midnightblue;
+}
+
+.button {
+  width: 150px;
 }
 </style>
