@@ -1,7 +1,7 @@
 <template>
   <div class="cadre">
     <button class="button" @click="reload()">
-      Recevoir une parole de Dieu aléatoire
+      Afficher une parole de Dieu aléatoire
     </button>
     <div class="uneparole" v-if="wordClick">
       <p>{{ uneparole.parole }}</p>
