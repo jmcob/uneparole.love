@@ -1,4 +1,5 @@
 <template>
+<div class="wrapper">
   <div class="cadre">
     <button class="button" @click="loadWord()">
       Afficher une parole de Dieu aléatoire
@@ -28,6 +29,7 @@
       </p>
     </div>
   </div>
+ </div>
 </template>
 <script>
 import HeaderTitle from "./components/HeaderTitle.vue";
@@ -202,10 +204,13 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
 
 * {
   font-family: "Tiro Gurmukhi", serif;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  }
 
 .cadre {
   display: flex;
