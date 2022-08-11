@@ -202,6 +202,9 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
 
 * {
   font-family: "Tiro Gurmukhi", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cadre {
