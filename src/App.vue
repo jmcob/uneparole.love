@@ -1,7 +1,7 @@
 <template>
   <div class="cadre">
     <button class="button" @click="reload()">
-      Une parole de Dieu aléatoire
+      Recevoir une parole de Dieu aléatoire
     </button>
     <div class="uneparole" v-if="wordClick">
       <p>{{ uneparole.parole }}</p>
@@ -221,5 +221,6 @@ p {
   font-size: larger;
   background-color: lightskyblue;
   border-radius: 5px;
+  cursor: pointer;
 }
 </style>
