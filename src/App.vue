@@ -14,8 +14,8 @@
 
     <br />
     <br /><br />
-    <p class="about" @click="toggleAbout()">A propos</p>
     <div class="aboutText" v-if="aboutClick">
+      <p class="about" @click="toggleAbout()">Fermer</p>
       <p>
         Bientôt 148 paroles de Dieu // <br />
         Les extraits ont été initialement choisis pour l'adoration
@@ -28,6 +28,7 @@
         // jeanmaxime
       </p>
     </div>
+    <div v-else><p class="about" @click="toggleAbout()">A propos</p></div>
   </div>
 </template>
 <script>
@@ -349,5 +350,9 @@ p {
   border-radius: 5px;
   cursor: pointer;
   border-radius: 50%;
+}
+.button:active {
+  background-color: midnightblue;
+  color: white;
 }
 </style>
