@@ -210,6 +210,7 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
   text-align: center;
   align-items: center;
   padding: 50px;
+  max-width: 350px;
 }
 
 p {
