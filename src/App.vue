@@ -1,13 +1,12 @@
 <template>
-<div class="wrapper">
   <div class="cadre">
     <button class="button" @click="loadWord()">
       Afficher une parole de Dieu aléatoire
     </button>
     <div class="uneparole" v-if="wordClick">
-      <p>{{ this.uneparole.parole }}</p>
+      <p>{{ uneparole.parole }}</p>
       <p class="ref">
-        <em>{{ this.uneparole.ref }}</em>
+        <em>{{ uneparole.ref }}</em>
       </p>
     </div>
     <br />
@@ -29,15 +28,11 @@
       </p>
     </div>
   </div>
- </div>
 </template>
 <script>
-import HeaderTitle from "./components/HeaderTitle.vue";
 export default {
   name: "app",
-  components: {
-    HeaderTitle,
-  },
+
   data() {
     return {
       paroles: [
@@ -167,30 +162,42 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
           ref: `Psaume 144, 3 premiers versets`,
         },
       ],
-      uneparole: {},
+      uneparole: {
+        parole: "",
+        ref: "",
+      },
+      i: Number,
+      tampon: {
+        parole: "",
+        ref: "",
+      },
       aboutClick: false,
       wordClick: false,
     };
   },
   methods: {
-    GetRandomWordOfGod() {
+    GetRandomWord() {
       const index = Math.random() * this.paroles.length;
       const roundedIndex = Math.round(index);
-      if (roundedIndex === this.paroles.length) {
-            this.GetRandomWordOfGod()
+      if (roundedIndex > this.paroles.length) {
+        this.GetRandomWord();
       }
-      const result = this.paroles[roundedIndex];
-      return result;
+      const uneparole = this.paroles[roundedIndex];
+      return uneparole;
     },
     loadWord() {
-      this.wordClick = true;
-      let stopBis = {};
-      if (this.uneparole !== {}) {
-        stopBis = this.uneparole;
-      }
+      this.i++;
+      this.tampon = this.uneparole;
 
-      this.uneparole = this.GetRandomWordOfGod();
-      if (this.uneparole === stopBis) this.loadWord();
+      this.wordClick = true;
+      this.uneparole = this.GetRandomWord();
+      while (this.uneparole === undefined) {
+        this.uneparole = this.GetRandomWord();
+      }
+      if (this.sameWord() && this.i < 3) this.loadWord();
+    },
+    sameWord() {
+      if (this.uneparole === this.tampon) return true;
     },
     toggleAbout() {
       this.aboutClick = !this.aboutClick;
@@ -206,19 +213,12 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
   font-family: "Tiro Gurmukhi", serif;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-
 .cadre {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   padding: 50px;
-  max-width: 350px;
 }
 
 p {
