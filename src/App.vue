@@ -177,7 +177,7 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
       const index = Math.random() * this.paroles.length;
       const roundedIndex = Math.round(index);
       if (roundedIndex === this.paroles.length) {
-            GetRandomWordOfGod()
+            this.GetRandomWordOfGod()
       }
       const result = this.paroles[roundedIndex];
       return result;
