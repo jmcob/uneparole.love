@@ -1,6 +1,8 @@
 <template>
   <div class="cadre">
-    <HeaderTitle />
+    <button class="button" @click="reload()">
+      Une parole de Dieu aléatoire
+    </button>
     <div class="uneparole" v-if="wordClick">
       <p>{{ uneparole.parole }}</p>
       <p class="ref">
@@ -8,9 +10,7 @@
       </p>
     </div>
     <br />
-    <button class="button" @click="reload()">
-      Je voudrais une nouvelle parole
-    </button>
+
     <br />
     <br /><br />
     <button @click="toggleAbout()">A propos de ce site</button>
@@ -215,10 +215,10 @@ p {
 }
 
 .button {
-  width: 150px;
+  width: 250px;
   margin: 10px;
   padding: 10px;
-  font-size: large;
+  font-size: larger;
   background-color: lightskyblue;
   border-radius: 5px;
 }
