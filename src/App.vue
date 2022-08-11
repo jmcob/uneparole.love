@@ -1,5 +1,6 @@
 <template>
   <div class="cadre">
+    <HeaderTitle />
     <button class="button" @click="loadWord()">
       Afficher une parole de Dieu aléatoire
     </button>
@@ -13,8 +14,8 @@
 
     <br />
     <br /><br />
-    <button @click="toggleAbout()">A propos de ce site</button>
-    <div class="about" v-if="aboutClick">
+    <p class="about" @click="toggleAbout()">A propos</p>
+    <div class="aboutText" v-if="aboutClick">
       <p>
         Bientôt 148 paroles de Dieu // <br />
         Les extraits ont été initialement choisis pour l'adoration
@@ -30,9 +31,10 @@
   </div>
 </template>
 <script>
+import HeaderTitle from "./components/HeaderTitle.vue";
 export default {
   name: "app",
-
+  components: { HeaderTitle },
   data() {
     return {
       paroles: [
@@ -41,39 +43,33 @@ export default {
 Mais pour vous qui craignez mon nom, le Soleil de justice se lèvera : il apportera la guérison dans son rayonnement. Vous sortirez en bondissant comme de jeunes veaux à la pâture.`,
           ref: `Livre de Malachie, chapitre 3, versets 19 & 20`,
         },
-
         {
           parole: ` Venez à moi, vous tous qui peinez sous le poids du fardeau, et moi, je vous procurerai le repos.
 Prenez sur vous mon joug, devenez mes disciples, car je suis doux et humble de cœur, et vous trouverez le repos pour votre âme.
 Oui, mon joug est facile à porter, et mon fardeau, léger.`,
           ref: `Évangile selon saint Matthieu, chapitre 11, versets 28 à 30`,
         },
-
         {
           parole: `Dans son enseignement, il disait : « Méfiez-vous des scribes, qui tiennent à se promener en vêtements d’apparat et qui aiment les salutations sur les places publiques,
 les sièges d’honneur dans les synagogues, et les places d’honneur dans les dîners.
 Ils dévorent les biens des veuves et, pour l’apparence, ils font de longues prières : ils seront d’autant plus sévèrement jugés. »`,
           ref: `Évangile selon saint Marc, chapitre 12, versets 38 à 40`,
         },
-
         {
           parole: `Et ceux-ci persécutaient Jésus parce qu’il avait fait cela le jour du sabbat.
 Jésus leur déclara : « Mon Père est toujours à l’œuvre, et moi aussi, je suis à l’œuvre. »
 C’est pourquoi, de plus en plus, les Juifs cherchaient à le tuer, car non seulement il ne respectait pas le sabbat, mais encore il disait que Dieu était son propre Père, et il se faisait ainsi l’égal de Dieu.`,
           ref: `Évangile selon saint Jean, chapitre 5, versets 16 à 18`,
         },
-
         {
           parole: `Jésus leur répondit : « Amen, amen, je vous le dis : vous me cherchez, non parce que vous avez vu des signes, mais parce que vous avez mangé de ces pains et que vous avez été rassasiés.
 Travaillez non pas pour la nourriture qui se perd, mais pour la nourriture qui demeure jusque dans la vie éternelle, celle que vous donnera le Fils de l’homme, lui que Dieu, le Père, a marqué de son sceau. »`,
           ref: `Évangile selon saint Jean, chapitre 6, versets 26 & 27`,
         },
-
         {
           parole: `De nouveau, Jésus leur parla : « Moi, je suis la lumière du monde. Celui qui me suit ne marchera pas dans les ténèbres, il aura la lumière de la vie. »`,
           ref: `Évangile selon saint Jean, chapitre 8, verset 12`,
         },
-
         {
           parole: `Marie, sœur de Lazare, arriva à l’endroit où se trouvait Jésus. Dès qu’elle le vit, elle se jeta à ses pieds et lui dit : « Seigneur, si tu avais été ici, mon frère ne serait pas mort. »
 Quand il vit qu’elle pleurait, et que les Juifs venus avec elle pleuraient aussi, Jésus, en son esprit, fut saisi d’émotion, il fut bouleversé,
@@ -81,7 +77,6 @@ et il demanda : « Où l’avez-vous déposé ? » Ils lui répondirent : « Sei
 Alors Jésus se mit à pleurer.`,
           ref: `Évangile selon saint Jean, chapitre 11, versets 32 à 35.`,
         },
-
         {
           parole: `Ainsi s’accomplit pour eux la prophétie d’Isaïe : Vous aurez beau écouter, vous ne comprendrez pas. Vous aurez beau regarder, vous ne verrez pas.
 Le cœur de ce peuple s’est alourdi : ils sont devenus durs d’oreille, ils se sont bouché les yeux, de peur que leurs yeux ne voient, que leurs oreilles n’entendent, que leur cœur ne comprenne, qu’ils ne se convertissent, – et moi, je les guérirai.`,
@@ -187,7 +182,6 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
     loadWord() {
       this.i++;
       this.tampon = this.uneparole;
-
       this.wordClick = true;
       this.uneparole = this.GetRandomWord();
       while (this.uneparole === undefined) {
@@ -202,6 +196,7 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
       this.aboutClick = !this.aboutClick;
     },
   },
+  components: { HeaderTitle },
 };
 </script>
 
@@ -227,14 +222,19 @@ p {
 .ref {
   color: midnightblue;
 }
-
+.about {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .button {
-  width: 250px;
+  width: 150px;
+  height: 150px;
   margin: 10px;
   padding: 10px;
   font-size: larger;
   background-color: lightskyblue;
   border-radius: 5px;
   cursor: pointer;
+  border-radius: 50%;
 }
 </style>

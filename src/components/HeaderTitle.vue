@@ -1,3 +1,9 @@
 <template>
-  <h1>Une parole de Dieu aléatoire</h1>
+  <img src="../assets/cross.svg" class="cross" alt="croix" />
 </template>
+
+<style>
+.cross {
+  width: 60px;
+}
+</style>
