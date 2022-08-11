@@ -166,7 +166,6 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
         parole: "",
         ref: "",
       },
-      i: Number,
       tampon: {
         parole: "",
         ref: "",
@@ -194,7 +193,7 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
       while (this.uneparole === undefined) {
         this.uneparole = this.GetRandomWord();
       }
-      if (this.sameWord() && this.i < 3) this.loadWord();
+      if (this.sameWord()) this.loadWord();
     },
     sameWord() {
       if (this.uneparole === this.tampon) return true;
