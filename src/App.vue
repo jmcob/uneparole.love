@@ -156,6 +156,119 @@ Chaque jour je te bénirai, je louerai ton nom toujours et à jamais.
 Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de limite.`,
           ref: `Psaume 144, 3 premiers versets`,
         },
+        {
+          parole: ` C’est pourquoi je tombe à genoux devant le Père,
+de qui toute paternité au ciel et sur la terre tient son nom.
+Lui qui est si riche en gloire, qu’il vous donne la puissance de son Esprit, pour que se fortifie en vous l’homme intérieur.`,
+          ref: `Lettres aux Éphésiens, chapitre 3, versets 14 à 16`,
+        },
+        {
+          parole: `Soyez toujours dans la joie du Seigneur ; je le redis : soyez dans la joie.
+Que votre bienveillance soit connue de tous les hommes. Le Seigneur est proche.
+Ne soyez inquiets de rien, mais, en toute circonstance, priez et suppliez, tout en rendant grâce, pour faire connaître à Dieu vos demandes.`,
+          ref: `Lettre aux Philippiens, chapitre 4, versets 4 à 6`,
+        },
+        {
+          parole: `Efforcez-vous d’atteindre la charité. Recherchez avec ardeur les dons spirituels, surtout celui de prophétie.`,
+          ref: `Première lettre aux Corinthiens, chapitre 14, premier verset`,
+        },
+        {
+          parole: `Que le Christ habite en vos cœurs par la foi ; restez enracinés dans l'amour, établis dans l'amour.
+Ainsi vous serez capables de comprendre avec tous les fidèles quelle est la largeur, la longueur, la hauteur, la profondeur…
+Vous connaîtrez ce qui dépasse toute connaissance : l’amour du Christ. Alors vous serez comblés jusqu’à entrer dans toute la plénitude de Dieu.`,
+          ref: `Lettres aux Éphésiens, chapitre 3, versets 17 à 19`,
+        },
+        {
+          parole: `Ayez en vous les dispositions qui sont dans le Christ Jésus : Le Christ Jésus,
+ayant la condition de Dieu, ne retint pas jalousement le rang qui l’égalait à Dieu.
+Mais il s’est anéanti, prenant la condition de serviteur, devenant semblable aux hommes. Reconnu homme à son aspect,
+il s’est abaissé, devenant obéissant jusqu’à la mort, et la mort de la croix.
+C’est pourquoi Dieu l’a exalté : il l’a doté du Nom qui est au-dessus de tout nom,
+afin qu’au nom de Jésus tout genou fléchisse au ciel, sur terre et aux enfers,
+et que toute langue proclame : « Jésus Christ est Seigneur » à la gloire de Dieu le Père.`,
+          ref: `Lettre au Philippiens, chapitre 2, versets 5 à 11`,
+        },
+        {
+          parole: `Alors, vous, puisque vous êtes avides d’inspirations, cherchez à progresser, mais en vue de construire l’Église.`,
+          ref: `Première lettre aux Corinthiens, chapitre 14, verset 12`,
+        },
+        {
+          parole: `Béni soit Dieu, le Père de notre Seigneur Jésus Christ ! Il nous a bénis et comblés des bénédictions de l’Esprit, au ciel, dans le Christ.
+Il nous a choisis, dans le Christ, avant la fondation du monde, pour que nous soyons saints, immaculés devant lui, dans l’amour.
+Il nous a prédestinés à être, pour lui, des fils adoptifs par Jésus, le Christ. Ainsi l’a voulu sa bonté,
+à la louange de gloire de sa grâce, la grâce qu’il nous donne dans le Fils bien-aimé.`,
+          ref: `Lettre aux Ephésiens, chapitre 1, versets 3 à 6`,
+        },
+        {
+          parole: `Prenant la parole, Jésus lui dit : « Que veux-tu que je fasse pour toi ? » L’aveugle lui dit : « Rabbouni, que je retrouve la vue ! »
+Et Jésus lui dit : « Va, ta foi t’a sauvé. » Aussitôt l’homme retrouva la vue, et il suivait Jésus sur le chemin.`,
+          ref: `Évangile selon saint Marc, chapitre 10, versets 51 et 52`,
+        },
+        {
+          parole: `Ensuite, il arriva que Jésus, passant à travers villes et villages, proclamait et annonçait la Bonne Nouvelle du règne de Dieu. Les Douze l’accompagnaient,
+ainsi que des femmes qui avaient été guéries de maladies et d’esprits mauvais : Marie, appelée Madeleine, de laquelle étaient sortis sept démons,
+Jeanne, femme de Kouza, intendant d’Hérode, Suzanne, et beaucoup d’autres, qui les servaient en prenant sur leurs ressources.`,
+          ref: `Évangile selon saint Luc, chapitre 8, 3 premiers versets`,
+        },
+        {
+          parole: `Personne, après avoir allumé une lampe, ne la couvre d’un vase ou ne la met sous le lit ; on la met sur le lampadaire pour que ceux qui entrent voient la lumière.
+Car rien n’est caché qui ne doive paraître au grand jour ; rien n’est secret qui ne doive être connu et venir au grand jour.
+Faites attention à la manière dont vous écoutez. Car à celui qui a, on donnera ; et à celui qui n’a pas, même ce qu’il croit avoir sera enlevé. »`,
+          ref: `Évangile selon saint Luc, chapitre 8, versets 16 à 18`,
+        },
+        {
+          parole: `Le jeûne qui me plaît, n’est-ce pas ceci : faire tomber les chaînes injustes, délier les attaches du joug, rendre la liberté aux opprimés, briser tous les jougs ?
+N’est-ce pas partager ton pain avec celui qui a faim, accueillir chez toi les pauvres sans abri, couvrir celui que tu verras sans vêtement, ne pas te dérober à ton semblable ?
+Alors ta lumière jaillira comme l’aurore, et tes forces reviendront vite. Devant toi marchera ta justice, et la gloire du Seigneur fermera la marche.
+Alors, si tu appelles, le Seigneur répondra ; si tu cries, il dira : « Me voici. » Si tu fais disparaître de chez toi le joug, le geste accusateur, la parole malfaisante,
+si tu donnes à celui qui a faim ce que toi, tu désires, et si tu combles les désirs du malheureux, ta lumière se lèvera dans les ténèbres et ton obscurité sera lumière de midi.`,
+          ref: `Livre d’Isaïe, chapitre 58, versets 6 à 10`,
+        },
+        {
+          parole: `(Salomon répondit au Seigneur après que celui-ci lui ait dit en songe « Demande ce que je dois te donner. ») :
+Donne à ton serviteur un cœur attentif pour qu’il sache gouverner ton peuple et discerner le bien et le mal ; sans cela, comment gouverner ton peuple, qui est si important ? »
+Cette demande de Salomon plut au Seigneur, qui lui dit :
+« Puisque c’est cela que tu as demandé, et non pas de longs jours, ni la richesse, ni la mort de tes ennemis, mais puisque tu as demandé le discernement, l’art d’être attentif et de gouverner,
+je fais ce que tu as demandé : je te donne un cœur intelligent et sage, tel que personne n’en a eu avant toi et que personne n’en aura après toi.`,
+          ref: `Premier livre des Rois, chapitre 3, versets 9 à 12`,
+        },
+        {
+          parole: `Les disciples lui demandaient ce que signifiait cette parabole.
+Il leur déclara : « À vous il est donné de connaître les mystères du royaume de Dieu, mais les autres n’ont que les paraboles. Ainsi, comme il est écrit : Ils regardent sans regarder, ils entendent sans comprendre.`,
+          ref: `Évangile selon saint Luc, chapitre 8, versets 9 & 10`,
+        },
+        {
+          parole: `La mère et les frères de Jésus vinrent le trouver, mais ils ne pouvaient pas arriver jusqu’à lui à cause de la foule.
+On le lui fit savoir : « Ta mère et tes frères sont là dehors, qui veulent te voir. »
+Il leur répondit : « Ma mère et mes frères sont ceux qui écoutent la parole de Dieu et la mettent en pratique. »`,
+          ref: `Évangile selon saint Luc, chapitre 8, versets 19 à 21`,
+        },
+        {
+          parole: `Les Apôtres dirent au Seigneur : « Augmente en nous la foi ! »
+Le Seigneur répondit : « Si vous aviez de la foi, gros comme une graine de moutarde, vous auriez dit à l’arbre que voici : “Déracine-toi et va te planter dans la mer”, et il vous aurait obéi.`,
+          ref: `Évangile selon saint Luc, chapitre 17, versets 5 & 6`,
+        },
+        {
+          parole: `Simon-Pierre lui répondit : « Seigneur, à qui irions-nous ? Tu as les paroles de la vie éternelle.
+Quant à nous, nous croyons, et nous savons que tu es le Saint de Dieu. »`,
+          ref: `Évangile selon saint Jean, chapitre 6, versets 68 & 69`,
+        },
+        {
+          parole: `Moi, je vous dis : Demandez, on vous donnera ; cherchez, vous trouverez ; frappez, on vous ouvrira.
+En effet, quiconque demande reçoit ; qui cherche trouve ; à qui frappe, on ouvrira.
+Quel père parmi vous, quand son fils lui demande un poisson, lui donnera un serpent au lieu du poisson ?
+ou lui donnera un scorpion quand il demande un œuf ?
+Si donc vous, qui êtes mauvais, vous savez donner de bonnes choses à vos enfants, combien plus le Père du ciel donnera-t-il l’Esprit Saint à ceux qui le lui demandent ! »`,
+          ref: `Évangile selon saint Luc, chapitre 11, versets 9 à 13`,
+        },
+        {
+          parole: `Jésus déclara : « Il faut que le Fils de l’homme souffre beaucoup, qu’il soit rejeté par les anciens, les grands prêtres et les scribes, qu’il soit tué, et que, le troisième jour, il ressuscite. »
+Il leur disait à tous : « Celui qui veut marcher à ma suite, qu’il renonce à lui-même, qu’il prenne sa croix chaque jour et qu’il me suive.
+Car celui qui veut sauver sa vie la perdra ; mais celui qui perdra sa vie à cause de moi la sauvera.
+Quel avantage un homme aura-t-il à gagner le monde entier, s’il se perd ou se ruine lui-même ?
+Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de lui, quand il viendra dans la gloire, la sienne, celle du Père et des saints anges.`,
+          ref: `Évangile selon saint Luc, chapitre 9, versets 22 à 26`,
+        },
       ],
       uneparole: {
         parole: "",
