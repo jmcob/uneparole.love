@@ -1,10 +1,12 @@
 <template>
   <div class="cadre">
     <HeaderTitle />
-    <p>{{ uneparole.parole }}</p>
-    <p class="ref">
-      <em>{{ uneparole.ref }}</em>
-    </p>
+    <div class="uneparole" v-if="wordClick">
+      <p>{{ uneparole.parole }}</p>
+      <p class="ref">
+        <em>{{ uneparole.ref }}</em>
+      </p>
+    </div>
     <br />
     <button class="button" @click="reload()">
       Je voudrais une nouvelle parole
@@ -165,6 +167,7 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
       ],
       uneparole: {},
       aboutClick: false,
+      wordClick: false,
     };
   },
   methods: {
@@ -176,6 +179,7 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
       return result;
     },
     reload() {
+      this.wordClick = true;
       const stopBis = this.uneparole;
       this.uneparole = this.GetRandomWordOfGod();
       if (this.uneparole === stopBis) this.reload();
@@ -183,9 +187,6 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
     toggleAbout() {
       this.aboutClick = !this.aboutClick;
     },
-  },
-  created() {
-    this.uneparole = this.GetRandomWordOfGod();
   },
 };
 </script>
@@ -216,5 +217,9 @@ p {
 .button {
   width: 150px;
   margin: 10px;
+  padding: 10px;
+  font-size: large;
+  background-color: lightskyblue;
+  border-radius: 5px;
 }
 </style>
