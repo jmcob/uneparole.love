@@ -172,8 +172,11 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
   },
   methods: {
     GetRandomWordOfGod() {
-      const index = Math.random() * 8 - 1;
+      const index = Math.random() * this.paroles.length;
       const roundedIndex = Math.round(index);
+      if (roundedIndex === this.paroles.length) {
+            GetRandomWordOfGod()
+      }
       const result = this.paroles[roundedIndex];
       return result;
     },
