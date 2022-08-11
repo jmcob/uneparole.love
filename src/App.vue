@@ -1,10 +1,12 @@
 <template>
   <div class="cadre">
     <HeaderTitle />
-    <button class="button" @click="loadWord()">
-      Afficher une parole de Dieu aléatoire
-    </button>
-    <div class="uneparole" v-if="wordClick">
+    <div class="button-container">
+      <button class="button" @click="loadWord()">
+        Afficher une parole de Dieu aléatoire
+      </button>
+    </div>
+    <div id="uneparole" v-if="wordClick">
       <p>{{ uneparole.parole }}</p>
       <p class="ref">
         <em>{{ uneparole.ref }}</em>
@@ -310,7 +312,6 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
       this.aboutClick = !this.aboutClick;
     },
   },
-  components: { HeaderTitle },
 };
 </script>
 
