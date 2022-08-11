@@ -1,12 +1,12 @@
 <template>
   <div class="cadre">
-    <button class="button" @click="reload()">
+    <button class="button" @click="loadWord()">
       Afficher une parole de Dieu aléatoire
     </button>
     <div class="uneparole" v-if="wordClick">
-      <p>{{ uneparole.parole }}</p>
+      <p>{{ this.uneparole.parole }}</p>
       <p class="ref">
-        <em>{{ uneparole.ref }}</em>
+        <em>{{ this.uneparole.ref }}</em>
       </p>
     </div>
     <br />
@@ -175,14 +175,17 @@ Il est grand, le Seigneur, hautement loué ; à sa grandeur, il n'est pas de lim
       const index = Math.random() * 8 - 1;
       const roundedIndex = Math.round(index);
       const result = this.paroles[roundedIndex];
-      console.log(result);
       return result;
     },
-    reload() {
+    loadWord() {
       this.wordClick = true;
-      const stopBis = this.uneparole;
+      let stopBis = {};
+      if (this.uneparole !== {}) {
+        stopBis = this.uneparole;
+      }
+
       this.uneparole = this.GetRandomWordOfGod();
-      if (this.uneparole === stopBis) this.reload();
+      if (this.uneparole === stopBis) this.loadWord();
     },
     toggleAbout() {
       this.aboutClick = !this.aboutClick;
