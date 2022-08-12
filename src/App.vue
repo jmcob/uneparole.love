@@ -4,7 +4,7 @@
       <HeaderTitle />
       <div class="button-container">
         <button class="button" @click="loadWord()">
-          Afficher une parole de Dieu aléatoire
+          Une parole de Dieu aléatoire
         </button>
       </div>
       <div id="uneparole" v-if="wordClick">
@@ -17,8 +17,8 @@
 
       <br />
       <br /><br />
-      <div class="aboutText" v-if="aboutClick">
-        <p class="about" @click="toggleAbout()">Fermer</p>
+      <div id="about" v-if="aboutClick">
+        <p class="fermer" @click="toggleAbout()">Fermer</p>
         <p>
           Bientôt 148 paroles de Dieu. <br /><br />
           Les extraits ont été initialement choisis pour l'adoration
@@ -34,12 +34,12 @@
           >
           <br />
           Ici vous êtes libres : pas de télémétrie, pas de cookie, pas de pub,
-          pas de suivi inter-site, pas de copyright, juste un service, que du
+          pas de suivi inter-site, pas de copyright, un simple service, que du
           bonheur !
           <br /><a href="http://jmxi.art">jeanmaxime</a>
         </p>
       </div>
-      <div v-else><p class="about" @click="toggleAbout()">A propos</p></div>
+      <div v-else><p class="about" @click="toggleAbout()">À propos</p></div>
     </div>
   </div>
 </template>
@@ -326,11 +326,8 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima&family=Karla:ital,wght@0,400;0,700;1,400&family=Tiro+Gurmukhi:ital@0;1&display=swap");
 
-* {
-  font-family: "Karla", sans-serif;
-}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -345,19 +342,26 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
   width: 80vw;
   max-width: 350px;
 }
+
+#about {
+  font-family: "Karla", sans-serif;
+  font-size: large;
+}
 #uneparole {
   text-indent: 2em;
-}
-p {
+  font-family: "Tiro Gurmukhi", serif;
   font-size: x-large;
 }
 
 .ref {
   color: midnightblue;
 }
-.about {
+.about,
+.fermer {
   cursor: pointer;
   text-decoration: underline;
+  text-align: center;
+  font-family: "Karla", sans-serif;
 }
 .button {
   width: 150px;
@@ -369,6 +373,7 @@ p {
   border-radius: 5px;
   cursor: pointer;
   border-radius: 50%;
+  font-family: "Karla", sans-serif;
 }
 .button:active {
   background-color: midnightblue;
