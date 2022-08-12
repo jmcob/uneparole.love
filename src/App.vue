@@ -199,7 +199,7 @@ il s’est abaissé, devenant obéissant jusqu’à la mort, et la mort de la cr
 C’est pourquoi Dieu l’a exalté : il l’a doté du Nom qui est au-dessus de tout nom,
 afin qu’au nom de Jésus tout genou fléchisse au ciel, sur terre et aux enfers,
 et que toute langue proclame : « Jésus Christ est Seigneur » à la gloire de Dieu le Père.`,
-          ref: `Lettre au Philippiens, chapitre 2, versets 5 à 11`,
+          ref: `Lettre aux Philippiens, chapitre 2, versets 5 à 11`,
         },
         {
           parole: `Alors, vous, puisque vous êtes avides d’inspirations, cherchez à progresser, mais en vue de construire l’Église.`,
@@ -326,10 +326,10 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,400&display=swap");
 
 * {
-  font-family: "Tiro Gurmukhi", serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 .wrapper {
   display: flex;
@@ -349,7 +349,7 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
   text-indent: 2em;
 }
 p {
-  font-size: large;
+  font-size: x-large;
 }
 
 .ref {
