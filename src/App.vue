@@ -19,25 +19,29 @@
       <br /><br />
       <div id="about" v-if="aboutClick">
         <p class="fermer" @click="toggleAbout()">Fermer</p>
+        <p>Bientôt 148 paroles de Dieu.</p>
         <p>
-          Bientôt 148 paroles de Dieu. <br /><br />
           Les extraits ont été initialement choisis pour l'adoration
           eucharistique : sous la houlette et avec la participation active de la
           coordinatrice de l’adoration perpétuelle au Sacré-Cœur à Bordeaux.
-          <br />
+        </p>
+        <p>
           Version 1, août 2022 – 65 extraits courants de la Bible puis 83
           extraits de psaumes,
           <strong>traduction liturgique <a href="aelf.org">AELF</a></strong
-          >. <br />
+          >.
+        </p>
+        <p>
           <a href="http://www.uneparole.love/pains/pains-de-vie.pdf"
             >Télécharger le PDF complet des paroles de Dieu sélectionnées</a
           >
-          <br />
+        </p>
+        <p>
           Ici vous êtes libres : pas de télémétrie, pas de cookie, pas de pub,
           pas de suivi inter-site, pas de copyright, un simple service, que du
           bonheur !
-          <br /><a href="http://jmxi.art">jeanmaxime</a>
         </p>
+        <p><a href="http://jmxi.art">jeanmaxime</a></p>
       </div>
       <div v-else><p class="about" @click="toggleAbout()">À propos</p></div>
     </div>
@@ -384,6 +388,7 @@ Telle est la volonté de mon Père : que celui qui voit le Fils et croit en lui 
 #about {
   font-family: "Karla", sans-serif;
   font-size: large;
+  text-indent: 2em;
 }
 #uneparole {
   text-indent: 2em;
@@ -400,6 +405,7 @@ Telle est la volonté de mon Père : que celui qui voit le Fils et croit en lui 
   text-decoration: underline;
   text-align: center;
   font-family: "Karla", sans-serif;
+  text-indent: 0;
 }
 .button {
   width: 150px;
