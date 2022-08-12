@@ -28,13 +28,12 @@
         Version août 2022 – 65 extraits courants de la Bible puis 83 extraits de
         psaumes, <strong>traduction liturgique</strong>. <br />
         <a href="http://www.uneparole.love/pains/pains-de-vie.pdf"
-          ><strong
-            >Télécharger le PDF complet des paroles de Dieu
-            sélectionnées</strong
-          ></a
+          >Télécharger le PDF complet des paroles de Dieu sélectionnées</a
         >
         <br />
-        // jeanmaxime
+        Ici vous êtes libres : pas de télémétrie, pas de cookie, pas de pub, pas
+        de suivi inter-site, que du bonheur !
+        <br />// jeanmaxime
       </p>
     </div>
     <div v-else><p class="about" @click="toggleAbout()">A propos</p></div>
