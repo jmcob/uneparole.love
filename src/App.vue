@@ -369,14 +369,26 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
   margin: 10px;
   padding: 10px;
   font-size: larger;
-  background-color: lightskyblue;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    125deg,
+    rgba(2, 0, 36, 1) 1%,
+    rgba(9, 9, 121, 1) 10%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
   border-radius: 5px;
   cursor: pointer;
   border-radius: 50%;
   font-family: "Karla", sans-serif;
 }
 .button:active {
-  background-color: midnightblue;
-  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    125deg,
+    rgba(2, 0, 36, 1) 17%,
+    rgba(9, 9, 121, 1) 55%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 </style>
