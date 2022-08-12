@@ -1,42 +1,46 @@
 <template>
-  <div class="cadre">
-    <HeaderTitle />
-    <div class="button-container">
-      <button class="button" @click="loadWord()">
-        Afficher une parole de Dieu aléatoire
-      </button>
-    </div>
-    <div id="uneparole" v-if="wordClick">
-      <p>{{ uneparole.parole }}</p>
-      <p class="ref">
-        <em>{{ uneparole.ref }}</em>
-      </p>
-    </div>
-    <br />
+  <div class="wrapper">
+    <div class="cadre">
+      <HeaderTitle />
+      <div class="button-container">
+        <button class="button" @click="loadWord()">
+          Afficher une parole de Dieu aléatoire
+        </button>
+      </div>
+      <div id="uneparole" v-if="wordClick">
+        <p>{{ uneparole.parole }}</p>
+        <p class="ref">
+          <em>{{ uneparole.ref }}</em>
+        </p>
+      </div>
+      <br />
 
-    <br />
-    <br /><br />
-    <div class="aboutText" v-if="aboutClick">
-      <p class="about" @click="toggleAbout()">Fermer</p>
-      <p>
-        Bientôt 148 paroles de Dieu // <br />
-        Les extraits ont été initialement choisis pour l'adoration
-        eucharistique. <br />
-        Pains de vie choisis sous la houlette et avec la participation active de
-        la coordinatrice de l’adoration perpétuelle au Sacré-Cœur à Bordeaux.
-        <br />
-        Version août 2022 – 65 extraits courants de la Bible puis 83 extraits de
-        psaumes, <strong>traduction liturgique</strong>. <br />
-        <a href="http://www.uneparole.love/pains/pains-de-vie.pdf"
-          >Télécharger le PDF complet des paroles de Dieu sélectionnées</a
-        >
-        <br />
-        Ici vous êtes libres : pas de télémétrie, pas de cookie, pas de pub, pas
-        de suivi inter-site, que du bonheur !
-        <br />// jeanmaxime
-      </p>
+      <br />
+      <br /><br />
+      <div class="aboutText" v-if="aboutClick">
+        <p class="about" @click="toggleAbout()">Fermer</p>
+        <p>
+          Bientôt 148 paroles de Dieu. <br /><br />
+          Les extraits ont été initialement choisis pour l'adoration
+          eucharistique : sous la houlette et avec la participation active de la
+          coordinatrice de l’adoration perpétuelle au Sacré-Cœur à Bordeaux.
+          <br />
+          Version 1, août 2022 – 65 extraits courants de la Bible puis 83
+          extraits de psaumes,
+          <strong>traduction liturgique <a href="aelf.org">AELF</a></strong
+          >. <br />
+          <a href="http://www.uneparole.love/pains/pains-de-vie.pdf"
+            >Télécharger le PDF complet des paroles de Dieu sélectionnées</a
+          >
+          <br />
+          Ici vous êtes libres : pas de télémétrie, pas de cookie, pas de pub,
+          pas de suivi inter-site, pas de copyright, juste un service, que du
+          bonheur !
+          <br /><a href="http://jmxi.art">jeanmaxime</a>
+        </p>
+      </div>
+      <div v-else><p class="about" @click="toggleAbout()">A propos</p></div>
     </div>
-    <div v-else><p class="about" @click="toggleAbout()">A propos</p></div>
   </div>
 </template>
 <script>
@@ -327,15 +331,23 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
 * {
   font-family: "Tiro Gurmukhi", serif;
 }
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .cadre {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  text-align: justify;
   align-items: center;
   padding: 50px;
+  width: 80vw;
+  max-width: 350px;
 }
-
+#uneparole {
+  text-indent: 2em;
+}
 p {
   font-size: large;
 }
