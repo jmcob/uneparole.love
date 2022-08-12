@@ -27,6 +27,13 @@
         <br />
         Version août 2022 – 65 extraits courants de la Bible puis 83 extraits de
         psaumes, <strong>traduction liturgique</strong>. <br />
+        <a href="http://www.uneparole.love/pains/pains-de-vie.pdf"
+          ><strong
+            >Télécharger le PDF complet des paroles de Dieu
+            sélectionnées</strong
+          ></a
+        >
+        <br />
         // jeanmaxime
       </p>
     </div>
