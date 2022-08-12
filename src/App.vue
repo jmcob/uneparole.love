@@ -326,10 +326,10 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
 * {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Karla", sans-serif;
 }
 .wrapper {
   display: flex;
