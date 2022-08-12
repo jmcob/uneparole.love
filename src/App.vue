@@ -282,6 +282,41 @@ Quel avantage un homme aura-t-il à gagner le monde entier, s’il se perd ou se
 Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de lui, quand il viendra dans la gloire, la sienne, celle du Père et des saints anges.`,
           ref: `Évangile selon saint Luc, chapitre 9, versets 22 à 26`,
         },
+        {
+          parole: `« Lequel d’entre vous, quand son serviteur aura labouré ou gardé les bêtes, lui dira à son retour des champs : “Viens vite prendre place à table” ?
+Ne lui dira-t-il pas plutôt : “Prépare-moi à dîner, mets-toi en tenue pour me servir, le temps que je mange et boive. Ensuite tu mangeras et boiras à ton tour” ?
+Va-t-il être reconnaissant envers ce serviteur d’avoir exécuté ses ordres ?
+De même vous aussi, quand vous aurez exécuté tout ce qui vous a été ordonné, dites : “Nous sommes de simples serviteurs : nous n’avons fait que notre devoir.” »`,
+          ref: `Évangile selon saint Luc, chapitre 17, versets 7 à 10`,
+        },
+        {
+          parole: `Jésus reprit donc la parole. Il leur déclarait : « Amen, amen, je vous le dis : le Fils ne peut rien faire de lui-même, il fait seulement ce qu’il voit faire par le Père ; ce que fait celui-ci, le Fils le fait pareillement.
+Car le Père aime le Fils et lui montre tout ce qu’il fait. Il lui montrera des œuvres plus grandes encore, si bien que vous serez dans l’étonnement.`,
+          ref: `Évangile selon saint Jean, chapitre 5, versets 19 & 20`,
+        },
+        {
+          parole: `Ne soyez pas étonnés ; l’heure vient où tous ceux qui sont dans les tombeaux entendront la voix du Fils de l’Homme.
+alors, ceux qui ont fait le bien sortiront pour ressusciter et vivre, ceux qui ont fait le mal, pour ressusciter et être jugés.
+Moi, je ne peux rien faire de moi-même ; je rends mon jugement d’après ce que j’entends, et mon jugement est juste, parce que je ne cherche pas à faire ma volonté, mais la volonté de Celui qui m’a envoyé.`,
+          ref: `Évangile selon saint Jean, chapitre 5, versets 28 à 30`,
+        },
+        {
+          parole: `C’est l’esprit qui fait vivre, la chair n’est capable de rien. Les paroles que je vous ai dites sont esprit et elles sont vie.`,
+          ref: `Évangile selon saint Jean, chapitre 6, verset 63`,
+        },
+        {
+          parole: `Qui donc est comparable au sage ? Qui sait expliquer le sens des choses ? La sagesse d’un homme fait briller son visage ; la dureté du visage en est changée.`,
+          ref: `Livre de l’Ecclésiaste, chapitre 8, premier verset`,
+        },
+        {
+          parole: `Jésus leur répondit : « Moi, je suis le pain de la vie. Celui qui vient à moi n’aura jamais faim ; celui qui croit en moi n’aura jamais soif.
+Mais je vous l’ai déjà dit : vous avez vu, et pourtant vous ne croyez pas.
+Tous ceux que me donne le Père viendront jusqu’à moi ; et celui qui vient à moi, je ne vais pas le jeter dehors.
+Car je suis descendu du ciel pour faire non pas ma volonté, mais la volonté de Celui qui m’a envoyé.
+Or, telle est la volonté de Celui qui m’a envoyé : que je ne perde aucun de ceux qu’il m’a donnés, mais que je les ressuscite au dernier jour.
+Telle est la volonté de mon Père : que celui qui voit le Fils et croit en lui ait la vie éternelle ; et moi, je le ressusciterai au dernier jour. »`,
+          ref: `Évangile selon saint Jean, chapitre 6, versets 35 à 40`,
+        },
       ],
       uneparole: {
         parole: "",
@@ -321,6 +356,9 @@ Celui qui a honte de moi et de mes paroles, le Fils de l’homme aura honte de l
     toggleAbout() {
       this.aboutClick = !this.aboutClick;
     },
+  },
+  created() {
+    console.log(this.paroles.length);
   },
 };
 </script>
