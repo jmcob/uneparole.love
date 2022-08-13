@@ -74,7 +74,6 @@ export default {
 .cadre {
   display: flex;
   flex-direction: column;
-  text-align: justify;
   align-items: center;
   padding: 50px;
   width: 80vw;
@@ -85,12 +84,14 @@ export default {
   font-family: "Karla", sans-serif;
   font-size: large;
   text-indent: 2em;
+  text-align: justify;
 }
 #uneparole {
   text-indent: 2em;
   font-family: "Tiro Gurmukhi", serif;
   font-size: x-large;
-  white-space: pre;
+  white-space: pre-wrap;
+  text-align: justify;
 }
 
 .ref {

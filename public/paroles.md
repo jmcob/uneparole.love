@@ -1,36 +1,3 @@
-Qui conçoit le mal et couve le crime enfantera le mensonge.
-Qui ouvre une fosse et la creuse tombera dans le trou qu'il a fait.
-Son mauvais coup lui revient sur la tête, sa violence retombe sur son crâne.
-Je rendrai grâce au Seigneur pour sa justice, je chanterai le nom du Seigneur, le Très-Haut.
-Psaume 7 versets 15 à 18
-
-A pleine voix je crie vers le Seigneur ; il me répond de sa montagne sainte.
-Et moi, je me couche et je dors ; je m'éveille : le Seigneur est mon soutien.
-Je ne crains pas ce peuple nombreux qui me cerne et s'avance contre moi.
-Lève-toi, Seigneur ! Sauve-moi, mon Dieu ! Tous mes ennemis, tu les frappes à la mâchoire ; les méchants, tu leur brises les dents.
-Du Seigneur vient le salut ; vienne ta bénédiction sur ton peuple
-Psaume 3 versets 5 à 9
-
-Offrez les offrandes justes et faites confiance au Seigneur.
-Beaucoup demandent : « Qui nous fera voir le bonheur ? » Sur nous, Seigneur, que s'illumine ton visage !
-Tu mets dans mon cœur plus de joie que toutes leurs vendanges et leurs moissons.
-Dans la paix moi aussi, je me couche et je dors, car tu me donnes d'habiter, Seigneur, seul, dans la confiance.
-Psaume 4 versets 6 à 9
-
-Ô Seigneur, notre Dieu, qu'il est grand ton nom par toute la terre ! Jusqu'aux cieux, ta splendeur est chantée
-par la bouche des enfants, des tout-petits : rempart que tu opposes à l'adversaire, où l'ennemi se brise en sa révolte.
-A voir ton ciel, ouvrage de tes doigts, la lune et les étoiles que tu fixas,
-qu'est-ce que l'homme pour que tu penses à lui, le fils d'un homme, que tu en prennes souci ?
-Psaume 8 versets 2 à 5
-
-Qu'est-ce que l'homme pour que tu penses à lui, le fils d'un homme, que tu en prennes souci ?
-Tu l'as voulu un peu moindre qu'un dieu, le couronnant de gloire et d'honneur ;
-tu l'établis sur les oeuvres de tes mains, tu mets toute chose à ses pieds :
-les troupeaux de boeufs et de brebis, et même les bêtes sauvages,
-les oiseaux du ciel et les poissons de la mer, tout ce qui va son chemin dans les eaux.
-O Seigneur, notre Dieu, qu'il est grand ton nom par toute la terre !
-Psaume 8 versets 5 à 10
-
 Quand sont ruinées les fondations, que peut faire le juste ?
 Mais le Seigneur, dans son temple saint, + le Seigneur, dans les cieux où il trône, garde les yeux ouverts sur le monde. Il voit, il scrute les hommes ; +
 le Seigneur a scruté le juste et le méchant : l'ami de la violence, il le hait.
