@@ -1,37 +1,3 @@
-Le Seigneur dit : « Sors et tiens-toi sur la montagne devant le Seigneur, car il va passer. » À l’approche du Seigneur, il y eut un ouragan, si fort et si violent qu’il fendait les montagnes et brisait les rochers, mais le Seigneur n’était pas dans l’ouragan ; et après l’ouragan, il y eut un tremblement de terre, mais le Seigneur n’était pas dans le tremblement de terre ;
-et après ce tremblement de terre, un feu, mais le Seigneur n’était pas dans ce feu ; et après ce feu, le murmure d’une brise légère.
-Aussitôt qu’il l’entendit, Élie se couvrit le visage avec son manteau, il sortit et se tint à l’entrée de la caverne. Alors il entendit une voix qui disait : « Que fais-tu là, Élie ? »
-Il répondit : « J’éprouve une ardeur jalouse pour toi, Seigneur, Dieu de l’univers. Les fils d’Israël ont abandonné ton Alliance, renversé tes autels, et tué tes prophètes par l’épée ; moi, je suis le seul à être resté et ils cherchent à prendre ma vie. »
-Premier livre des Rois, chapitre 19, versets 11 à 14
-
-Pendant qu’ils passaient, Élie dit à Élisée : « Dis-moi ce que tu veux que je fasse pour toi avant d’être enlevé loin de toi. » Élisée répondit : « Que je reçoive une double part de l’esprit que tu as reçu ! »
-Élie reprit : « Tu demandes quelque chose de difficile : tu l’obtiendras si tu me vois lorsque je serai enlevé loin de toi. Sinon, tu ne l’obtiendras pas. »
-Ils étaient en train de marcher tout en parlant lorsqu’un char de feu, avec des chevaux de feu, les sépara. Alors, Élie monta au ciel dans un ouragan.
-Élisée le vit et se mit à crier : « Mon père !... Mon père !... Char d’Israël et ses cavaliers ! » Puis il cessa de le voir. Il saisit ses vêtements et les déchira en deux.
-Deuxième livre des Rois, chapitre 2, versets 9 à 12
-
-
-LE CHŒUR : En toi, notre fête et notre joie ! Nous redirons tes amours, meilleures que le vin : il est juste de t’aimer !
-Cantique des cantiques, chapitre premier, deuxième partie du quatrième verset
-
-Qu’elles sont belles, tes amours, ma sœur fiancée ! Qu’elles sont bonnes, tes amours : meilleures que le vin ! L’odeur de tes parfums, une exquise senteur !
-Un miel pur coule de tes lèvres, ô fiancée, le miel et le lait, sous ta langue ; l’odeur de tes vêtements est comme l’odeur du Liban.
-Cantique des cantiques, chapitre quatre, versets 10 & 11
-
-ELLE : Éveille-toi, Vent du nord ! Viens, Vent du sud ! Souffle sur mon jardin et ses arômes s’exhaleront ! Qu’il entre dans son jardin, mon bien-aimé, qu’il en mange les fruits délicieux.
-LUI :  Je suis entré dans mon jardin, ma sœur fiancée : j’ai recueilli ma myrrhe, avec mes aromates, j’ai mangé mon pain et mon miel, j’ai bu mon vin et mon lait. CHŒUR : Mangez, amis ! Buvez, bien-aimés, enivrez-vous !
-Cantique des cantiques, à cheval entre les chapitres 4 et 5.
-
-Et voici qu’une femme souffrant d’hémorragies depuis douze ans s’approcha par-derrière et toucha la frange de son vêtement.
-Car elle se disait en elle-même : « Si je parviens seulement à toucher son vêtement, je serai sauvée. »
-Jésus se retourna et, la voyant, lui dit : « Confiance, ma fille ! Ta foi t’a sauvée. » Et, à l’heure même, la femme fut sauvée.
-Évangile de Matthieu, chapitre 9, versets 20 à 22
-
-L’ange du Seigneur apparut à Gédéon et lui dit : « Le Seigneur est avec toi, vaillant guerrier ! »
-Gédéon lui répondit : « Pardon, mon Seigneur ! Si le Seigneur est avec nous, pourquoi tout ceci nous est-il arrivé ? Que sont devenus tous ces prodiges que nous ont racontés nos pères ? Ils nous disaient : “Est-ce que le Seigneur ne nous a pas fait monter d’Égypte ?” Mais aujourd’hui le Seigneur nous a abandonnés, en nous livrant au pouvoir de Madiane… »
-Alors le Seigneur regarda Gédéon et lui dit : « Avec la force qui est en toi, va sauver Israël du pouvoir de Madiane. N’est-ce pas moi qui t’envoie ? »
-Livre des Juges, chapitre 6, versets 12 à 14
-
 Jésus parcourait toutes les villes et tous les villages, enseignant dans leurs synagogues, proclamant l’Évangile du Royaume et guérissant toute maladie et toute infirmité.
 Voyant les foules, Jésus fut saisi de compassion envers elles parce qu’elles étaient désemparées et abattues comme des brebis sans berger.
 Il dit alors à ses disciples : « La moisson est abondante, mais les ouvriers sont peu nombreux.
