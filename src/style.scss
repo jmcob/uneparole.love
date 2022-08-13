@@ -1,0 +1,108 @@
+// font
+
+@import url("https://fonts.googleapis.com/css2?family=Arima&family=Karla:ital,wght@0,400;0,700;1,400&family=Tiro+Gurmukhi:ital@0;1&display=swap");
+
+// main div containers
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 80vw;
+    max-width: 350px;
+}
+
+// about section
+
+#about {
+    font-family: "Karla", sans-serif;
+    font-size: large;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+// section parole
+
+#uneparole {
+    text-indent: 2em;
+    font-family: "Tiro Gurmukhi", serif;
+    font-size: x-large;
+    white-space: pre-wrap;
+    text-align: justify;
+}
+
+.ref {
+    color: midnightblue;
+}
+
+// Liens sous la parole
+
+.about,
+.center {
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    text-indent: 0;
+}
+
+h1 {
+    font-size: large;
+}
+// Bouton et animation
+
+.button {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(125deg,
+            rgba(2, 0, 36, 1) 1%,
+            rgba(9, 9, 121, 1) 10%,
+            rgba(0, 212, 255, 1) 100%);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: "Karla", sans-serif;
+    transition-property: background;
+    transition-duration: 600ms;
+    animation-name: spin;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+}
+
+@keyframes spin {
+    0% {
+        box-shadow: 5px 20px crimson, 35px 16px gold;
+    }
+    50% {
+        box-shadow: 5px 10px midnightblue, 20px 16px orangered;
+    }
+    100% {
+        box-shadow: 25px -15px lightblue, 10px 26px crimson;
+    }
+}
+
+.button:hover,
+.button:active {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(125deg,
+            rgba(2, 0, 36, 1) 17%,
+            rgba(9, 9, 121, 1) 55%,
+            rgba(0, 212, 255, 1) 100%);
+}
+
+// header, cross size
+.cross {
+    width: 60px;
+}

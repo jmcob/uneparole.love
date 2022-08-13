@@ -8,7 +8,6 @@
           <em>{{ uneparole.ref }}</em>
         </p>
       </div>
-      <br />
       <br /><br />
       <AboutVue />
     </div>
@@ -63,80 +62,3 @@ export default {
   },
 };
 </script>
-
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Arima&family=Karla:ital,wght@0,400;0,700;1,400&family=Tiro+Gurmukhi:ital@0;1&display=swap");
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.cadre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-  width: 80vw;
-  max-width: 350px;
-}
-
-#about {
-  font-family: "Karla", sans-serif;
-  font-size: large;
-  text-indent: 2em;
-  text-align: justify;
-}
-#uneparole {
-  text-indent: 2em;
-  font-family: "Tiro Gurmukhi", serif;
-  font-size: x-large;
-  white-space: pre-wrap;
-  text-align: justify;
-}
-
-.ref {
-  color: midnightblue;
-}
-.about,
-.center {
-  cursor: pointer;
-  text-decoration: underline;
-  text-align: center;
-  font-family: "Karla", sans-serif;
-  text-indent: 0;
-}
-h1 {
-  font-size: large;
-}
-
-.button {
-  width: 150px;
-  height: 150px;
-  margin: 10px;
-  padding: 10px;
-  font-size: large;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    125deg,
-    rgba(2, 0, 36, 1) 1%,
-    rgba(9, 9, 121, 1) 10%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-family: "Karla", sans-serif;
-}
-.button:hover,
-.button:active {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    125deg,
-    rgba(2, 0, 36, 1) 17%,
-    rgba(9, 9, 121, 1) 55%,
-    rgba(0, 212, 255, 1) 100%
-  );
-}
-</style>
