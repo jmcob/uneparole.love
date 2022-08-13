@@ -129,7 +129,8 @@ h1 {
   border-radius: 50%;
   font-family: "Karla", sans-serif;
 }
-.button:hover {
+.button:hover,
+.button:active {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     125deg,
