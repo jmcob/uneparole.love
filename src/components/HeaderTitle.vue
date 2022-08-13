@@ -1,9 +1,11 @@
 <template>
   <img src="../assets/cross.svg" class="cross" alt="croix" />
   <div @keyup.space="loadWord()" class="button-container">
-    <button class="button" @click="loadWord()">
-      Prenez une parole de Dieu au hasard
-    </button>
+    <h1>
+      <button class="button" @click="loadWord()">
+        Prenez une parole de Dieu au hasard
+      </button>
+    </h1>
   </div>
 </template>
 

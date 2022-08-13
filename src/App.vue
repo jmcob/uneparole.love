@@ -37,6 +37,7 @@ export default {
       wordClick: false,
     };
   },
+
   methods: {
     GetRandomWord() {
       const index = Math.random() * this.paroles.length;
@@ -98,19 +99,23 @@ export default {
   color: midnightblue;
 }
 .about,
-.fermer {
+.center {
   cursor: pointer;
   text-decoration: underline;
   text-align: center;
   font-family: "Karla", sans-serif;
   text-indent: 0;
 }
+h1 {
+  font-size: large;
+}
+
 .button {
   width: 150px;
   height: 150px;
   margin: 10px;
   padding: 10px;
-  font-size: larger;
+  font-size: large;
   background: rgb(2, 0, 36);
   background: linear-gradient(
     125deg,
