@@ -4,7 +4,7 @@
       <HeaderTitle />
       <div @keyup.space="loadWord()" class="button-container">
         <button class="button" @click="loadWord()">
-          Une parole de Dieu aléatoire
+          Prenez une parole de Dieu au hasard
         </button>
       </div>
       <div id="uneparole" v-if="wordClick">
