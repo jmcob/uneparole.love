@@ -1,9 +1,3 @@
-Jésus parcourait toutes les villes et tous les villages, enseignant dans leurs synagogues, proclamant l’Évangile du Royaume et guérissant toute maladie et toute infirmité.
-Voyant les foules, Jésus fut saisi de compassion envers elles parce qu’elles étaient désemparées et abattues comme des brebis sans berger.
-Il dit alors à ses disciples : « La moisson est abondante, mais les ouvriers sont peu nombreux.
-Priez donc le maître de la moisson d’envoyer des ouvriers pour sa moisson. »
-Évangile de Matthieu, chapitre 9, versets 35 à 38
-
 Qui conçoit le mal et couve le crime enfantera le mensonge.
 Qui ouvre une fosse et la creuse tombera dans le trou qu'il a fait.
 Son mauvais coup lui revient sur la tête, sa violence retombe sur son crâne.
@@ -635,14 +629,3 @@ louez-le par les cordes et les flûtes, louez-le par la danse et le tambour !
 Louez-le par les cymbales sonores, louez-le par les cymbales triomphantes !
 Et que tout être vivant chante louange au Seigneur ! Alléluia !
 Psaume 150, intégral
-
-Le Christ Jésus est l’image du Dieu invisible, le premier-né, avant toute créature :
-en lui, tout fut créé, dans le ciel et sur la terre. Les êtres visibles et invisibles, Puissances, Principautés, Souverainetés, Dominations, tout est créé par lui et pour lui.
-Il est avant toute chose, et tout subsiste en lui.
-Lettre aux Colossiens, chapitre 1, versets 15 à 17
-
-
-Le Christ Jésus est aussi la tête du corps, la tête de l’Église : c’est lui le commencement, le premier-né d’entre les morts, afin qu’il ait en tout la primauté.
-Car Dieu a jugé bon qu’habite en lui toute plénitude
-et que tout, par le Christ, lui soit enfin réconcilié, faisant la paix par le sang de sa Croix, la paix pour tous les êtres sur la terre et dans le ciel.
-Lettre aux Colossiens, chapitre 1, versets 18 à 20
