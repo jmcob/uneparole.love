@@ -83,13 +83,13 @@ h1 {
 
 @keyframes spin {
     0% {
-        box-shadow: -5px 10px midnightblue, 12px 8px gold;
+        box-shadow: -5px 5px midnightblue, 5px 2px gold;
     }
     50% {
-        box-shadow: 5px 10px white, 12px 8px orangered;
+        box-shadow: 2px 5px white, 5px 4px orangered;
     }
     100% {
-        box-shadow: 10px -10px lightblue, -5px 10px crimson;
+        box-shadow: 5px -5px lightblue, -3px 5px crimson;
     }
 }
 
