@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="cadre">
       <HeaderTitle />
-      <div class="button-container">
+      <div @keyup.space="loadWord()" class="button-container">
         <button class="button" @click="loadWord()">
           Une parole de Dieu aléatoire
         </button>
@@ -345,7 +345,6 @@ Telle est la volonté de mon Père : que celui qui voit le Fils et croit en lui 
       return uneparole;
     },
     loadWord() {
-      this.i++;
       this.tampon = this.uneparole;
       this.wordClick = true;
       this.uneparole = this.GetRandomWord();
