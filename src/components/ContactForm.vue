@@ -1,36 +1,34 @@
 <template>
   <div class="hello">
-    <div class="cadre">
-      <h2>Soumettre une parole de Dieu</h2>
-      <p>
-        Si vous désirez soumettre une parole sur uneparole.love, remplissez ce
-        formulaire !
-        <br />Que Dieu vous bénisse !
-      </p>
+    <h2>Soumettre une parole de Dieu</h2>
+    <p>
+      Si vous désirez soumettre une parole sur uneparole.love, remplissez ce
+      formulaire !
+      <br />Que Dieu vous bénisse !
+    </p>
 
-      <form ref="form" @submit.prevent="sendEmail">
-        <label>Nom</label>
-        <input type="text" v-model="name" name="name" placeholder="Votre nom" />
-        <label>Email</label>
-        <input
-          type="email"
-          v-model="email"
-          name="email"
-          placeholder="Votre e-mail"
-        />
-        <label>Passage biblique (avec références si possible)</label>
-        <textarea
-          name="message"
-          v-model="message"
-          cols="30"
-          rows="5"
-          placeholder="Passage"
-        >
-        </textarea>
+    <form ref="form" @submit.prevent="sendEmail">
+      <label>Nom</label>
+      <input type="text" v-model="name" name="name" placeholder="Votre nom" />
+      <label>Email</label>
+      <input
+        type="email"
+        v-model="email"
+        name="email"
+        placeholder="Votre e-mail"
+      />
+      <label>Passage biblique (avec références si possible)</label>
+      <textarea
+        name="message"
+        v-model="message"
+        cols="30"
+        rows="5"
+        placeholder="Passage"
+      >
+      </textarea>
 
-        <input type="submit" :value="send" />
-      </form>
-    </div>
+      <input type="submit" :value="send" />
+    </form>
   </div>
 </template>
 
@@ -90,7 +88,7 @@ export default {
 label {
   float: left;
 }
-.cadre {
+.hello {
   padding-bottom: 20px;
   background-color: white;
   border-radius: 10px;
