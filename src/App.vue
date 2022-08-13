@@ -1,12 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="cadre">
-      <HeaderTitle />
-      <div @keyup.space="loadWord()" class="button-container">
-        <button class="button" @click="loadWord()">
-          Prenez une parole de Dieu au hasard
-        </button>
-      </div>
+      <HeaderTitle :loadWord="this.loadWord" />
       <div id="uneparole" v-if="wordClick">
         <p>{{ uneparole.parole }}</p>
         <p class="ref">
@@ -64,9 +59,6 @@ export default {
     sameWord() {
       if (this.uneparole === this.tampon) return true;
     },
-  },
-  created() {
-    console.log(this.paroles.length);
   },
 };
 </script>

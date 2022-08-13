@@ -2,15 +2,15 @@
   <div>
     <div id="about" v-if="aboutClick">
       <p class="fermer" @click="toggleAbout()">Fermer</p>
-      <p>Bientôt 148 paroles de Dieu.</p>
+      <p>Actuellement {{ paroles.length }} paroles différentes.</p>
       <p>
         Les extraits ont été initialement choisis pour l'adoration eucharistique
         : sous la houlette et avec la participation active de la coordinatrice
         de l’adoration perpétuelle au Sacré-Cœur à Bordeaux.
       </p>
       <p>
-        Version 1.1, août 2022 – 65 extraits courants de la Bible puis 83
-        extraits de psaumes,
+        Version 1.1, août 2022 – A terme, 65 extraits courants de la Bible puis
+        83 extraits de psaumes,
         <strong>traduction liturgique <a href="aelf.org">AELF</a></strong
         >.
       </p>
@@ -31,9 +31,12 @@
 </template>
 
 <script>
+import paroles from "../json/paroles.json";
+
 export default {
   data() {
     return {
+      paroles: paroles,
       aboutClick: false,
     };
   },
