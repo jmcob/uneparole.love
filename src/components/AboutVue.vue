@@ -9,8 +9,8 @@
         de l’adoration perpétuelle au Sacré-Cœur à Bordeaux.
       </p>
       <p>
-        Version 1, août 2022 – 65 extraits courants de la Bible puis 83 extraits
-        de psaumes,
+        Version 1.1, août 2022 – 65 extraits courants de la Bible puis 83
+        extraits de psaumes,
         <strong>traduction liturgique <a href="aelf.org">AELF</a></strong
         >.
       </p>
