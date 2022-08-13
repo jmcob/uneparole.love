@@ -21,7 +21,7 @@
 </template>
 <script>
 import HeaderTitle from "./components/HeaderTitle.vue";
-import AboutVue from "./components/About.vue";
+import AboutVue from "./components/AboutVue.vue";
 import paroles from "./json/paroles.json";
 
 export default {
