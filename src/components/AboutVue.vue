@@ -34,20 +34,29 @@
     <div class="center" v-else>
       <p @click="toggleSoumission()">Soumettre une parole</p>
     </div>
+    <div v-if="paroleDuMois">
+      <p class="center" @click="toggleMois()">Fermer la parole du mois</p>
+      <OfTheMonth />
+    </div>
+    <div class="center" v-else>
+      <p @click="toggleMois()">La parole du mois</p>
+    </div>
   </div>
 </template>
 
 <script>
 import paroles from "../json/paroles.json";
 import ContactForm from "../components/ContactForm.vue";
+import OfTheMonth from "./OfTheMonth.vue";
 
 export default {
-  components: { ContactForm },
+  components: { ContactForm, OfTheMonth },
   data() {
     return {
       paroles: paroles,
       aboutClick: false,
       soumission: false,
+      paroleDuMois: false,
     };
   },
   methods: {
@@ -56,6 +65,9 @@ export default {
     },
     toggleSoumission() {
       this.soumission = !this.soumission;
+    },
+    toggleMois() {
+      this.paroleDuMois = !this.paroleDuMois;
     },
   },
 };
