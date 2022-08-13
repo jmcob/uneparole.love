@@ -16,7 +16,7 @@
     align-items: center;
     padding: 50px;
     width: 80vw;
-    max-width: 350px;
+    max-width: 320px;
 }
 
 // about section
@@ -73,9 +73,7 @@ h1 {
     cursor: pointer;
     border-radius: 50%;
     font-family: "Karla", sans-serif;
-    transition-property: background;
-    transition-duration: 600ms;
-    animation-name: spin;
+    // animation-name: spin;
     animation-duration: 700ms;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
@@ -83,13 +81,16 @@ h1 {
 
 @keyframes spin {
     0% {
-        box-shadow: -3px 3px midnightblue, 3px 1px gold;
+        box-shadow: -2px 2px midnightblue, 2px 1px gold;
     }
-    50% {
-        box-shadow: 1px 3px white, 3px 2px orangered;
+    33% {
+        box-shadow: 1px 2px white, 2px 2px orangered;
+    }
+    66% {
+        box-shadow: 2px -2px lightblue, -1px 2px crimson;
     }
     100% {
-        box-shadow: 3px -3px lightblue, -1px 3px crimson;
+        box-shadow: 0px 0px white, 0px 0px white;
     }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="cadre">
-      <HeaderTitle :loadWord="this.loadWord" />
+      <HeaderTitle :animation="this.animation" :loadWord="this.loadWord" />
       <div id="uneparole" v-if="wordClick">
         <p>{{ uneparole.parole }}</p>
         <p class="ref">
@@ -34,9 +34,12 @@ export default {
       },
       aboutClick: false,
       wordClick: false,
+      animation: true,
     };
   },
-
+  created() {
+    setTimeout(() => (this.animation = false), 700);
+  },
   methods: {
     GetRandomWord() {
       const index = Math.random() * this.paroles.length;
@@ -50,6 +53,8 @@ export default {
     loadWord() {
       this.tampon = this.uneparole;
       this.wordClick = true;
+      this.animation = true;
+      setTimeout(() => (this.animation = false), 700);
       this.uneparole = this.GetRandomWord();
       while (this.uneparole === undefined) {
         this.uneparole = this.GetRandomWord();

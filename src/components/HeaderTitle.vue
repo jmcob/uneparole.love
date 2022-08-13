@@ -2,7 +2,15 @@
   <img src="../assets/cross.svg" class="cross" alt="croix" />
   <div @keyup.space="loadWord()" class="button-container">
     <h1>
-      <button class="button" @click="loadWord()">
+      <button
+        v-if="animation"
+        @click="loadWord()"
+        :style="{ animationName: 'spin' }"
+        class="button"
+      >
+        Piocher une parole de Dieu au hasard
+      </button>
+      <button v-else @click="loadWord()" class="button">
         Piocher une parole de Dieu au hasard
       </button>
     </h1>
@@ -13,6 +21,7 @@
 export default {
   props: {
     loadWord: Function,
+    animation: Boolean,
   },
 };
 </script>
