@@ -90,6 +90,7 @@ export default {
   text-indent: 2em;
   font-family: "Tiro Gurmukhi", serif;
   font-size: x-large;
+  white-space: pre;
 }
 
 .ref {
