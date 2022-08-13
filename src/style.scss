@@ -93,14 +93,6 @@ h1 {
     }
 }
 
-.button:hover,
-.button:active {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(125deg,
-            rgba(2, 0, 36, 1) 17%,
-            rgba(9, 9, 121, 1) 55%,
-            rgba(0, 212, 255, 1) 100%);
-}
 
 // header, cross size
 .cross {
