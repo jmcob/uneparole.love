@@ -1,28 +1,12 @@
 <template>
   <div class="about info" id="infos">
     <div id="infoContainer">
-      {{ this.desInfos.fete }}
+      {{ this.desInfos.ligne1 }}
     </div>
   </div>
   <div>
-    <div id="about" v-if="aboutClick">
-      <p class="center" @click="this.aboutClick = !this.aboutClick">
-        Fermer l'à propos
-      </p>
-      <Informations />
-    </div>
-    <div v-else>
-      <p class="about" @click="this.aboutClick = !this.aboutClick">À propos</p>
-    </div>
-    <div v-if="soumission">
-      <p class="center" @click="this.soumission = !this.soumission">
-        Fermer le formulaire
-      </p>
-      <ContactForm />
-    </div>
-    <div class="center" v-else>
-      <p @click="this.soumission = !this.soumission">Soumettre une parole</p>
-    </div>
+    <router-link class="about" to="/about">à Propos</router-link>
+    <router-link class="about" to="/contact">Soumettre une parole</router-link>
     <div v-if="paroleDuMois">
       <p class="center" @click="this.paroleDuMois = !this.paroleDuMois">
         Fermer la parole du mois
@@ -53,6 +37,7 @@ import OfTheMonth from "./OfTheMonth.vue";
 import Informations from "./Informations.vue";
 import EvangileDuJour from "./EvangileDuJour.vue";
 import dayjs from "dayjs";
+import axios from "axios";
 
 export default {
   components: {
@@ -78,9 +63,8 @@ export default {
     async getInfos() {
       this.api =
         "https://api.aelf.org/v1/informations/" + this.today + "/france";
-      await this.axios.get(this.api).then((res) => {
+      await axios.get(this.api).then((res) => {
         this.desInfos = res.data.informations;
-        console.log(this.desInfos);
       });
     },
   },

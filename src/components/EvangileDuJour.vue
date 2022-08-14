@@ -18,9 +18,10 @@
 <script>
 import dayjs from "dayjs";
 import "dayjs/locale/fr";
+import axios from "axios";
 
 export default {
-  props: { desInfos: [] },
+  props: { desInfos: {} },
   data() {
     return {
       uneparole: [],
@@ -33,8 +34,7 @@ export default {
   methods: {
     getGospel() {
       this.api = "https://api.aelf.org/v1/messes/" + this.todayAPI + "/france";
-      const res = this.axios.get(this.api).then((res) => {
-        console.log(res.data.messes[0].lectures);
+      const res = axios.get(this.api).then((res) => {
         this.uneparole = res.data.messes[0].lectures;
         this.uneparole.forEach((lecture) => {
           if ((lecture.type = "evangile")) {
