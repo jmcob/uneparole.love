@@ -51,15 +51,17 @@
 
 // Liens sous la parole
 
-.about,
-.center {
+.about {
     cursor: pointer;
     text-decoration: underline;
-    text-align: center;
     font-family: "Karla", sans-serif;
     text-indent: 0;
     font-size: large;
 }
+.center {
+    text-align: center;
+}
+
 .info {
     text-decoration: none;
     cursor: default;
