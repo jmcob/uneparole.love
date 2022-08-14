@@ -36,8 +36,15 @@
     font-size: larger;
     white-space: pre-wrap;
     text-align: justify;
+        line-height: 1.5;
 }
-
+#evangileDuJour {
+    line-height: 1;
+    text-indent: 2em;
+    font-family: "Tiro Gurmukhi", serif;
+    font-size: large;
+    white-space: pre-wrap;
+}
 .ref {
     color: midnightblue;
 }
