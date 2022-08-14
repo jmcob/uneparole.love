@@ -1,7 +1,15 @@
 <template>
-  <img src="../assets/cross.svg" class="cross" alt="croix" />
+  <div class="wrapper">
+    <HeaderCross />
+    <ContactForm />
+  </div>
 </template>
 
 <script>
-import HeaderTitle from "../components/HeaderTitle.vue";
+import HeaderCross from "../components/HeaderCross.vue";
+import ContactForm from "../components/ContactForm.vue";
+
+export default {
+  components: { HeaderCross, ContactForm },
+};
 </script>

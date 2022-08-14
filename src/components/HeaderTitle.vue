@@ -1,4 +1,5 @@
 <template>
+  <img src="../assets/cross.svg" class="cross" alt="croix" />
   <div @keyup.space="loadWord()" class="button-container">
     <h1>
       <button

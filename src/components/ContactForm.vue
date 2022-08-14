@@ -1,39 +1,43 @@
 <template>
-  <div class="hello">
-    <h2>Soumettre une parole de Dieu</h2>
-    <p>
-      Si vous désirez soumettre une parole sur uneparole.love, remplissez ce
-      formulaire !
-      <br />Que Dieu vous bénisse !
-    </p>
+  <div class="wrapper">
+    <div class="hello">
+      <h2>Soumettre une parole de Dieu</h2>
+      <p>
+        Si vous désirez soumettre une parole sur
+        <router-link to="/">uneparole.love</router-link> , remplissez ce
+        formulaire ! <br />Que Dieu vous bénisse !
+      </p>
 
-    <form ref="form" @submit.prevent="sendEmail">
-      <label>Nom</label>
-      <input type="text" v-model="name" name="name" placeholder="Votre nom" />
-      <label>Email</label>
-      <input
-        type="email"
-        v-model="email"
-        name="email"
-        placeholder="Votre e-mail"
-      />
-      <label>Passage biblique (avec références si possible)</label>
-      <textarea
-        name="message"
-        v-model="message"
-        cols="30"
-        rows="5"
-        placeholder="Passage"
-      >
-      </textarea>
+      <form ref="form" @submit.prevent="sendEmail">
+        <label>Nom</label>
+        <input type="text" v-model="name" name="name" placeholder="Votre nom" />
+        <label>Email</label>
+        <input
+          type="email"
+          v-model="email"
+          name="email"
+          placeholder="Votre e-mail"
+        />
+        <label>Passage biblique (avec références si possible)</label>
+        <textarea
+          name="message"
+          v-model="message"
+          cols="30"
+          rows="5"
+          placeholder="Passage"
+        >
+        </textarea>
 
-      <input type="submit" :value="send" />
-    </form>
+        <input type="submit" :value="send" />
+      </form>
+    </div>
   </div>
 </template>
 
 <script>
 import emailjs from "@emailjs/browser";
+import "../style.scss";
+
 export default {
   name: "ContactForm",
   data() {
@@ -80,7 +84,8 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+@import "../style";
 * {
   box-sizing: border-box;
 }
@@ -88,11 +93,13 @@ export default {
 label {
   float: left;
 }
+
 .hello {
   padding-bottom: 20px;
   background-color: white;
   border-radius: 10px;
   font-family: "Karla", sans-serif;
+  width: 80vw;
 }
 label,
 p,

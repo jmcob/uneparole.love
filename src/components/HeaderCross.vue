@@ -1,3 +1,3 @@
 <template>
-  <img src="../assets/cross.svg" class="cross" alt="croix" />
+  <img src="../assets/cross.svg" class="cross" alt="Une croix" />
 </template>
