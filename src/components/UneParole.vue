@@ -1,6 +1,6 @@
 <template>
   <div v-if="biggerFont" :style="{ textSizeAdjust: 'x-Large' }" id="uneparole">
-    <div id="uneparole" v-if="wordClick">
+    <div v-if="wordClick">
       <p class="center" @click="biggerFont = !biggerFont">Taille de police</p>
       <p>{{ this.uneparole.parole }}</p>
       <p class="ref">
@@ -8,13 +8,14 @@
       </p>
     </div>
   </div>
-
-  <div id="uneparole" v-if="wordClick">
-    <p class="center" @click="biggerFont = !biggerFont">Taille de police</p>
-    <p>{{ this.uneparole.parole }}</p>
-    <p class="ref">
-      <em>{{ this.uneparole.ref }}</em>
-    </p>
+  <div v-else>
+    <div id="uneparole" v-if="wordClick">
+      <p class="center" @click="biggerFont = !biggerFont">Taille de police</p>
+      <p>{{ this.uneparole.parole }}</p>
+      <p class="ref">
+        <em>{{ this.uneparole.ref }}</em>
+      </p>
+    </div>
   </div>
 </template>
 
