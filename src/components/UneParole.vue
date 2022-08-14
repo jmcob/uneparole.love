@@ -1,21 +1,25 @@
 <template>
-  <div v-if="biggerFont" :style="{ textSizeAdjust: 'x-Large' }" id="uneparole">
-    <div v-if="wordClick">
-      <p class="center" @click="biggerFont = !biggerFont">Taille de police</p>
-      <p>{{ this.uneparole.parole }}</p>
-      <p class="ref">
-        <em>{{ this.uneparole.ref }}</em>
-      </p>
-    </div>
+  <div
+    v-if="wordClick && biggerFont"
+    :style="{ fontSize: 'x-large' }"
+    id="uneparole"
+  >
+    <p class="center" @click="biggerFont = !biggerFont">
+      Choisir une police plus petite
+    </p>
+    <p>{{ this.uneparole.parole }}</p>
+    <p class="ref">
+      <em>{{ this.uneparole.ref }}</em>
+    </p>
   </div>
-  <div v-else>
-    <div id="uneparole" v-if="wordClick">
-      <p class="center" @click="biggerFont = !biggerFont">Taille de police</p>
-      <p>{{ this.uneparole.parole }}</p>
-      <p class="ref">
-        <em>{{ this.uneparole.ref }}</em>
-      </p>
-    </div>
+  <div v-else-if="wordClick" id="uneparole">
+    <p class="center" @click="biggerFont = !biggerFont">
+      Afficher une police plus grande
+    </p>
+    <p>{{ this.uneparole.parole }}</p>
+    <p class="ref">
+      <em>{{ this.uneparole.ref }}</em>
+    </p>
   </div>
 </template>
 
