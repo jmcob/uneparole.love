@@ -1,7 +1,7 @@
 <template>
   <div class="about info" id="infos">
     <div id="infoContainer">
-      {{ this.desInfos.ligne1 }}
+      {{ this.desInfos.jour_liturgique_nom }}
     </div>
   </div>
   <div>
