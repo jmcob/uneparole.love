@@ -7,19 +7,23 @@
 </template>
 
 <script>
+import dayjs from "dayjs";
+
 export default {
   data() {
     return {
-      api: "https://api.aelf.org/v1/messes/2022-08-14/france",
-      uneparole: {},
+      uneparole: [],
+      today: dayjs().format("YYYY-MM-DD"),
+      api: "",
     };
   },
   methods: {
     getGospel() {
+      this.api = "https://api.aelf.org/v1/messes/" + this.today + "/france";
       const res = this.axios.get(this.api).then((res) => {
         console.log(res.data.messes[0].lectures);
         this.uneparole = res.data.messes[0].lectures;
-        this.uneparole.forEach((lecture, index) => {
+        this.uneparole.forEach((lecture) => {
           if ((lecture.type = "evangile")) {
             this.uneparole = lecture;
           }
@@ -27,7 +31,7 @@ export default {
       });
     },
   },
-  created() {
+  mounted() {
     this.getGospel();
   },
 };

@@ -60,6 +60,22 @@
     text-indent: 0;
     font-size: large;
 }
+.info {
+    text-decoration: none;
+    cursor: default;
+}
+#infoContainer {
+ display: flex;
+ flex-direction: row;
+}
+.colorCircle {
+    width: 15px; 
+    height: 15px;
+    border-radius: 50%; 
+    border: 0.5px solid black;
+    margin: 0px;
+    padding: 0px;
+}
 
 h1 {
     font-size: large;

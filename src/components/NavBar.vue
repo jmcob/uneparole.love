@@ -1,4 +1,19 @@
 <template>
+  <div class="about info" id="infos">
+    <div id="infoContainer">
+      <p>
+        <span
+          class="colorCircle"
+          :style="{ backgroundColor: `${this.color}`, color: `${this.color}` }"
+          >:-D</span
+        >
+        Temps {{ this.desInfos.temps_liturgique }}
+      </p>
+
+      <br />
+      {{ this.desInfos.fete }}
+    </div>
+  </div>
   <div>
     <div id="about" v-if="aboutClick">
       <p class="center" @click="this.aboutClick = !this.aboutClick">
@@ -47,6 +62,7 @@ import ContactForm from "./ContactForm.vue";
 import OfTheMonth from "./OfTheMonth.vue";
 import Informations from "./Informations.vue";
 import EvangileDuJour from "./EvangileDuJour.vue";
+import dayjs from "dayjs";
 
 export default {
   components: {
@@ -57,12 +73,36 @@ export default {
   },
   data() {
     return {
+      today: dayjs().format("YYYY-MM-DD"),
+      api: "",
+      desInfos: [],
       paroles: paroles,
       aboutClick: false,
       soumission: false,
       paroleDuMois: false,
       evangileDuJour: false,
+      color: "",
     };
+  },
+  methods: {
+    async getInfos() {
+      this.api =
+        "https://api.aelf.org/v1/informations/" + this.today + "/france";
+      await this.axios.get(this.api).then((res) => {
+        this.desInfos = res.data.informations;
+        console.log(this.desInfos);
+      });
+      this.timesColor();
+    },
+    timesColor() {
+      if (this.desInfos.couleur === "vert") this.color = "green";
+      if (this.desInfos.couleur === "violet") this.color = "purple";
+      if (this.desInfos.couleur === "rouge") this.color = "red";
+      if (this.desInfos.couleur === "blanc") this.color = "white";
+    },
+  },
+  created() {
+    this.getInfos();
   },
 };
 </script>
