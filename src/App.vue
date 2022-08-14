@@ -9,18 +9,18 @@
         </p>
       </div>
       <br /><br />
-      <AboutVue />
+      <NavBar />
     </div>
   </div>
 </template>
 <script>
 import HeaderTitle from "./components/HeaderTitle.vue";
-import AboutVue from "./components/AboutVue.vue";
+import NavBar from "./components/NavBar.vue";
 import paroles from "./json/paroles.json";
 
 export default {
   name: "app",
-  components: { HeaderTitle, AboutVue },
+  components: { HeaderTitle, NavBar },
   data() {
     return {
       paroles: paroles,
