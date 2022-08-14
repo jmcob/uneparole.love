@@ -1,16 +1,6 @@
 <template>
   <div class="about info" id="infos">
     <div id="infoContainer">
-      <p>
-        <span
-          class="colorCircle"
-          :style="{ backgroundColor: `${this.color}`, color: `${this.color}` }"
-          >:-D</span
-        >
-        Temps {{ this.desInfos.temps_liturgique }}
-      </p>
-
-      <br />
       {{ this.desInfos.fete }}
     </div>
   </div>
@@ -46,7 +36,7 @@
       <p class="center" @click="this.evangileDuJour = !this.evangileDuJour">
         Fermer l'évangile du jour
       </p>
-      <EvangileDuJour />
+      <EvangileDuJour :desInfos="this.desInfos" />
     </div>
     <div class="center" v-else>
       <p @click="this.evangileDuJour = !this.evangileDuJour">
@@ -92,13 +82,6 @@ export default {
         this.desInfos = res.data.informations;
         console.log(this.desInfos);
       });
-      this.timesColor();
-    },
-    timesColor() {
-      if (this.desInfos.couleur === "vert") this.color = "green";
-      if (this.desInfos.couleur === "violet") this.color = "purple";
-      if (this.desInfos.couleur === "rouge") this.color = "red";
-      if (this.desInfos.couleur === "blanc") this.color = "white";
     },
   },
   created() {
