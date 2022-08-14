@@ -2,12 +2,7 @@
   <div class="wrapper">
     <div class="cadre">
       <HeaderTitle :animation="this.animation" :loadWord="this.loadWord" />
-      <div id="uneparole" v-if="wordClick">
-        <p>{{ uneparole.parole }}</p>
-        <p class="ref">
-          <em>{{ uneparole.ref }}</em>
-        </p>
-      </div>
+      <UneParole :wordClick="this.wordClick" :uneparole="this.uneparole" />
       <br /><br />
       <NavBar />
     </div>
@@ -16,11 +11,12 @@
 <script>
 import HeaderTitle from "./components/HeaderTitle.vue";
 import NavBar from "./components/NavBar.vue";
+import UneParole from "./components/UneParole.vue";
 import paroles from "./json/paroles.json";
 
 export default {
   name: "app",
-  components: { HeaderTitle, NavBar },
+  components: { HeaderTitle, NavBar, UneParole },
   data() {
     return {
       paroles: paroles,
