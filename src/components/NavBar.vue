@@ -53,6 +53,7 @@ import OfTheMonth from "./OfTheMonth.vue";
 import Informations from "./Informations.vue";
 import EvangileDuJour from "./EvangileDuJour.vue";
 import dayjs from "dayjs";
+import axios from "axios";
 
 export default {
   components: {
@@ -78,9 +79,8 @@ export default {
     async getInfos() {
       this.api =
         "https://api.aelf.org/v1/informations/" + this.today + "/france";
-      await this.axios.get(this.api).then((res) => {
+      await axios.get(this.api).then((res) => {
         this.desInfos = res.data.informations;
-        console.log(this.desInfos);
       });
     },
   },
