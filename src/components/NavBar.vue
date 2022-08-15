@@ -1,6 +1,7 @@
 <template>
+  <br />
   <div class="wrapper">
-    <div class="about info" id="infos">
+    <div class="about info center" id="infos">
       <div id="infoContainer">
         {{ this.date }}, {{ this.desInfos.jour_liturgique_nom }}
       </div>
