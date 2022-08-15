@@ -21,20 +21,20 @@ import "dayjs/locale/fr";
 import axios from "axios";
 
 export default {
-  props: { desInfos: {} },
   data() {
     return {
       uneparole: [],
+      desInfos: {},
       todayAPI: dayjs().format("YYYY-MM-DD"),
-      todayTemplate: dayjs().locale("fr").format("dddd DD MMMM YY"),
+      todayTemplate: dayjs().locale("fr").format("dddd DD MMMM YYYY"),
       api: "",
       color: "",
     };
   },
   methods: {
-    getGospel() {
+    async getGospel() {
       this.api = "https://api.aelf.org/v1/messes/" + this.todayAPI + "/france";
-      const res = axios.get(this.api).then((res) => {
+      const res = await axios.get(this.api).then((res) => {
         this.uneparole = res.data.messes[0].lectures;
         this.uneparole.forEach((lecture) => {
           if ((lecture.type = "evangile")) {
@@ -43,6 +43,13 @@ export default {
         });
       });
       this.timesColor();
+    },
+    async getInfos() {
+      this.api =
+        "https://api.aelf.org/v1/informations/" + this.todayAPI + "/france";
+      await axios.get(this.api).then((res) => {
+        this.desInfos = res.data.informations;
+      });
     },
     timesColor() {
       if (this.desInfos.couleur === "vert") this.color = "green";
@@ -53,6 +60,7 @@ export default {
   },
   mounted() {
     this.getGospel();
+    this.getInfos();
   },
 };
 </script>
