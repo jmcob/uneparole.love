@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "./views/HomeView.vue";
 import ContactView from "./views/ContactView.vue";
 import AboutView from "./views/AboutView.vue";
+import GospelView from "./views/GospelView.vue";
+import MonthView from "./views/MonthView.vue";
 
 export default createRouter({
   history: createWebHistory(),
@@ -18,5 +20,16 @@ export default createRouter({
       path: "/about",
       component: AboutView,
     },
+    {
+      path: "/evangile",
+      component: GospelView,
+    },
+    {
+      path: "/paroledumois",
+      component: MonthView,
+    },
   ],
+  scrollBehavior() {
+    document.getElementById("app").scrollIntoView({ behavior: "smooth" });
+  },
 });
