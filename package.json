@@ -1,25 +1,32 @@
 {
   "name": "uneparole",
-  "private": true,
   "version": "1.1.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "vite",
+    "serve": "vite preview",
     "build": "vite build",
+    "dev": "vite",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
+    "@mdi/font": "5.9.55",
     "axios": "^0.27.2",
     "dayjs": "^1.11.5",
+    "roboto-fontface": "*",
     "vue": "^3.2.37",
     "vue-axios": "^3.4.1",
-    "vue-router": "4"
+    "vue-router": "4",
+    "vuetify": "^3.0.0-beta.0",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "sass": "^1.54.4",
-    "vite": "^3.0.0"
-  }
+    "vite": "^3.0.0",
+    "vite-plugin-vuetify": "^1.0.0-alpha.0",
+    "vue-cli-plugin-vuetify": "~2.5.1"
+  },
+  "type": "module"
 }

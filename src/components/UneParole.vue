@@ -7,19 +7,22 @@
     <p class="center about" @click="biggerFont = !biggerFont">
       Choisir une police plus petite
     </p>
-    <p>{{ this.uneparole.parole }}</p>
-    <p class="ref">
-      <em>{{ this.uneparole.ref }}</em>
-    </p>
+    <br />
   </div>
-  <div v-else-if="wordClick" id="uneparole">
+  <div v-else-if="wordClick">
+
     <p class="center about" @click="biggerFont = !biggerFont">
       Afficher une police plus grande
     </p>
+    <br />
+  </div>
+  <div id="uneparole">
     <p>{{ this.uneparole.parole }}</p>
+    <br />
     <p class="ref">
       <em>{{ this.uneparole.ref }}</em>
     </p>
+    <br />
   </div>
 </template>
 
