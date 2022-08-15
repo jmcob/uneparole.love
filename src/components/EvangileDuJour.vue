@@ -9,6 +9,7 @@
       {{ this.todayTemplate }} <br />
       {{ this.desInfos.jour_liturgique_nom }}
     </p>
+    <br />
     <p><span v-html="this.uneparole.contenu"></span></p>
     <p>{{ this.uneparole.ref }}</p>
   </div>

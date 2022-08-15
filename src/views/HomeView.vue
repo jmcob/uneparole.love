@@ -2,10 +2,12 @@
   <div class="wrapper">
     <div class="cadre">
       <HeaderCross />
-      <BlueButton :animation="this.animation" :loadWord="this.loadWord" />
-      <UneParole :wordClick="this.wordClick" :uneparole="this.uneparole" />
-      <br /><br />
-      <NavBar />
+      <NavBar
+        :animation="this.animation"
+        :loadWord="this.loadWord"
+        :wordClick="this.wordClick"
+        :uneparole="this.uneparole"
+      />
     </div>
   </div>
 </template>
