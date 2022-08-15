@@ -7,16 +7,11 @@
   </div>
   <v-tabs
     v-model="tab"
-    background-color="yellow-accent-4"
+    background-color="white-accent-4"
     centered
     stacked
     slider-color="midnightblue"
   >
-    <v-tab value="tab-1">
-      <v-icon>mdi-book-cross</v-icon>
-      1Parole
-    </v-tab>
-
     <v-tab value="tab-2">
       <v-icon>mdi-calendar-range</v-icon>
       Evangile
@@ -26,18 +21,12 @@
       <v-icon>mdi-information-outline</v-icon>
       Info
     </v-tab>
+    <v-tab value="tab-1">
+      <v-icon>mdi-book-cross</v-icon>
+      1Parole
+    </v-tab>
   </v-tabs>
 
-  <v-window v-model="tab">
-    <v-window-item value="tab-1">
-      <v-card class="center">
-        <br />
-        <BlueButton :animation="this.animation" :loadWord="this.loadWord" />
-        <br />
-        <UneParole :wordClick="this.wordClick" :uneparole="this.uneparole" />
-      </v-card>
-    </v-window-item>
-  </v-window>
   <v-window v-model="tab">
     <v-window-item value="tab-2">
       <v-card>
@@ -52,6 +41,16 @@
         ><br />
         <Informations
       /></v-card>
+    </v-window-item>
+  </v-window>
+  <v-window v-model="tab">
+    <v-window-item value="tab-1">
+      <v-card class="center">
+        <br />
+        <BlueButton :animation="this.animation" :loadWord="this.loadWord" />
+        <br />
+        <UneParole :wordClick="this.wordClick" :uneparole="this.uneparole" />
+      </v-card>
     </v-window-item>
   </v-window>
 </template>
