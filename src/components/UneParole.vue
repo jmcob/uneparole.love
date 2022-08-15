@@ -8,9 +8,13 @@
       Choisir une police plus petite
     </p>
     <br />
+    <p>{{ this.uneparole.parole }}</p>
+    <br />
+    <p class="ref">
+      <em>{{ this.uneparole.ref }}</em>
+    </p>
   </div>
   <div v-else-if="wordClick">
-
     <p class="center about" @click="biggerFont = !biggerFont">
       Afficher une police plus grande
     </p>
