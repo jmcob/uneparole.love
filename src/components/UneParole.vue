@@ -4,7 +4,7 @@
     :style="{ fontSize: 'x-large' }"
     id="uneparole"
   >
-    <p class="center" @click="biggerFont = !biggerFont">
+    <p class="center about" @click="biggerFont = !biggerFont">
       Choisir une police plus petite
     </p>
     <p>{{ this.uneparole.parole }}</p>
