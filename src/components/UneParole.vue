@@ -10,6 +10,7 @@
     <br />
   </div>
   <div v-else-if="wordClick">
+
     <p class="center about" @click="biggerFont = !biggerFont">
       Afficher une police plus grande
     </p>
