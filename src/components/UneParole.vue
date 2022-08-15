@@ -13,7 +13,7 @@
     </p>
   </div>
   <div v-else-if="wordClick" id="uneparole">
-    <p class="center" @click="biggerFont = !biggerFont">
+    <p class="center about" @click="biggerFont = !biggerFont">
       Afficher une police plus grande
     </p>
     <p>{{ this.uneparole.parole }}</p>
