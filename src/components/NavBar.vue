@@ -12,12 +12,12 @@
     stacked
     slider-color="midnightblue"
   >
-    <v-tab class="text-body-2" value="tab-2">
+    <v-tab class="text-h6" value="tab-2">
       <v-icon>mdi-calendar-range</v-icon>
       Evangile du jour
     </v-tab>
 
-    <v-tab class="text-body-2" value="tab-1">
+    <v-tab class="text-h6" value="tab-1">
       <v-icon>mdi-book-cross</v-icon>
       Une Parole
     </v-tab>
