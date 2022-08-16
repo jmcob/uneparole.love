@@ -17,13 +17,9 @@
       Evangile
     </v-tab>
 
-    <v-tab value="tab-3">
-      <v-icon>mdi-information-outline</v-icon>
-      Info
-    </v-tab>
     <v-tab value="tab-1">
       <v-icon>mdi-book-cross</v-icon>
-      1Parole
+      Une Parole
     </v-tab>
   </v-tabs>
 
@@ -35,14 +31,7 @@
       </v-card>
     </v-window-item>
   </v-window>
-  <v-window v-model="tab">
-    <v-window-item value="tab-3">
-      <v-card class="about info"
-        ><br />
-        <Informations
-      /></v-card>
-    </v-window-item>
-  </v-window>
+
   <v-window v-model="tab">
     <v-window-item value="tab-1">
       <v-card class="center">

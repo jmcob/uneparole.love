@@ -8,12 +8,13 @@
         :wordClick="this.wordClick"
         :uneparole="this.uneparole"
       />
+      <FooterInfo />
     </div>
   </div>
 </template>
 <script>
 import HeaderCross from "../components/HeaderCross.vue";
-
+import FooterInfo from "../components/FooterInfo.vue";
 import BlueButton from "../components/BlueButton.vue";
 import NavBar from "../components/NavBar.vue";
 import UneParole from "../components/UneParole.vue";
@@ -21,7 +22,7 @@ import paroles from "../json/paroles.json";
 
 export default {
   name: "app",
-  components: { HeaderCross, BlueButton, NavBar, UneParole },
+  components: { HeaderCross, BlueButton, NavBar, UneParole, FooterInfo },
   data() {
     return {
       paroles: paroles,
