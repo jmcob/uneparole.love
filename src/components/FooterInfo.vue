@@ -22,7 +22,9 @@
 
       <v-card-text class="black">
         {{ new Date().getFullYear() }} —
-        <span class="font-weight-thin">jeanmaxime</span>
+        <span class="font-weight-thin"
+          ><router-link to="http://jmxi.art"> jeanmaxime</router-link></span
+        >
       </v-card-text>
     </v-card>
   </v-footer>
