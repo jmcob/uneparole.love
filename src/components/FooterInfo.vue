@@ -10,14 +10,19 @@
           ></v-btn
         ></router-link>
         <router-link to="/contact">
-          <v-btn class="mx-4" icon="mdi-email" variant="plain"></v-btn
+          <v-btn
+            class="mx-4"
+            icon="mdi-lightbulb-on-outline"
+            variant="plain"
+          ></v-btn
         ></router-link>
       </v-card-text>
 
       <v-divider></v-divider>
 
       <v-card-text class="black">
-        {{ new Date().getFullYear() }} — <strong>jeanmaxime</strong>
+        {{ new Date().getFullYear() }} —
+        <span class="font-weight-thin">jeanmaxime</span>
       </v-card-text>
     </v-card>
   </v-footer>
