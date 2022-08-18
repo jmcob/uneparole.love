@@ -7,10 +7,10 @@
         :style="{ animationName: 'spin' }"
         class="button"
       >
-        Piocher une parole de Dieu au hasard
+        Dis seulement une parole
       </button>
       <button v-else @click="loadWord()" class="button">
-        Piocher une parole de Dieu au hasard
+        Dis seulement une parole
       </button>
     </h1>
   </div>
