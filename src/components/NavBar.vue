@@ -38,7 +38,11 @@
         <br />
         <UneParole :wordClick="this.wordClick" :uneparole="this.uneparole" />
         <br />
-        <BlueButton :animation="this.animation" :loadWord="this.loadWord" />
+        <BlueButton
+          :wordClick="!this.wordClick"
+          :animation="this.animation"
+          :loadWord="this.loadWord"
+        />
       </v-card>
     </v-window-item>
   </v-window>
