@@ -1,10 +1,4 @@
-Fais confiance au Seigneur, agis bien, habite la terre et reste fidèle ;
-mets ta joie dans le Seigneur : il comblera les désirs de ton coeur.
-Dirige ton chemin vers le Seigneur, fais-lui confiance, et lui, il agira.
-Il fera lever comme le jour ta justice, et ton droit comme le plein midi.
-Repose-toi sur le Seigneur et compte sur lui. Ne t'indigne pas devant celui qui réussit, devant l'homme qui use d'intrigues.
-Laisse ta colère, calme ta fièvre, ne t'indigne pas : il n'en viendrait que du mal ;
-Psaume 36, versets 3 à 8
+
 Heureux est l'homme qui met sa foi dans le Seigneur * et ne va pas du côté des violents, dans le parti des traîtres.
 Tu as fait pour nous tant de choses, toi, Seigneur mon Dieu ! * Tant de projets et de merveilles : non, tu n'as point d'égal ! Je les dis, je les redis encore ; * mais leur nombre est trop grand !
 Tu ne voulais ni offrande ni sacrifice, tu as ouvert mes oreilles ; * tu ne demandais ni holocauste ni victime,

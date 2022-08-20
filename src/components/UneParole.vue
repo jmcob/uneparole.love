@@ -19,14 +19,14 @@
       Afficher une police plus grande
     </p>
     <br />
-  </div>
-  <div id="uneparole">
-    <p>{{ this.uneparole.parole }}</p>
-    <br />
-    <p class="ref">
-      <em>{{ this.uneparole.ref }}</em>
-    </p>
-    <br />
+    <div id="uneparole">
+      <p>{{ this.uneparole.parole }}</p>
+      <br />
+      <p class="ref">
+        <em>{{ this.uneparole.ref }}</em>
+      </p>
+      <br />
+    </div>
   </div>
 </template>
 

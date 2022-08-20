@@ -36,9 +36,9 @@
     <v-window-item value="tab-1">
       <v-card class="center">
         <br />
-        <BlueButton :animation="this.animation" :loadWord="this.loadWord" />
-        <br />
         <UneParole :wordClick="this.wordClick" :uneparole="this.uneparole" />
+        <br />
+        <BlueButton :animation="this.animation" :loadWord="this.loadWord" />
       </v-card>
     </v-window-item>
   </v-window>
