@@ -7,16 +7,11 @@
 </template>
 
 <script>
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
 import { addDoc, collection } from "firebase/firestore";
 
 // export default {
 //   methods: {
 //     writeWord() {
-//       // Initialize Firebase
-//       const app = initializeApp(this.$store.state.firebaseConfig);
-
 //       // Initialize Cloud Firestore and get a reference to the service
 //       const db = getFirestore(app);
 //       paroles.forEach((parole) => {

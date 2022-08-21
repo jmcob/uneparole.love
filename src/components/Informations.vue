@@ -1,5 +1,5 @@
 <template>
-  <p>Il y a actuellement {{ paroles.length }} paroles différentes.</p>
+  <p>Il y a actuellement 90 paroles différentes.</p>
   <br />
   <p>
     Les extraits ont été initialement choisis pour l'adoration eucharistique :
@@ -19,11 +19,7 @@
     >
   </p>
   <br />
-  <p>
-    Ici vous êtes libres : pas de télémétrie, pas de cookie, pas de pub, pas de
-    suivi inter-site, pas de copyright, un simple service, que du bonheur !
-  </p>
-  <br />
+
   <p>
     Voici le lien pour
     <router-link class="about" to="/contact"
@@ -34,15 +30,3 @@
   <br />
   <p><a href="http://jmxi.art">jeanmaxime</a></p>
 </template>
-
-<script>
-import paroles from "../json/paroles.json";
-
-export default {
-  data() {
-    return {
-      paroles: paroles,
-    };
-  },
-};
-</script>
