@@ -4,29 +4,22 @@ import vuetify from "./plugins/vuetify";
 import { loadFonts } from "./plugins/webfontloader";
 import { createStore } from "vuex";
 
+loadFonts();
+
 // Create a new store instance.
 const store = createStore({
   state() {
     return {
-      firebaseConfig: {
-        apiKey: "AIzaSyAOSzAed7cVr8lQU2NmJAfr432KyYyW0S8",
-
-        authDomain: "une-parole.firebaseapp.com",
-
-        projectId: "une-parole",
-
-        storageBucket: "une-parole.appspot.com",
-
-        messagingSenderId: "31289144640",
-
-        appId: "1:31289144640:web:570d29ed82c5cba10a76a5",
-      },
+      count: 0,
+      user: "",
     };
   },
-  mutations: {},
+  mutations: {
+    increment(state) {
+      state.count++;
+    },
+  },
 });
-
-loadFonts();
 
 import "./style.scss";
 

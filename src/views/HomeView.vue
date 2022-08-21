@@ -19,12 +19,13 @@ import FooterInfo from "../components/FooterInfo.vue";
 import BlueButton from "../components/BlueButton.vue";
 import NavBar from "../components/NavBar.vue";
 import UneParole from "../components/UneParole.vue";
-import { initializeApp } from "firebase/app";
-import { getFirestore, getDocs, collection } from "firebase/firestore/lite";
+import { getDocs, collection } from "firebase/firestore";
+import LogIn from "../components/LogIn.vue";
+import { db } from "../firebaseInit";
 
 export default {
   name: "app",
-  components: { HeaderCross, BlueButton, NavBar, UneParole, FooterInfo },
+  components: { HeaderCross, BlueButton, NavBar, UneParole, FooterInfo, LogIn },
   data() {
     return {
       uneparole: "",
@@ -40,10 +41,6 @@ export default {
   },
   methods: {
     async GetParolesFromDB() {
-      // Initialize Firebase
-      const app = initializeApp(this.$store.state.firebaseConfig);
-      // Initialize Cloud Firestore and get a reference to the service
-      const db = getFirestore(app);
       const querySnapshot = await getDocs(collection(db, "word"));
       const refs = [];
       const paroles = [];
