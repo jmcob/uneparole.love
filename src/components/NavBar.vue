@@ -36,12 +36,16 @@
     <v-window-item value="tab-1">
       <v-card class="center">
         <br />
-        <UneParole :wordClick="this.wordClick" :uneparole="this.uneparole" />
+        <UneParole
+          :wordClick="this.wordClick"
+          :uneref="this.uneref"
+          :uneparole="this.uneparole"
+        />
         <br />
         <BlueButton
           :wordClick="!this.wordClick"
           :animation="this.animation"
-          :loadWord="this.loadWord"
+          :GetParolesFromDB="this.GetParolesFromDB"
         />
       </v-card>
     </v-window-item>
@@ -49,7 +53,6 @@
 </template>
 
 <script>
-import paroles from "../json/paroles.json";
 import ContactForm from "./ContactForm.vue";
 import OfTheMonth from "./OfTheMonth.vue";
 import Informations from "./Informations.vue";
@@ -72,9 +75,10 @@ export default {
   },
   props: {
     animation: Boolean,
-    loadWord: Function,
+    GetParolesFromDB: Function,
     wordClick: Boolean,
-    uneparole: {},
+    uneparole: "",
+    uneref: "",
   },
   data() {
     return {
@@ -82,8 +86,6 @@ export default {
       date: dayjs().locale("fr").format("DD MMMM"),
       api: "",
       desInfos: [],
-      paroles: paroles,
-      paroleDuMois: false,
       color: "",
       tab: null,
     };

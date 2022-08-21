@@ -4,9 +4,10 @@
       <HeaderCross />
       <NavBar
         :animation="this.animation"
-        :loadWord="this.loadWord"
+        :GetParolesFromDB="this.GetParolesFromDB"
         :wordClick="this.wordClick"
         :uneparole="this.uneparole"
+        :uneref="this.uneref"
       />
       <FooterInfo />
     </div>
@@ -18,22 +19,17 @@ import FooterInfo from "../components/FooterInfo.vue";
 import BlueButton from "../components/BlueButton.vue";
 import NavBar from "../components/NavBar.vue";
 import UneParole from "../components/UneParole.vue";
-import paroles from "../json/paroles.json";
+import { initializeApp } from "firebase/app";
+import { getFirestore, getDocs, collection } from "firebase/firestore/lite";
 
 export default {
   name: "app",
   components: { HeaderCross, BlueButton, NavBar, UneParole, FooterInfo },
   data() {
     return {
-      paroles: paroles,
-      uneparole: {
-        parole: "",
-        ref: "",
-      },
-      tampon: {
-        parole: "",
-        ref: "",
-      },
+      uneparole: "",
+      uneref: "",
+      tampon: {},
       aboutClick: false,
       wordClick: false,
       animation: true,
@@ -43,29 +39,51 @@ export default {
     setTimeout(() => (this.animation = false), 700);
   },
   methods: {
-    GetRandomWord() {
-      const index = Math.random() * this.paroles.length;
-      const roundedIndex = Math.round(index);
-      if (roundedIndex > this.paroles.length) {
-        this.GetRandomWord();
-      }
-      const uneparole = this.paroles[roundedIndex];
-      return uneparole;
+    async GetParolesFromDB() {
+      // Initialize Firebase
+      const app = initializeApp(this.$store.state.firebaseConfig);
+      // Initialize Cloud Firestore and get a reference to the service
+      const db = getFirestore(app);
+      const querySnapshot = await getDocs(collection(db, "word"));
+      const refs = [];
+      const paroles = [];
+      let random = 0;
+      querySnapshot.forEach((doc, index) => {
+        // doc.data() is never undefined for query doc snapshots
+        paroles.push(doc.data().parole);
+        refs.push(doc.data().ref);
+      });
+      random = this.GetRandomIndex(paroles.length);
+      this.uneref = refs[random];
+      this.uneparole = paroles[random];
+      this.SpecialEffects();
     },
-    loadWord() {
-      this.tampon = this.uneparole;
+    GetRandomIndex(index) {
+      const random = Math.random() * index;
+      const roundedIndex = Math.round(random);
+      if (roundedIndex === index) this.GetRandomIndex();
+      return roundedIndex;
+    },
+    SpecialEffects() {
       this.wordClick = true;
       this.animation = true;
       setTimeout(() => (this.animation = false), 700);
-      this.uneparole = this.GetRandomWord();
-      while (this.uneparole === undefined) {
-        this.uneparole = this.GetRandomWord();
-      }
-      if (this.sameWord()) this.loadWord();
     },
-    sameWord() {
-      if (this.uneparole === this.tampon) return true;
-    },
+    // loadWord() {
+    //   this.tampon = this.uneparole;
+    //   this.wordClick = true;
+    //   this.animation = true;
+    //   setTimeout(() => (this.animation = false), 700);
+    //   this.uneparole = this.GetParolesFromDB();
+    //   console.log(this.uneparole);
+    //   while (this.uneparole === undefined) {
+    //     this.uneparole = this.GetParolesFromDB();
+    //   }
+    //   if (this.sameWord()) this.loadWord();
+    // },
+    // sameWord() {
+    //   if (this.uneparole === this.tampon) return true;
+    // },
   },
 };
 </script>
