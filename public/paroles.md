@@ -1,4 +1,5 @@
 
+
 Heureux est l'homme qui met sa foi dans le Seigneur * et ne va pas du côté des violents, dans le parti des traîtres.
 Tu as fait pour nous tant de choses, toi, Seigneur mon Dieu ! * Tant de projets et de merveilles : non, tu n'as point d'égal ! Je les dis, je les redis encore ; * mais leur nombre est trop grand !
 Tu ne voulais ni offrande ni sacrifice, tu as ouvert mes oreilles ; * tu ne demandais ni holocauste ni victime,

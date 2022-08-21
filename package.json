@@ -13,11 +13,13 @@
     "@mdi/font": "5.9.55",
     "axios": "^0.27.2",
     "dayjs": "^1.11.5",
+    "firebase": "^9.9.3",
     "roboto-fontface": "*",
     "vue": "^3.2.37",
     "vue-axios": "^3.4.1",
     "vue-router": "4",
     "vuetify": "^3.0.0-beta.0",
+    "vuex": "^4.0.2",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {

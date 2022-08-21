@@ -1,17 +1,36 @@
 <template>
   <div class="wrapper">
     <div class="cadre">
-      <HeaderCross />
-      <OfTheMonth />
+      <h1 @click="writeWord">Write Data</h1>
     </div>
   </div>
 </template>
 
 <script>
-import HeaderCross from "../components/HeaderCross.vue";
-import OfTheMonth from "../components/OfTheMonth.vue";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 
-export default {
-  components: { HeaderCross, OfTheMonth },
-};
+// export default {
+//   methods: {
+//     writeWord() {
+//       // Initialize Firebase
+//       const app = initializeApp(this.$store.state.firebaseConfig);
+
+//       // Initialize Cloud Firestore and get a reference to the service
+//       const db = getFirestore(app);
+//       paroles.forEach((parole) => {
+//         try {
+//           const docRef = addDoc(collection(db, "word"), {
+//             parole: parole.parole,
+//             ref: parole.ref,
+//           });
+//           console.log("Document written with ID: ", docRef.ref);
+//         } catch (e) {
+//           console.error("Error adding document: ", e);
+//         }
+//       });
+//     },
+//   },
+// };
 </script>

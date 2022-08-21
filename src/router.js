@@ -24,6 +24,10 @@ export default createRouter({
       path: "/evangile",
       component: GospelView,
     },
+    {
+      path: "/test",
+      component: MonthView,
+    },
   ],
   scrollBehavior() {
     document.getElementById("app").scrollIntoView({ behavior: "smooth" });

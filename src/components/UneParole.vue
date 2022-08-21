@@ -8,10 +8,10 @@
       Choisir une police plus petite
     </p>
     <br />
-    <p>{{ this.uneparole.parole }}</p>
+    <p>{{ uneparole }}</p>
     <br />
     <p class="ref">
-      <em>{{ this.uneparole.ref }}</em>
+      <em>{{ uneref }}</em>
     </p>
   </div>
   <div v-else-if="wordClick">
@@ -20,10 +20,10 @@
     </p>
     <br />
     <div id="uneparole">
-      <p>{{ this.uneparole.parole }}</p>
+      <p>{{ uneparole }}</p>
       <br />
       <p class="ref">
-        <em>{{ this.uneparole.ref }}</em>
+        <em>{{ uneref }}</em>
       </p>
       <br />
     </div>
@@ -33,10 +33,8 @@
 <script>
 export default {
   props: {
-    uneparole: {
-      parole: "",
-      ref: "",
-    },
+    uneparole: "",
+    uneref: "",
     wordClick: Boolean,
   },
   data() {
