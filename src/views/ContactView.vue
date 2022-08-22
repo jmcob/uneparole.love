@@ -1,6 +1,7 @@
 <template>
   <div class="wrapper">
     <HeaderCross />
+    <Arrow />
     <ContactForm />
     <FooterInfo />
   </div>
@@ -10,8 +11,9 @@
 import HeaderCross from "../components/HeaderCross.vue";
 import ContactForm from "../components/ContactForm.vue";
 import FooterInfo from "../components/FooterInfo.vue";
+import Arrow from "../components/Arrow.vue";
 
 export default {
-  components: { HeaderCross, ContactForm, FooterInfo },
+  components: { HeaderCross, ContactForm, FooterInfo, Arrow },
 };
 </script>

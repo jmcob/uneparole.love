@@ -1,6 +1,6 @@
 <template>
-
   <HeaderCross />
+  <Arrow />
   <form v-if="!online" action="submit">
     <input type="text" label="email" v-model="email" placeholder="email" />
     <br />
@@ -13,7 +13,6 @@
     <br />
     <button class="login" @click.prevent="this.LogIn(email, password)">
       Se connecter
-
     </button>
     <br />
   </form>
@@ -44,7 +43,6 @@
     <p v-if="sent"><strong>Votre parole a été publiée.</strong></p>
     <button @click="LogOut()">Déconnexion</button>
   </div>
-
 </template>
 
 <script>
@@ -56,6 +54,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import HeaderCross from "./HeaderCross.vue";
+import Arrow from "./Arrow.vue";
 import { collection, addDoc } from "firebase/firestore";
 
 export default {
@@ -69,7 +68,7 @@ export default {
       sent: false,
     };
   },
-  components: { HeaderCross },
+  components: { HeaderCross, Arrow },
   methods: {
     createUser(email, password) {
       createUserWithEmailAndPassword(auth, email, password)
