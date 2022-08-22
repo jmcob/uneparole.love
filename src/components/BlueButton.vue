@@ -1,9 +1,9 @@
 <template>
-  <div @keyup.space="GetParolesFromDB()" class="button-container">
+  <div @keyup.space="DisplayParole()" class="button-container">
     <h1>
       <button
         v-if="animation && wordClick"
-        @click="GetParolesFromDB()"
+        @click="DisplayParole()"
         :style="{ animationName: 'spin' }"
         class="button"
       >
@@ -11,7 +11,7 @@
       </button>
       <div v-else-if="!wordClick && this.animation"></div>
       <div v-else-if="!wordClick"></div>
-      <button v-else @click="GetParolesFromDB()" class="button">
+      <button v-else @click="DisplayParole()" class="button">
         Dis seulement une parole
       </button>
     </h1>
@@ -21,7 +21,7 @@
 <script>
 export default {
   props: {
-    GetParolesFromDB: Function,
+    DisplayParole: Function,
     animation: Boolean,
     wordClick: Boolean,
   },

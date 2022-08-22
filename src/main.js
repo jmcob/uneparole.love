@@ -12,6 +12,7 @@ const store = createStore({
     return {
       count: 0,
       user: "",
+      wordcount: 0,
     };
   },
   mutations: {

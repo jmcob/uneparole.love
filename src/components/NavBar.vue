@@ -45,7 +45,7 @@
         <BlueButton
           :wordClick="!this.wordClick"
           :animation="this.animation"
-          :GetParolesFromDB="this.GetParolesFromDB"
+          :DisplayParole="this.DisplayParole"
         />
       </v-card>
     </v-window-item>
@@ -75,7 +75,7 @@ export default {
   },
   props: {
     animation: Boolean,
-    GetParolesFromDB: Function,
+    DisplayParole: Function,
     wordClick: Boolean,
     uneparole: "",
     uneref: "",

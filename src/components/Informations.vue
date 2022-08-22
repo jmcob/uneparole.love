@@ -1,5 +1,5 @@
 <template>
-  <p>Il y a actuellement 90 paroles différentes.</p>
+  <p>Il y a actuellement {{ wordcount }} paroles différentes.</p>
   <br />
   <p>
     Les extraits ont été initialement choisis pour l'adoration eucharistique :
@@ -28,5 +28,15 @@
     de la Bible sur le site.
   </p>
   <br />
-  <p><a href="http://jmxi.art">jeanmaxime</a></p>
 </template>
+
+<script>
+export default {
+  computed: {
+    // arrow functions can make the code very succinct!
+    wordcount() {
+      return this.$store.state.wordcount;
+    },
+  },
+};
+</script>
