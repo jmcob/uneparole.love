@@ -4,6 +4,7 @@ import ContactView from "./views/ContactView.vue";
 import AboutView from "./views/AboutView.vue";
 import GospelView from "./views/GospelView.vue";
 import MonthView from "./views/MonthView.vue";
+import LogInView from "./views/LogInView.vue";
 
 export default createRouter({
   history: createWebHistory(),
@@ -25,8 +26,12 @@ export default createRouter({
       component: GospelView,
     },
     {
-      path: "/test",
+      path: "/data",
       component: MonthView,
+    },
+    {
+      path: "/ajout",
+      component: LogInView,
     },
   ],
   scrollBehavior() {
