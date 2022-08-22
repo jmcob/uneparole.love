@@ -31,6 +31,7 @@ export default createRouter({
     },
     {
       path: "/ajout",
+
       component: LogInView,
     },
   ],

@@ -4,7 +4,7 @@
       <HeaderCross />
       <NavBar
         :animation="this.animation"
-        :GetParolesFromDB="this.GetParolesFromDB"
+        :DisplayParole="this.DisplayParole"
         :wordClick="this.wordClick"
         :uneparole="this.uneparole"
         :uneref="this.uneref"
@@ -22,6 +22,7 @@ import UneParole from "../components/UneParole.vue";
 import { getDocs, collection } from "firebase/firestore";
 import LogIn from "../components/LogIn.vue";
 import { db } from "../firebaseInit";
+import { mapState } from "vuex";
 
 export default {
   name: "app",
@@ -30,6 +31,8 @@ export default {
     return {
       uneparole: "",
       uneref: "",
+      paroles: [],
+      refs: [],
       tampon: {},
       aboutClick: false,
       wordClick: false,
@@ -38,21 +41,23 @@ export default {
   },
   created() {
     setTimeout(() => (this.animation = false), 700);
+    this.GetParolesFromDB();
   },
   methods: {
     async GetParolesFromDB() {
       const querySnapshot = await getDocs(collection(db, "word"));
-      const refs = [];
-      const paroles = [];
-      let random = 0;
       querySnapshot.forEach((doc, index) => {
         // doc.data() is never undefined for query doc snapshots
-        paroles.push(doc.data().parole);
-        refs.push(doc.data().ref);
+        this.paroles.push(doc.data().parole);
+        this.refs.push(doc.data().ref);
       });
-      random = this.GetRandomIndex(paroles.length);
-      this.uneref = refs[random];
-      this.uneparole = paroles[random];
+      this.$store.state.wordcount = this.paroles.length;
+    },
+    async DisplayParole() {
+      let random = 0;
+      random = this.GetRandomIndex(this.paroles.length);
+      this.uneref = this.refs[random];
+      this.uneparole = this.paroles[random];
       this.SpecialEffects();
     },
     GetRandomIndex(index) {
@@ -66,21 +71,10 @@ export default {
       this.animation = true;
       setTimeout(() => (this.animation = false), 700);
     },
-    // loadWord() {
-    //   this.tampon = this.uneparole;
-    //   this.wordClick = true;
-    //   this.animation = true;
-    //   setTimeout(() => (this.animation = false), 700);
-    //   this.uneparole = this.GetParolesFromDB();
-    //   console.log(this.uneparole);
-    //   while (this.uneparole === undefined) {
-    //     this.uneparole = this.GetParolesFromDB();
-    //   }
-    //   if (this.sameWord()) this.loadWord();
-    // },
-    // sameWord() {
-    //   if (this.uneparole === this.tampon) return true;
-    // },
   },
+  computed: mapState([
+    // map this.wordLength to store.state.wordLength
+    "wordcount",
+  ]),
 };
 </script>

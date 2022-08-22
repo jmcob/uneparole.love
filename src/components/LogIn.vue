@@ -1,4 +1,5 @@
 <template>
+
   <HeaderCross />
   <form v-if="!online" action="submit">
     <input type="text" label="email" v-model="email" placeholder="email" />
@@ -12,9 +13,11 @@
     <br />
     <button class="login" @click.prevent="this.LogIn(email, password)">
       Se connecter
+
     </button>
     <br />
   </form>
+
   <div v-else>
     <h2>Hello {{ this.$store.state.user.email }} !</h2>
     <form action="submit">
@@ -41,6 +44,7 @@
     <p v-if="sent"><strong>Votre parole a été publiée.</strong></p>
     <button @click="LogOut()">Déconnexion</button>
   </div>
+
 </template>
 
 <script>
@@ -72,6 +76,8 @@ export default {
         .then((userCredential) => {
           // Signed in
           this.$store.state.user = userCredential.user;
+          console.log(userCredential);
+          console.log(userCredential.user);
           this.online = true;
           // ...
         })

@@ -2,6 +2,7 @@
   <div class="wrapper">
     <div class="cadre"><LogIn /></div>
   </div>
+
 </template>
 
 <script>
