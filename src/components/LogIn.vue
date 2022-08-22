@@ -1,12 +1,12 @@
 <template>
-  <form v-if="(this.online = false)" action="submit">
+  <h2 v-if="online">Bonjour {{ this.$store.state.user.email }}</h2>
+  <form v-else action="submit">
     <input type="text" label="email" v-model="email" id="" />
     <input type="text" label="password" v-model="password" id="" />
     <button class="login" @click.prevent="this.createUser(email, password)">
       Connect
     </button>
   </form>
-  <h2 v-else>Bonjour {{ this.$store.state.user }}</h2>
 </template>
 
 <script>
@@ -28,6 +28,8 @@ export default {
         .then((userCredential) => {
           // Signed in
           this.$store.state.user = userCredential.user;
+          console.log(userCredential);
+          console.log(userCredential.user);
           this.online = true;
           // ...
         })
