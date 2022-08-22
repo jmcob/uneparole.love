@@ -26,11 +26,12 @@ export default createRouter({
       component: GospelView,
     },
     {
-      path: "/writeData",
+      path: "/data",
       component: MonthView,
     },
     {
-      path: "/login",
+      path: "/ajout",
+
       component: LogInView,
     },
   ],
