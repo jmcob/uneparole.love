@@ -27,18 +27,13 @@ Oui, tu es venu à mon secours : je crie de joie à l'ombre de tes ailes.
 Mon âme s'attache à toi, ta main droite me soutient.
 Psaume 62, versets 4 à 9
 
-« Ah ! Si mon peuple m'écoutait, Israël, s'il allait sur mes chemins !
-Aussitôt j'humilierais ses ennemis, contre ses oppresseurs je tournerais ma main.
-« Mes adversaires s'abaisseraient devant lui ; tel serait leur sort à jamais !
-Je le nourrirais de la fleur du froment, je te rassasierais avec le miel du rocher ! »
-Psaume 80, versets 14 à 17
-
 Et moi, humilié, meurtri, que ton salut, Dieu, me redresse.
 Et je louerai le nom de Dieu par un cantique, je vais le magnifier, lui rendre grâce.
 Cela plaît au Seigneur plus qu'un taureau, plus qu'une bête ayant cornes et sabots.
 Les pauvres l'ont vu, ils sont en fête : « Vie et joie, à vous qui cherchez Dieu ! »
 Car le Seigneur écoute les humbles, il n'oublie pas les siens emprisonnés.
 Psaume 68, versets 30 à 34
+
 Tu visites la terre et tu l'abreuves, tu la combles de richesses ; * les ruisseaux de Dieu regorgent d'eau : tu prépares les moissons. Ainsi, tu prépares la terre,
 tu arroses les sillons ; * tu aplanis le sol, tu le détrempes sous les pluies, tu bénis les semailles.
 Tu couronnes une année de bienfaits ; * sur ton passage, ruisselle l'abondance.
