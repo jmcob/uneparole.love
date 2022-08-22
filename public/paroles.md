@@ -6,30 +6,13 @@ Tu ne voulais ni offrande ni sacrifice, tu as ouvert mes oreilles ; * tu ne dema
 alors j'ai dit : « Voici, je viens. «
 Psaume 39, versets 5 à 8
 
-Fais que j'entende les chants et la fête : ils danseront, les os que tu broyais.
-Détourne ta face de mes fautes, enlève tous mes péchés.
-Crée en moi un coeur pur, ô mon Dieu, renouvelle et raffermis au fond de moi mon esprit.
-Ne me chasse pas loin de ta face, ne me reprends pas ton esprit saint.
-Rends-moi la joie d'être sauvé ; que l'esprit généreux me soutienne.
-Psaume 50, versets 10 à 14
 
-R / Sur Dieu dont j'exalte la parole, le Seigneur dont j'exalte la parole, *
-sur Dieu, je prends appui : plus rien ne me fait peur ! * Que peuvent sur moi des humains ?
-Mon Dieu, je tiendrai ma promesse, je t'offrirai des sacrifices d'action de grâce ;
-car tu m'as délivré de la mort et tu préserves mes pieds de la chute, pour que je marche à la face de Dieu dans la lumière des vivants.
-Psaume 55, versets 11 à 14
 Mon coeur est prêt, mon Dieu, + mon coeur est prêt ! * Je veux chanter, jouer des hymnes !
 Éveille-toi, ma gloire ! + Éveillez-vous, harpe, cithare, * que j'éveille l'aurore !
 Je te rendrai grâce parmi les peuples, Seigneur, et jouerai mes hymnes en tous pays.
 Ton amour est plus grand que les cieux, ta vérité, plus haute que les nues.
 R / Dieu, lève-toi sur les cieux : que ta gloire domine la terre !
 Psaume 56, versets 8 à 12
-
-Je n'ai mon repos qu'en Dieu seul ; oui, mon espoir vient de lui.
-R / Lui seul est mon rocher, mon salut, ma citadelle : je reste inébranlable.
-Mon salut et ma gloire se trouvent près de Dieu. * Chez Dieu, mon refuge, mon rocher imprenable !
-Comptez sur lui en tous temps, vous, le peuple. * Devant lui épanchez votre cœur : Dieu est pour nous un refuge.
-Psaume 61, versets 6 à 9
 
 L'homme n'est qu'un souffle, + les fils des hommes, un mensonge : * sur un plateau de balance, tous ensemble, ils seraient moins qu'un souffle.
 N'allez pas compter sur la fraude et n'aspirez pas au profit ; * si vous amassez des richesses, n'y mettez pas votre cœur.
