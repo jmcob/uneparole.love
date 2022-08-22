@@ -1,46 +1,3 @@
-
-
-Heureux est l'homme qui met sa foi dans le Seigneur * et ne va pas du côté des violents, dans le parti des traîtres.
-Tu as fait pour nous tant de choses, toi, Seigneur mon Dieu ! * Tant de projets et de merveilles : non, tu n'as point d'égal ! Je les dis, je les redis encore ; * mais leur nombre est trop grand !
-Tu ne voulais ni offrande ni sacrifice, tu as ouvert mes oreilles ; * tu ne demandais ni holocauste ni victime,
-alors j'ai dit : « Voici, je viens. «
-Psaume 39, versets 5 à 8
-
-
-Mon coeur est prêt, mon Dieu, + mon coeur est prêt ! * Je veux chanter, jouer des hymnes !
-Éveille-toi, ma gloire ! + Éveillez-vous, harpe, cithare, * que j'éveille l'aurore !
-Je te rendrai grâce parmi les peuples, Seigneur, et jouerai mes hymnes en tous pays.
-Ton amour est plus grand que les cieux, ta vérité, plus haute que les nues.
-R / Dieu, lève-toi sur les cieux : que ta gloire domine la terre !
-Psaume 56, versets 8 à 12
-
-L'homme n'est qu'un souffle, + les fils des hommes, un mensonge : * sur un plateau de balance, tous ensemble, ils seraient moins qu'un souffle.
-N'allez pas compter sur la fraude et n'aspirez pas au profit ; * si vous amassez des richesses, n'y mettez pas votre cœur.
-Dieu a dit une chose, deux choses que j'ai entendues. + Ceci : que la force est à Dieu ;
-à toi, Seigneur, la grâce ! * Et ceci : tu rends à chaque homme selon ce qu'il fait.
-Psaume 61, versets 10 à 13
-Ton amour vaut mieux que la vie : tu seras la louange de mes lèvres !
-Toute ma vie je vais te bénir, lever les mains en invoquant ton nom.
-Comme par un festin je serai rassasié ; la joie sur les lèvres, je dirai ta louange.
-Dans la nuit, je me souviens de toi et je reste des heures à te parler.
-Oui, tu es venu à mon secours : je crie de joie à l'ombre de tes ailes.
-Mon âme s'attache à toi, ta main droite me soutient.
-Psaume 62, versets 4 à 9
-
-Et moi, humilié, meurtri, que ton salut, Dieu, me redresse.
-Et je louerai le nom de Dieu par un cantique, je vais le magnifier, lui rendre grâce.
-Cela plaît au Seigneur plus qu'un taureau, plus qu'une bête ayant cornes et sabots.
-Les pauvres l'ont vu, ils sont en fête : « Vie et joie, à vous qui cherchez Dieu ! »
-Car le Seigneur écoute les humbles, il n'oublie pas les siens emprisonnés.
-Psaume 68, versets 30 à 34
-
-Tu visites la terre et tu l'abreuves, tu la combles de richesses ; * les ruisseaux de Dieu regorgent d'eau : tu prépares les moissons. Ainsi, tu prépares la terre,
-tu arroses les sillons ; * tu aplanis le sol, tu le détrempes sous les pluies, tu bénis les semailles.
-Tu couronnes une année de bienfaits ; * sur ton passage, ruisselle l'abondance.
-Au désert, les pâturages ruissellent, * les collines débordent d'allégresse.
-Les herbages se parent de troupeaux + et les plaines se couvrent de blé. * Tout exulte et chante !
-Psaume 64, versets 10 à 14
-
 Que Dieu nous prenne en grâce et nous bénisse, que son visage s'illumine pour nous ;
 et ton chemin sera connu sur la terre, ton salut, parmi toutes les nations.
 R / Que les peuples, Dieu, te rendent grâce ; qu'ils te rendent grâce tous ensemble !
@@ -49,9 +6,6 @@ R / Que les peuples, Dieu, te rendent grâce ; qu'ils te rendent grâce tous ens
 La terre a donné son fruit ; Dieu, notre Dieu, nous bénit.
 Que Dieu nous bénisse, et que la terre tout entière l'adore !
 Psaume 66 premiers versets
-
-
-
 
 A toi le jour, à toi la nuit, toi qui ajustas le soleil et les astres !
 C'est toi qui fixas les bords de la terre ; l'hiver et l'été, c'est toi qui les formas.
@@ -418,17 +372,3 @@ il donne leur pâture aux troupeaux, aux petits du corbeau qui la réclament.
 La force des chevaux n'est pas ce qu'il aime, ni la vigueur des guerriers, ce qui lui plaît ;
 mais le Seigneur se plaît avec ceux qui le craignent, avec ceux qui espèrent son amour.
 Psaume 146, versets 7 à 11
-
-Alléluia ! Louez le Seigneur du haut des cieux, louez-le dans les hauteurs.
-Vous, tous ses anges, louez-le, louez-le, tous les univers.
-Louez-le, soleil et lune, louez-le, tous les astres de lumière ;
-vous, cieux des cieux, louez-le, et les eaux des hauteurs des cieux.
-R/ Qu'ils louent le nom du Seigneur : sur son ordre ils furent créés ;
-Psaume 148, premiers versets
-Alléluia ! Louez Dieu dans son temple saint, louez-le au ciel de sa puissance ;
-louez-le pour ses actions éclatantes, louez-le selon sa grandeur !
-Louez-le en sonnant du cor, louez-le sur la harpe et la cithare ;
-louez-le par les cordes et les flûtes, louez-le par la danse et le tambour !
-Louez-le par les cymbales sonores, louez-le par les cymbales triomphantes !
-Et que tout être vivant chante louange au Seigneur ! Alléluia !
-Psaume 150, intégral

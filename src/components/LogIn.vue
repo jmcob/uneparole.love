@@ -1,7 +1,13 @@
 <template>
   <HeaderCross />
   <Arrow />
-  <form v-if="!online" action="submit">
+  <form v-if="!this.$store.state.user.email" action="submit">
+    <p>
+      Cet accès est réservé à la gestion de la base de données de paroles. Vous
+      pouvez en demander l'accès sous conditions en me contactant sur
+      <a href="mailto:jeanmaxime@uneparole.love">cette adresse mail</a>. <br />
+    </p>
+    <br />
     <input type="text" label="email" v-model="email" placeholder="email" />
     <br />
     <input
@@ -19,35 +25,65 @@
 
   <div v-else>
     <h2>Hello {{ this.$store.state.user.email }} !</h2>
+    <br />
     <form action="submit">
       <p>
-        Soumettre une parole, à la base de donnée d'uneparole.love. Un à Cinq
-        verset en version liturgique, pris sur
-        <a href="http://www.aelf.org">AELF.org</a> de préférence :
+        Soumettre une parole, à la base de donnée d'<a
+          href="http://uneparole.love"
+          >uneparole.love</a
+        >. <br /><br />
+        1 à 5 versets en version liturgique, pris sur
+        <a href="http://www.aelf.org">AELF.org</a> de préférence, et sans les
+        numéros de verset (car vous les incluez dans la référence ci dessous) :
       </p>
-      <textarea v-model="parole" id="parole" cols="30" rows="10"></textarea>
+      <textarea
+        v-model="parole"
+        id="parole"
+        cols="30"
+        rows="10"
+        placeholder="Une Parole de la Bible"
+      ></textarea>
+      <br />
       <p>
+        <br />
         La référence de la parole, exemple :
         <em
           >Première lettre aux Corinthiens, chapitre 13, versets 12 et 13 :</em
         >
       </p>
-      <textarea v-model="ref" id="ref" cols="30" rows="3"></textarea>
+      <textarea
+        v-model="ref"
+        id="ref"
+        cols="30"
+        rows="3"
+        placeholder="La référence de votre Parole"
+      ></textarea>
       <br />
-      Attention, ce formulaire ajoute directement votre parole à la base de
-      données. Il fonctionne. En cas de doute, appelez moi !
+      <p>
+        <br />
+        Attention, ce formulaire ajoute directement votre Parole à la base de
+        données. Il fonctionne.
+        <br />
+        <br />
+        Votre mail est associé a la Parole que vous envoyez, je pourrais
+        apporter des corrections éventuelles.
+        <br /><br />
+        En cas de doute, appelez moi !
+      </p>
+      <br />
       <button class="login" @click.prevent="this.Submit(parole, ref)">
-        Soumettre la parole
+        Soumettre votre Parole
       </button>
     </form>
     <p v-if="sent"><strong>Votre parole a été publiée.</strong></p>
-    <button @click="LogOut()">Déconnexion</button>
+    <br />
+    <button class="logout" @click="LogOut()">Déconnexion</button>
   </div>
 </template>
 
 <script>
 import { auth, db } from "../firebaseInit";
-
+import { mapMutations } from "vuex";
 import {
   createUserWithEmailAndPassword,
   signOut,
@@ -62,7 +98,6 @@ export default {
     return {
       email: "",
       password: "",
-      online: false,
       parole: "",
       ref: "",
       sent: false,
@@ -70,6 +105,7 @@ export default {
   },
   components: { HeaderCross, Arrow },
   methods: {
+    ...mapMutations(["whoAmI"]),
     createUser(email, password) {
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -77,7 +113,6 @@ export default {
           this.$store.state.user = userCredential.user;
           console.log(userCredential);
           console.log(userCredential.user);
-          this.online = true;
           // ...
         })
         .catch((error) => {
@@ -90,6 +125,7 @@ export default {
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Signed in
+          localStorage.setItem("user", JSON.stringify(userCredential.user));
           this.$store.state.user = userCredential.user;
           this.online = true;
         })
@@ -101,7 +137,9 @@ export default {
     LogOut() {
       signOut(auth)
         .then(() => {
-          this.online = false;
+          this.$store.state.user = "";
+          localStorage.clear();
+          location.reload();
         })
         .catch((error) => {
           console.log(error);
@@ -115,11 +153,14 @@ export default {
         ref: ref,
         email: this.$store.state.user.email,
       });
-      console.log("Document written with ID: ", docRef.id);
+      console.log("Document written by: ", docRef.email);
       this.parole = "";
       this.ref = "";
       this.sent = true;
     },
+  },
+  created() {
+    this.whoAmI();
   },
 };
 </script>
@@ -127,5 +168,11 @@ export default {
 textarea,
 input {
   background-color: lightblue;
+}
+
+.logout {
+  background-color: midnightblue;
+  color: white;
+  padding: 5px;
 }
 </style>

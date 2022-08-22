@@ -10,14 +10,15 @@ loadFonts();
 const store = createStore({
   state() {
     return {
-      count: 0,
       user: "",
       wordcount: 0,
     };
   },
   mutations: {
-    increment(state) {
-      state.count++;
+    whoAmI(state) {
+      if (localStorage.getItem("user")) {
+        state.user = JSON.parse(localStorage.getItem("user"));
+      }
     },
   },
 });
