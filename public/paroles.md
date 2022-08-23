@@ -1,85 +1,10 @@
-
-
-
-
-adorez le Seigneur, éblouissant de sainteté : tremblez devant lui, terre entière.
-Allez dire aux nations : « Le Seigneur est roi ! » Le monde, inébranlable, tient bon. Il gouverne les peuples avec droiture.
-Joie au ciel ! Exulte la terre ! Les masses de la mer mugissent,
-la campagne tout entière est en fête. Les arbres des forêts dansent de joie
-devant la face du Seigneur, car il vient, car il vient pour juger la terre. Il jugera le monde avec justice, * et les peuples selon sa vérité !
-Psaume 95, versets 9 à 13
-
-
-
-Tu es, Seigneur, le Très-Haut sur toute la terre : * tu domines de haut tous les dieux.
-Haïssez le mal, vous qui aimez le Seigneur, + car il garde la vie de ses fidèles * et les arrache aux mains des impies.
-Une lumière est semée pour le juste, et pour le coeur simple, une joie.
-Que le Seigneur soit votre joie, hommes justes ; rendez grâce en rappelant son nom très saint.
-Psaume 96, versets 9 à 12
-
-Acclamez le Seigneur, terre entière, sonnez, chantez, jouez ;
-jouez pour le Seigneur sur la cithare, sur la cithare et tous les instruments ;
-au son de la trompette et du cor, acclamez votre roi, le Seigneur !
-Que résonnent la mer et sa richesse, le monde et tous ses habitants ;
-que les fleuves battent des mains, que les montagnes chantent leur joie,
-à la face du Seigneur, car il vient pour gouverner la terre, * pour gouverner le monde avec justice et les peuples avec droiture !
-Psaume 97, versets 4 à 9
-
-Bénis le Seigneur, ô mon âme, bénis son nom très saint, tout mon être !
-Bénis le Seigneur, ô mon âme, n'oublie aucun de ses bienfaits !
-Car il pardonne toutes tes offenses et te guérit de toute maladie ;
-il réclame ta vie à la tombe et te couronne d'amour et de tendresse ;
-il comble de biens tes vieux jours : tu renouvelles, comme l'aigle, ta jeunesse.
-Psaume 102, premiers versets
-
-Acclamez le Seigneur, terre entière,
-servez le Seigneur dans l'allégresse, venez à lui avec des chants de joie !
-Reconnaissez que le Seigneur est Dieu : il nous a faits, et nous sommes à lui, nous, son peuple, son troupeau.
-Venez dans sa maison lui rendre grâce, dans sa demeure chanter ses louanges ; rendez-lui grâce et bénissez son nom !
-Oui, le Seigneur est bon, éternel est son amour, sa fidélité demeure d'âge en âge.
-Psaume 99, premiers versets
-
-je n'aurai pas même un regard pour les pratiques démoniaques. Je haïrai l'action du traître qui n'aura sur moi nulle prise ; *
-loin de moi, le coeur tortueux ! Le méchant, je ne veux pas le connaître.
-Qui dénigre en secret son prochain, je le réduirai au silence ; * le regard hautain, le coeur ambitieux, je ne peux les tolérer.
-Mes yeux distinguent les hommes sûrs du pays : ils siégeront à mes côtés ; * qui se conduira parfaitement celui-là me servira.
-Pas de siège, parmi ceux de ma maison, pour qui se livre à la fraude ; * impossible à qui profère le mensonge de tenir sous mon regard.
-Psaume 100, versets 3 à 7
-
-    Mon épouse infidèle,
-je vais la séduire,
-je vais l’entraîner jusqu’au désert,
-et je lui parlerai cœur à cœur.
-    Là, elle me répondra
-comme au temps de sa jeunesse,
-au jour où elle est sortie du pays d’Égypte.
-Livre d’Osée, chapitre 2, versets 16, 17b et 18
-Je crois, et je parlerai, moi qui ai beaucoup souffert,
-moi qui ai dit dans mon trouble : « L'homme n'est que mensonge. »
-Comment rendrai-je au Seigneur tout le bien qu'il m'a fait ?
-J'élèverai la coupe du salut, j'invoquerai le nom du Seigneur.
-Je tiendrai mes promesses au Seigneur, oui, devant tout son peuple !
-Psaume 115, versets 10 à 14
-
-    En ce jour-là – oracle du Seigneur –,
-voici ce qui arrivera :
-Tu m’appelleras : « Mon époux »
-et non plus : « Mon Baal » (c’est-à-dire « mon maître »).
-    Je ferai de toi mon épouse pour toujours,
-je ferai de toi mon épouse
-dans la justice et le droit,
-dans la fidélité et la tendresse ;
-    je ferai de toi mon épouse dans la loyauté,
-et tu connaîtras le Seigneur.
-
-Livre d’Osée, chapitre 2, versets 19, 21 et 22
-
 Que cela soit écrit pour l'âge à venir, et le peuple à nouveau créé chantera son Dieu :
 « Des hauteurs, son sanctuaire, le Seigneur s'est penché ; du ciel, il regarde la terre
 pour entendre la plainte des captifs et libérer ceux qui devaient mourir. »
 On publiera dans Sion le nom du Seigneur et sa louange dans tout Jérusalem,
 au rassemblement des royaumes et des peuples qui viendront servir le Seigneur.
 Psaume 101, versets 19 à 23
+
 L'homme ! ses jours sont comme l'herbe ; comme la fleur des champs, il fleurit :
 dès que souffle le vent, il n'est plus, même la place où il était l'ignore.
 Mais l'amour du Seigneur, sur ceux qui le craignent, est de toujours à toujours, * et sa justice pour les enfants de leurs enfants,

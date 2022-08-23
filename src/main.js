@@ -11,7 +11,13 @@ const store = createStore({
   state() {
     return {
       user: "",
+      // Nombre de paroles total
       wordcount: 0,
+      // length of ps, gosp, nt and at are in informations; they could be filters too.
+      ps: [],
+      gosp: [],
+      at: [],
+      nt: [],
     };
   },
   mutations: {

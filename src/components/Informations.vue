@@ -3,7 +3,10 @@
     <div class="count">
       <p>
         Il y a actuellement
-        <strong>{{ wordcount }} paroles</strong> différentes.
+        <strong>{{ wordcount }} paroles</strong> différentes,
+        {{ ps.length }} issues de psaumes, {{ gosp.length }} d'évangiles,
+        {{ at.length }} du reste de l'ancien testament, et {{ nt.length }} du
+        reste du nouveau.
       </p>
     </div>
     <div class="adoration">
@@ -15,8 +18,7 @@
     </div>
     <div class="148">
       <p>
-        Version 1.1, août 2022 – A terme, 65 extraits courants de la Bible puis
-        83 extraits de psaumes,
+        Version 1.1, août 2022 –
         <strong>traduction liturgique <a href="aelf.org">AELF</a></strong
         >.
       </p>
@@ -51,6 +53,19 @@ export default {
     // arrow functions can make the code very succinct!
     wordcount() {
       return this.$store.state.wordcount;
+    },
+    // length of ps, gosp, nt and at are in informations; they could be filters too.
+    ps() {
+      return this.$store.state.ps;
+    },
+    gosp() {
+      return this.$store.state.gosp;
+    },
+    at() {
+      return this.$store.state.at;
+    },
+    nt() {
+      return this.$store.state.nt;
     },
   },
 };

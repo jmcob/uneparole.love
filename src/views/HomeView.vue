@@ -29,12 +29,13 @@ export default {
   components: { HeaderCross, BlueButton, NavBar, UneParole, FooterInfo, LogIn },
   data() {
     return {
+      // une parole et une ref come from paroles et refs in DisplayParoles()
       uneparole: "",
       uneref: "",
+      // paroles and refs come from firestore
       paroles: [],
       refs: [],
-      tampon: {},
-      aboutClick: false,
+      // wordClick and animation are activated with the button
       wordClick: false,
       animation: true,
     };
@@ -46,16 +47,26 @@ export default {
   methods: {
     async GetParolesFromDB() {
       const querySnapshot = await getDocs(collection(db, "word"));
+      this.$store.state.ps = [];
+      this.$store.state.gosp = [];
+      this.$store.state.at = [];
+      this.$store.state.nt = [];
       querySnapshot.forEach((doc, index) => {
         // doc.data() is never undefined for query doc snapshots
         this.paroles.push(doc.data().parole);
         this.refs.push(doc.data().ref);
+
+        if (doc.data().ps) this.$store.state.ps.push(doc.data().ps);
+        if (doc.data().gosp) this.$store.state.gosp.push(doc.data().gosp);
+        if (doc.data().at) this.$store.state.at.push(doc.data().at);
+        if (doc.data().nt) this.$store.state.nt.push(doc.data().nt);
       });
       this.$store.state.wordcount = this.paroles.length;
     },
     async DisplayParole() {
       let random = 0;
       random = this.GetRandomIndex(this.paroles.length);
+      console.log(random);
       this.uneref = this.refs[random];
       this.uneparole = this.paroles[random];
       const replaceWith = `<br>`;

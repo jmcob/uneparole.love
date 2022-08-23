@@ -145,7 +145,7 @@ export default {
         .then(() => {
           this.$store.state.user = "";
           localStorage.clear();
-          location.reload();
+          location.href = "https://www.uneparole.love/";
         })
         .catch((error) => {
           console.log(error);
