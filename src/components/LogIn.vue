@@ -31,15 +31,16 @@
         Soumettre une parole, à la base de donnée d'<a
           href="http://uneparole.love"
           >uneparole.love</a
-        >. <br />
+        >
+        <br /><br />
       </h3>
       <p>
         1 à 5 versets en version liturgique, pris sur
         <a href="http://www.aelf.org">AELF.org</a> de préférence, et
         <strong>sans les numéros de verset</strong> (car vous les incluez dans
         la référence ensuite). Si vous voulez insérez des sauts de ligne (et ne
-        pas afficher un bloc de texte donc), insérez
-        <strong>\\n</strong> (antislash, antislash, n).
+        pas afficher un bloc de texte donc), insérez <strong>\\n</strong> à
+        l'endroit du saut de ligne, (antislash, antislash, n).
       </p>
       <textarea
         v-model="parole"
