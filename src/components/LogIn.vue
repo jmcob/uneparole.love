@@ -39,8 +39,8 @@
         <a href="http://www.aelf.org">AELF.org</a> de préférence, et
         <strong>sans les numéros de verset</strong> (car vous les incluez dans
         la référence ensuite). Si vous voulez insérez des sauts de ligne (et ne
-        pas afficher un bloc de texte donc), insérez <strong>\\n</strong> à
-        l'endroit du saut de ligne, (antislash, antislash, n).
+        pas afficher un bloc de texte donc), insérez <strong>\n</strong> à
+        l'endroit du saut de ligne, (antislash, n).
       </p>
       <textarea
         v-model="parole"
@@ -81,7 +81,7 @@
         Soumettre votre Parole
       </button>
     </form>
-    <p v-if="sent"><strong>Votre parole a été publiée.</strong></p>
+    <p v-if="sent"><strong>Votre parole est publiée.</strong></p>
     <br />
     <button class="logout" @click="LogOut()">Déconnexion</button>
   </div>
