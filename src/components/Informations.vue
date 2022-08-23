@@ -24,7 +24,8 @@
       </p>
       <p>
         <a href="http://www.uneparole.love/pains/pains-de-vie.pdf"
-          >Télécharger le PDF complet des paroles de Dieu sélectionnées</a
+          >Télécharger le PDF des 148 paroles de Dieu sélectionnées
+          initialement</a
         >
       </p>
     </div>

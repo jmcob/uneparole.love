@@ -65,6 +65,13 @@
         placeholder="La référence de votre Parole"
       ></textarea>
       <br />
+      <input type="radio" v-model="part" value="0" />Evangile
+      <br />
+      <input type="radio" v-model="part" value="1" />Psaume
+      <br />
+      <input type="radio" v-model="part" value="2" />Autres Nouveau Testament
+      <br />
+      <input type="radio" v-model="part" value="3" />Autres Ancien Testament
       <p>
         <br />
         Attention, ce formulaire ajoute directement votre Parole à la base de
@@ -107,11 +114,18 @@ export default {
       parole: "",
       ref: "",
       sent: false,
+      // partie de la bible selectionnée :
+      part: 0,
+      gosp: false,
+      ps: false,
+      nt: false,
+      at: false,
     };
   },
   components: { HeaderCross, Arrow },
   methods: {
     ...mapMutations(["whoAmI"]),
+
     createUser(email, password) {
       createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
@@ -152,12 +166,26 @@ export default {
         });
     },
     Submit(parole, ref) {
+      if (this.part == 0) {
+        this.gosp = true;
+      } else if (this.part == 1) {
+        this.ps = true;
+      } else if (this.part == 2) {
+        this.nt = true;
+      } else if (this.part == 3) {
+        this.at = true;
+      }
+      console.log(this.part, this.gosp, this.ps, this.at, this.nt);
       // Add a new document in collection "word"
       // Add a new document with a generated id.
       const docRef = addDoc(collection(db, "word"), {
         parole: parole,
         ref: ref,
         email: this.$store.state.user.email,
+        gosp: this.gosp,
+        ps: this.ps,
+        nt: this.nt,
+        at: this.at,
       });
       console.log("Document written by: ", docRef.email);
       this.parole = "";

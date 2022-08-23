@@ -55,7 +55,6 @@ export default {
         // doc.data() is never undefined for query doc snapshots
         this.paroles.push(doc.data().parole);
         this.refs.push(doc.data().ref);
-
         if (doc.data().ps) this.$store.state.ps.push(doc.data().ps);
         if (doc.data().gosp) this.$store.state.gosp.push(doc.data().gosp);
         if (doc.data().at) this.$store.state.at.push(doc.data().at);
