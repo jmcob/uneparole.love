@@ -58,6 +58,8 @@ export default {
       random = this.GetRandomIndex(this.paroles.length);
       this.uneref = this.refs[random];
       this.uneparole = this.paroles[random];
+      const replaceWith = `<br>`;
+      this.uneparole = this.uneparole.replaceAll(/\\n/g, replaceWith);
       this.SpecialEffects();
     },
     GetRandomIndex(index) {

@@ -8,7 +8,7 @@
       Choisir une police plus petite
     </p>
     <br />
-    <p>{{ uneparole }}</p>
+    <p><span v-html="uneparole"></span></p>
     <br />
     <p class="ref">
       <em>{{ uneref }}</em>
@@ -20,7 +20,7 @@
     </p>
     <br />
     <div id="uneparole">
-      <p>{{ uneparole }}</p>
+      <p><span v-html="uneparole"></span></p>
       <br />
       <p class="ref">
         <em>{{ uneref }}</em>

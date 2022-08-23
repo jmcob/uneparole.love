@@ -1,3 +1,8 @@
+Oui, le grand Dieu, c'est le Seigneur, le grand roi au-dessus de tous les dieux : \n il tient en main les profondeurs de la terre, et les sommets des montagnes sont à lui ; \n à lui la mer, c'est lui qui l'a faite, et les terres, car ses mains les ont pétries. \n Entrez, inclinez-vous, prosternez-vous, adorons le Seigneur qui nous a faits. \n Oui, il est notre Dieu ; + nous sommes le peuple qu'il conduit, le troupeau guidé par sa main.
+
+
+
+
 Chantez au Seigneur un chant nouveau, chantez au Seigneur, terre entière,
 chantez au Seigneur et bénissez son nom ! De jour en jour, proclamez son salut,
 racontez à tous les peuples sa gloire, à toutes les nations ses merveilles !
