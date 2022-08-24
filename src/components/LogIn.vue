@@ -25,12 +25,27 @@
 
   <div v-else>
     <h2>Hello {{ this.$store.state.user.email }} !</h2>
+    <br />
     <router-link to="/print">
       <h3>1. Gestionnaire d'impression</h3></router-link
     >
+    <br />
+    Le pdf des paroles est disponible derriere l'icone "imprimante" de la page
+    d'accueil.
+    <h4>Pour générer un nouveau pdf de toutes les paroles</h4>
+    Demander l'impression au navigateur (Ctrl + P)
+    <router-link to="/print"> de cette page</router-link>
+    désélectionner l'impression avec marges, et imprimer en pdf (sélectionner
+    l'imprimante PDF a la place de votre imprimante).
+    <br />
+    Cette fonction a priori n'est utile qu'à moi (jeanmaxime) afin de refaire un
+    pdf avec les nouvelles paroles, mais on ne sait jamais. Bien vérifier qu'il
+    n'y a pas de decalage des blocs au fur et a mesure des pages avant
+    impression. Si c'est le cas il faut m'appeler.
 
     <br />
     <form action="submit">
+      <br />
       <h3>
         2. Soumettre une parole, à la base de donnée d'<a
           href="http://uneparole.love"
@@ -44,7 +59,7 @@
         <strong>sans les numéros de verset</strong> (car vous les incluez dans
         la référence ensuite). Si vous voulez insérez des sauts de ligne (et ne
         pas afficher un bloc de texte donc), insérez <strong>\n</strong> à
-        l'endroit du saut de ligne, (antislash, n).
+        l'endroit du ou des sauts de ligne, (antislash, n).
       </p>
       <textarea
         v-model="parole"
