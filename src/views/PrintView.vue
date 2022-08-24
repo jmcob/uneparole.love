@@ -37,18 +37,20 @@ export default {
 <style scoped>
 .papier {
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
-  width: 10.5cm;
-  height: 10.35cm;
+  font-size: 13pt;
+  width: 10cm;
+  height: 9.41cm;
   padding: 1mm;
   border: 1px dashed black;
   overflow: hidden;
   line-height: 1.2em;
+  padding: 3mm;
 }
 .paperWrap {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 5mm;
 }
 body {
   width: 210mm;

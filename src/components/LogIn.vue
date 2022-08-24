@@ -25,10 +25,14 @@
 
   <div v-else>
     <h2>Hello {{ this.$store.state.user.email }} !</h2>
+    <router-link to="/print">
+      <h3>1. Gestionnaire d'impression</h3></router-link
+    >
+
     <br />
     <form action="submit">
       <h3>
-        Soumettre une parole, à la base de donnée d'<a
+        2. Soumettre une parole, à la base de donnée d'<a
           href="http://uneparole.love"
           >uneparole.love</a
         >
