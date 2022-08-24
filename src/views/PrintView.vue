@@ -34,7 +34,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 .papier {
   font-family: "Times New Roman", Times, serif;
   font-size: large;
