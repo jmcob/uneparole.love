@@ -46,12 +46,12 @@ export default {
   },
   methods: {
     async GetParolesFromDB() {
-      const querySnapshot = await getDocs(collection(db, "word"));
+      this.$store.state.querySnapshot = await getDocs(collection(db, "word"));
       this.$store.state.ps = [];
       this.$store.state.gosp = [];
       this.$store.state.at = [];
       this.$store.state.nt = [];
-      querySnapshot.forEach((doc, index) => {
+      this.$store.state.querySnapshot.forEach((doc, index) => {
         // doc.data() is never undefined for query doc snapshots
         this.paroles.push(doc.data().parole);
         this.refs.push(doc.data().ref);

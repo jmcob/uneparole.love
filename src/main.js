@@ -18,6 +18,7 @@ const store = createStore({
       gosp: [],
       at: [],
       nt: [],
+      querySnapshot: {},
     };
   },
   mutations: {

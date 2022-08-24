@@ -16,6 +16,9 @@
             variant="plain"
           ></v-btn
         ></router-link>
+        <router-link to="/print">
+          <v-btn class="mx-4" icon="mdi-printer" variant="plain"></v-btn
+        ></router-link>
       </v-card-text>
 
       <v-divider></v-divider>

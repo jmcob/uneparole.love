@@ -5,6 +5,7 @@ import AboutView from "./views/AboutView.vue";
 import GospelView from "./views/GospelView.vue";
 import MonthView from "./views/MonthView.vue";
 import LogInView from "./views/LogInView.vue";
+import PrintView from "./views/PrintView.vue";
 
 export default createRouter({
   history: createWebHistory(),
@@ -33,6 +34,11 @@ export default createRouter({
       path: "/ajout",
 
       component: LogInView,
+    },
+    {
+      path: "/print",
+
+      component: PrintView,
     },
   ],
   scrollBehavior() {
