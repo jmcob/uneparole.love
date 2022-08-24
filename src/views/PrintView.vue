@@ -38,7 +38,7 @@ export default {
 .papier {
   font-family: "Times New Roman", Times, serif;
   font-size: large;
-  width: 10.25cm;
+  width: 10.5cm;
   height: 10.35cm;
   padding: 1mm;
   border: 1px dashed black;
