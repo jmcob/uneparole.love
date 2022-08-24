@@ -8,12 +8,15 @@
       Choisir une police plus petite
     </p>
     <br />
-    <p class="center info">Portez cette parole en prière :</p>
-    <br />
     <p><span v-html="uneparole"></span></p>
     <br />
+
     <p class="ref">
       <em>{{ uneref }}</em>
+    </p>
+    <br />
+    <p class="center info">
+      Si elle vous plaît, portez cette parole en prière.
     </p>
   </div>
   <div v-else-if="wordClick" :style="{ fontSize: 'large' }">
@@ -21,15 +24,17 @@
       Afficher une police plus grande
     </p>
     <br />
-    <p class="center info">Portez cette parole en prière :</p>
-    <br />
     <div id="uneparole">
       <p><span v-html="uneparole"></span></p>
       <br />
+
       <p class="ref">
         <em>{{ uneref }}</em>
       </p>
       <br />
+      <p class="center info">
+        Si elle vous plaît, portez cette parole en prière.
+      </p>
     </div>
   </div>
 </template>
