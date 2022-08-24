@@ -73,9 +73,8 @@ export default {
       this.SpecialEffects();
     },
     GetRandomIndex(index) {
-      const random = Math.random() * index;
+      const random = Math.random() * index - 1;
       const roundedIndex = Math.round(random);
-      if (roundedIndex === index) this.GetRandomIndex();
       return roundedIndex;
     },
     SpecialEffects() {
