@@ -23,10 +23,10 @@
         >.
       </p>
       <p>
-        <a href="http://www.uneparole.love/pains/pains-de-vie.pdf"
-          >Télécharger le PDF des 148 paroles de Dieu sélectionnées
-          initialement</a
+        <a href="https://www.uneparole.love/pains/153xuneparole.pdf"
+          >153 paroles en PDF</a
         >
+        pour une utilisation en église. Fonctionne mieux avec Firefox.
       </p>
     </div>
     <div class="cookie">

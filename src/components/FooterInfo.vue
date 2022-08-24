@@ -16,9 +16,9 @@
             variant="plain"
           ></v-btn
         ></router-link>
-        <router-link to="/print">
+        <a href="https://www.uneparole.love/pains/153xuneparole.pdf">
           <v-btn class="mx-4" icon="mdi-printer" variant="plain"></v-btn
-        ></router-link>
+        ></a>
       </v-card-text>
 
       <v-divider></v-divider>
