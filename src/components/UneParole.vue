@@ -1,12 +1,14 @@
 <template>
   <div
     v-if="wordClick && biggerFont"
-    :style="{ fontSize: 'x-large' }"
+    :style="{ fontSize: 'larger' }"
     id="uneparole"
   >
     <p class="center about" @click="biggerFont = !biggerFont">
       Choisir une police plus petite
     </p>
+    <br />
+    <p class="center info">Portez cette parole en prière :</p>
     <br />
     <p><span v-html="uneparole"></span></p>
     <br />
@@ -14,10 +16,12 @@
       <em>{{ uneref }}</em>
     </p>
   </div>
-  <div v-else-if="wordClick">
+  <div v-else-if="wordClick" :style="{ fontSize: 'large' }">
     <p class="center about" @click="biggerFont = !biggerFont">
       Afficher une police plus grande
     </p>
+    <br />
+    <p class="center info">Portez cette parole en prière :</p>
     <br />
     <div id="uneparole">
       <p><span v-html="uneparole"></span></p>

@@ -46,7 +46,7 @@ padding: 5px;
 #uneparole {
     text-indent: 2em;
     font-family: 'Merriweather', serif;
-    font-size: larger;
+    font-size: large;
     white-space: pre-wrap;
     text-align: justify;
     line-height: 1.5;
@@ -81,6 +81,7 @@ padding: 5px;
 .info {
     text-decoration: none;
     cursor: default;
+    font-family: "Karla", sans-serif;
 }
 #infoContainer {
  display: flex;
