@@ -3,22 +3,27 @@
     <div class="count">
       <p>
         Il y a actuellement
-        <strong>{{ wordcount }} paroles</strong> différentes,
-        {{ ps.length }} issues de psaumes, {{ gosp.length }} d'évangiles,
-        {{ at.length }} du reste de l'ancien testament, et {{ nt.length }} du
-        reste du nouveau.
-      </p>
+        <strong>{{ wordcount }} paroles</strong> différentes :
+        <br>
+        <ul>
+            <li>{{ ps.length }} issues de psaumes,</li>
+            <li> {{ gosp.length }} trouvées dans l'évangile,</li>
+            <li>{{ at.length }} tirées de l'ancien testament, hormis les psaumes,</li>
+            <li>et {{ nt.length }} choisies dans le
+        reste du nouveau testament, en dehors des évangiles.</li>
+        </ul>
+        </p>
     </div>
     <div class="adoration">
       <p>
-        Les extraits ont été initialement choisis pour l'adoration eucharistique
+        Les extraits ont été initialement sélectionnés pour l'adoration eucharistique
         : sous la houlette et avec la participation active de la coordinatrice
         de l’adoration perpétuelle au Sacré-Cœur à Bordeaux.
       </p>
     </div>
     <div class="148">
       <p>
-        Version 1.1, août 2022 –
+        Version 1.1 : août 2022 –
         <strong>traduction liturgique <a href="aelf.org">AELF</a></strong
         >.
       </p>
@@ -34,6 +39,9 @@
         Ce site ne vous suit pas, ni par des cookies, ni par de la télémétrie,
         ou de l'analyse. C'est un simple service perfectible, qui ne veut que
         votre sainteté.
+        <br>
+        <br>
+        La distribution des paroles est libre et gratuite, la redistribution de ce site est autorisée à des fins écclésiales. Vous pouvez participer a la construction de ce site gràce à GitHub en faisant <a href="https://github.com/jmcob/uneparole.love">un "fork" du projet</a>.
       </p>
     </div>
     <div class="ajout">
