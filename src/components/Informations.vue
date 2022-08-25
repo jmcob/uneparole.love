@@ -26,7 +26,7 @@
         <a href="https://www.uneparole.love/pains/153xuneparole.pdf"
           >153 paroles en PDF</a
         >
-        pour une utilisation en église. Fonctionne mieux avec Firefox.
+        pour une utilisation en église.
       </p>
     </div>
     <div class="cookie">

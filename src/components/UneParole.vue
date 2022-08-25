@@ -15,9 +15,7 @@
       <em>{{ uneref }}</em>
     </p>
     <br />
-    <p class="center info">
-      Si elle vous plaît, portez cette parole en prière.
-    </p>
+    <p class="center info">Si cette parole vous plaît, portez la en prière.</p>
   </div>
   <div v-else-if="wordClick" :style="{ fontSize: 'large' }">
     <p class="center about" @click="biggerFont = !biggerFont">
@@ -33,7 +31,7 @@
       </p>
       <br />
       <p class="center info">
-        Si elle vous plaît, portez cette parole en prière.
+        Si cette parole vous plaît, portez la en prière.
       </p>
     </div>
   </div>

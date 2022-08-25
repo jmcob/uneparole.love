@@ -41,7 +41,8 @@
     Cette fonction a priori n'est utile qu'à moi (jeanmaxime) afin de refaire un
     pdf avec les nouvelles paroles, mais on ne sait jamais. Bien vérifier qu'il
     n'y a pas de decalage des blocs au fur et a mesure des pages avant
-    impression. Si c'est le cas il faut m'appeler.
+    impression. Si c'est le cas il faut m'appeler. Fonctionne mieux avec
+    Firefox, parce que conçu avec.
 
     <br />
     <form action="submit">
