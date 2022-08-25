@@ -1,6 +1,7 @@
 <template>
   <div class="informations">
     <div class="count">
+    <h2>Informations du site</h2>
       <p>
         Il y a actuellement
         <strong>{{ wordcount }} paroles</strong> différentes :
@@ -15,6 +16,7 @@
         </p>
     </div>
     <div class="adoration">
+    <h3>Une parole pour adorer</h3>
       <p>
         Les extraits ont été initialement sélectionnés pour l'adoration eucharistique
         : sous la houlette et avec la participation active de la coordinatrice
@@ -22,6 +24,7 @@
       </p>
     </div>
     <div class="148">
+    <h3>Version et impression</h3>
       <p>
         Version 1.1 : août 2022 –
         <strong>traduction liturgique <a href="aelf.org">AELF</a></strong
@@ -35,6 +38,7 @@
       </p>
     </div>
     <div class="cookie">
+    <h3>N'ayez pas peur</h3>
       <p>
         Ce site ne vous suit pas, ni par des cookies, ni par de la télémétrie,
         ou de l'analyse. C'est un simple service perfectible, qui ne veut que
@@ -45,6 +49,7 @@
       </p>
     </div>
     <div class="ajout">
+    <h3>Vous avez une idée de parole ?</h3>
       <p>
         Voici le lien pour
         <router-link class="about" to="/contact"
