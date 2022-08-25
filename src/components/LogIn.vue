@@ -205,6 +205,7 @@ export default {
         ps: this.ps,
         nt: this.nt,
         at: this.at,
+        date: new date(),
       });
       console.log("Document written by: ", docRef.email);
       this.parole = "";
