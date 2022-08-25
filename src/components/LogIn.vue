@@ -108,7 +108,9 @@
         Soumettre votre Parole
       </button>
     </form>
-    <p v-if="sent"><strong>Votre parole est publiée.</strong></p>
+    <p v-if="sent" :class="{ sent_transition: sent }" class="sent">
+      <strong>Votre parole est publiée.</strong>
+    </p>
     <br />
     <button class="logout" @click="LogOut()">Déconnexion</button>
   </div>
@@ -212,6 +214,10 @@ export default {
       this.parole = "";
       this.ref = "";
       this.sent = true;
+      this.at = false;
+      this.nt = false;
+      this.gosp = false;
+      this.ps = false;
     },
   },
   created() {
@@ -224,7 +230,9 @@ textarea,
 input {
   background-color: lightblue;
 }
-
+.sent {
+  color: crimson;
+}
 .logout {
   background-color: midnightblue;
   color: white;
