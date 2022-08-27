@@ -200,28 +200,37 @@ export default {
       console.log(this.part, this.gosp, this.ps, this.at, this.nt);
       // Add a new document in collection "word"
       // Add a new document with a generated id.
-      const docRef = addDoc(collection(db, "word"), {
-        parole: parole,
-        ref: ref,
-        email: this.$store.state.user.email,
-        gosp: this.gosp,
-        ps: this.ps,
-        nt: this.nt,
-        at: this.at,
-        date: Date.now(),
-      });
-      console.log("Document written by: ", docRef.email);
-      this.parole = "";
-      this.ref = "";
-      this.sent = true;
-      this.at = false;
-      this.nt = false;
-      this.gosp = false;
-      this.ps = false;
+      if (
+        this.parole &&
+        this.ref &&
+        (this.gosp || this.at || this.ny || this.ps)
+      ) {
+        const docRef = addDoc(collection(db, "word"), {
+          parole: parole,
+          ref: ref,
+          email: this.$store.state.user.email,
+          gosp: this.gosp,
+          ps: this.ps,
+          nt: this.nt,
+          at: this.at,
+          date: Date.now(),
+        });
+
+        console.log("Document written by: ", docRef.email);
+        this.parole = "";
+        this.ref = "";
+        this.sent = true;
+        this.at = false;
+        this.nt = false;
+        this.gosp = false;
+        this.ps = false;
+      } else {
+        alert("Remplissez bien le formulaire");
+      }
     },
-  },
-  created() {
-    this.whoAmI();
+    created() {
+      this.whoAmI();
+    },
   },
 };
 </script>

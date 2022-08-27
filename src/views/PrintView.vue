@@ -45,6 +45,7 @@ export default {
   overflow: hidden;
   line-height: 1.2em;
   padding: 3mm;
+  text-align: justify;
 }
 .paperWrap {
   display: flex;
