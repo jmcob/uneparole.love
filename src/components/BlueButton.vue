@@ -1,5 +1,5 @@
 <template>
-  <div @keyup.space="DisplayParole()" class="button-container">
+  <div class="button-container">
     <h1>
       <div v-if="this.$store.state.wordClick"></div>
 

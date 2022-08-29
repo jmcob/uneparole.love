@@ -8,7 +8,7 @@
         :uneparole="this.uneparole"
         :uneref="this.uneref"
       />
-      <FooterInfo />
+      <FooterInfo :DisplayParole="this.DisplayParole" />
     </div>
   </div>
 </template>
@@ -60,6 +60,7 @@ export default {
       });
       this.$store.state.wordcount = this.paroles.length;
     },
+    // la fonction qui affiche la parole sur la page
     async DisplayParole() {
       let random = 0;
       random = this.GetRandomIndex(this.paroles.length);
@@ -70,11 +71,13 @@ export default {
       this.uneparole = this.uneparole.replaceAll(/\\n/g, replaceWith);
       this.SpecialEffects();
     },
+    // La randomisation de la parole
     GetRandomIndex(index) {
       const random = Math.random() * (index - 1);
       const roundedIndex = Math.round(random);
       return roundedIndex;
     },
+    // apparition et disparition du bouton, et de l'animation
     SpecialEffects() {
       this.$store.state.wordClick = true;
       this.animation = true;

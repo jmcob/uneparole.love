@@ -20,7 +20,11 @@
           <v-btn class="mx-4" icon="mdi-printer" variant="plain"></v-btn
         ></a>
         <div
-          @click="this.$store.state.wordClick = !this.$store.state.wordClick"
+          @click="
+            !this.$store.state.wordClick
+              ? DisplayParole()
+              : (this.$store.state.wordClick = !this.$store.state.wordClick)
+          "
         >
           <v-btn class="mx-4" icon="mdi-reload" variant="plain"></v-btn>
         </div>
@@ -40,10 +44,6 @@
 </template>
 <script>
 export default {
-  methods: {
-    reload() {
-      location.href = "https://www.uneparole.com";
-    },
-  },
+  props: { DisplayParole: Function },
 };
 </script>
