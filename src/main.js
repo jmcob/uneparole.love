@@ -19,6 +19,7 @@ const store = createStore({
       at: [],
       nt: [],
       querySnapshot: {},
+      wordClick: false,
     };
   },
   mutations: {

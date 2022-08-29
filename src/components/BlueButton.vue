@@ -1,17 +1,14 @@
 <template>
   <div @keyup.space="DisplayParole()" class="button-container">
     <h1>
+      <div v-if="this.$store.state.wordClick"></div>
+
       <button
-        v-if="animation && wordClick"
+        v-else
         @click="DisplayParole()"
         :style="{ animationName: 'spin' }"
         class="button"
       >
-        Dis seulement une parole
-      </button>
-      <div v-else-if="!wordClick && this.animation"></div>
-      <div v-else-if="!wordClick"></div>
-      <button v-else @click="DisplayParole()" class="button">
         Dis seulement une parole
       </button>
     </h1>
@@ -23,7 +20,6 @@ export default {
   props: {
     DisplayParole: Function,
     animation: Boolean,
-    wordClick: Boolean,
   },
 };
 </script>

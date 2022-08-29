@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="wordClick && biggerFont"
+    v-if="this.$store.state.wordClick && biggerFont"
     :style="{ fontSize: 'larger' }"
     id="uneparole"
   >
@@ -17,7 +17,7 @@
     <br />
     <p class="center info">Si cette parole vous plaît, portez la en prière.</p>
   </div>
-  <div v-else-if="wordClick" :style="{ fontSize: 'large' }">
+  <div v-else-if="this.$store.state.wordClick" :style="{ fontSize: 'large' }">
     <p class="center about" @click="biggerFont = !biggerFont">
       Afficher une police plus grande
     </p>
@@ -42,7 +42,6 @@ export default {
   props: {
     uneparole: "",
     uneref: "",
-    wordClick: Boolean,
   },
   data() {
     return {

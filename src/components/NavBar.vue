@@ -36,14 +36,9 @@
     <v-window-item value="tab-1">
       <v-card class="center">
         <br />
-        <UneParole
-          :wordClick="this.wordClick"
-          :uneref="this.uneref"
-          :uneparole="this.uneparole"
-        />
+        <UneParole :uneref="this.uneref" :uneparole="this.uneparole" />
         <br />
         <BlueButton
-          :wordClick="!this.wordClick"
           :animation="this.animation"
           :DisplayParole="this.DisplayParole"
         />

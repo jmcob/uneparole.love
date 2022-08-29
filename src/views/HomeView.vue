@@ -5,7 +5,6 @@
       <NavBar
         :animation="this.animation"
         :DisplayParole="this.DisplayParole"
-        :wordClick="this.wordClick"
         :uneparole="this.uneparole"
         :uneref="this.uneref"
       />
@@ -36,7 +35,6 @@ export default {
       paroles: [],
       refs: [],
       // wordClick and animation are activated with the button
-      wordClick: false,
       animation: true,
     };
   },
@@ -78,7 +76,7 @@ export default {
       return roundedIndex;
     },
     SpecialEffects() {
-      this.wordClick = true;
+      this.$store.state.wordClick = true;
       this.animation = true;
       setTimeout(() => (this.animation = false), 700);
     },
