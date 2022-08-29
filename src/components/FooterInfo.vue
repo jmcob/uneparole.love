@@ -19,15 +19,15 @@
         <a href="https://www.uneparole.love/pains/153xuneparole.pdf">
           <v-btn class="mx-4" icon="mdi-printer" variant="plain"></v-btn
         ></a>
-        <div
+        <span
           @click="
-            !this.$store.state.wordClick
-              ? DisplayParole()
-              : (this.$store.state.wordClick = !this.$store.state.wordClick)
+            this.$store.state.wordClick
+              ? (this.$store.state.wordClick = !this.$store.state.wordClick)
+              : DisplayParole()
           "
         >
           <v-btn class="mx-4" icon="mdi-reload" variant="plain"></v-btn>
-        </div>
+        </span>
       </v-card-text>
 
       <v-divider></v-divider>
