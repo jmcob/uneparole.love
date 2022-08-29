@@ -41,6 +41,7 @@ export default {
   created() {
     setTimeout(() => (this.animation = false), 700);
     this.GetParolesFromDB();
+    this.$store.state.wordClick = false;
   },
   methods: {
     async GetParolesFromDB() {
