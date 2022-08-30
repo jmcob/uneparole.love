@@ -62,7 +62,27 @@ export default {
       this.$store.state.wordcount = this.paroles.length;
     },
     // la fonction qui affiche la parole sur la page
-    async DisplayParole() {
+    async DisplayParole(all, ps, gosp) {
+      if (ps) {
+        this.paroles = [];
+        this.refs = [];
+        this.$store.state.querySnapshot.forEach((doc, index) => {
+          if (doc.data().ps) {
+            this.paroles.push(doc.data().parole);
+            this.refs.push(doc.data().ref);
+          }
+        });
+      }
+      if (gosp) {
+        this.paroles = [];
+        this.refs = [];
+        this.$store.state.querySnapshot.forEach((doc, index) => {
+          if (doc.data().gosp) {
+            this.paroles.push(doc.data().parole);
+            this.refs.push(doc.data().ref);
+          }
+        });
+      }
       let random = 0;
       random = this.GetRandomIndex(this.paroles.length);
       console.log(random);

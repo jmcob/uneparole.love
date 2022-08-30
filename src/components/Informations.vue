@@ -26,7 +26,7 @@
     <div class="148">
     <h3>Version et impression</h3>
       <p>
-        Version 1.1 : août 2022 –
+        Version 1.2 : août 2022 –
         <strong>traduction liturgique <a href="aelf.org">AELF</a></strong
         >.
       </p>
