@@ -40,6 +40,15 @@ export default createRouter({
 
       component: PrintView,
     },
+    {
+      // path: "*",
+      path: "/:catchAll(.*)",
+      name: "404",
+      component: HomeView,
+      meta: {
+        requiresAuth: false,
+      },
+    },
   ],
   scrollBehavior() {
     document.getElementById("app").scrollIntoView({ behavior: "smooth" });
