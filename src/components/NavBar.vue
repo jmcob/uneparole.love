@@ -1,8 +1,6 @@
 <template>
   <div class="about info center" id="infos">
-    <div id="infoContainer">
-      {{ this.date }}, {{ this.desInfos.jour_liturgique_nom }}
-    </div>
+    <div id="infoContainer">{{ this.date }}, {{ this.desInfos.fete }}</div>
     <br />
   </div>
   <v-tabs
