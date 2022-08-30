@@ -18,7 +18,7 @@ import FooterInfo from "../components/FooterInfo.vue";
 import BlueButton from "../components/BlueButton.vue";
 import NavBar from "../components/NavBar.vue";
 import UneParole from "../components/UneParole.vue";
-import { getDocs, collection } from "firebase/firestore";
+import { getDocs, collection, query, limit, doc } from "firebase/firestore";
 import LogIn from "../components/LogIn.vue";
 import { db } from "../firebaseInit";
 import { mapState } from "vuex";
@@ -52,8 +52,7 @@ export default {
       this.$store.state.nt = [];
       this.$store.state.querySnapshot.forEach((doc, index) => {
         // doc.data() is never undefined for query doc snapshots
-        this.paroles.push(doc.data().parole);
-        this.refs.push(doc.data().ref);
+        // count for informations view
         if (doc.data().ps) this.$store.state.ps.push(doc.data().ps);
         if (doc.data().gosp) this.$store.state.gosp.push(doc.data().gosp);
         if (doc.data().at) this.$store.state.at.push(doc.data().at);
@@ -63,6 +62,14 @@ export default {
     },
     // la fonction qui affiche la parole sur la page
     async DisplayParole(all, ps, gosp) {
+      if (all) {
+        this.paroles = [];
+        this.refs = [];
+        this.$store.state.querySnapshot.forEach((doc, index) => {
+          this.paroles.push(doc.data().parole);
+          this.refs.push(doc.data().ref);
+        });
+      }
       if (ps) {
         this.paroles = [];
         this.refs = [];
