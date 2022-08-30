@@ -65,8 +65,8 @@
       <textarea
         v-model="parole"
         id="parole"
-        cols="30"
-        rows="12"
+        cols="40"
+        rows="15"
         placeholder="Une Parole de la Bible"
       ></textarea>
       <br />
@@ -80,7 +80,7 @@
       <textarea
         v-model="ref"
         id="ref"
-        cols="30"
+        cols="40"
         rows="3"
         placeholder="La référence de votre Parole"
       ></textarea>
