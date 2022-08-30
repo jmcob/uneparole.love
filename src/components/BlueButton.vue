@@ -3,7 +3,7 @@
     <div v-if="this.$store.state.wordClick"></div>
     <div v-else>
       <h1
-        @click="DisplayParole(all, ps, gosp)"
+        @click="BookBooleanActivator(), DisplayParole(all, ps, gosp)"
         :style="{ animationName: 'spin' }"
         class="button"
       >
@@ -12,18 +12,35 @@
       <br />
 
       <div>
-        <input type="radio" id="all" name="drone" v-model="all" checked />
-        <label for="all"> Dans toute la Bible</label>
-      </div>
-
-      <div>
-        <input type="radio" id="ps" name="drone" v-model="ps" />
-        <label for="ps"> Parmi les psaumes</label>
-      </div>
-
-      <div>
-        <input type="radio" id="gosp" name="drone" v-model="gosp" />
-        <label for="gosp"> Dans l'évangile</label>
+        <v-radio-group v-model="livres" column>
+          <v-radio
+            type="radio"
+            id="all"
+            name="drone"
+            checked
+            label="Dans toute la Bible"
+            color="orange"
+            value="all"
+          ></v-radio>
+          <v-radio
+            type="radio"
+            id="all"
+            name="drone"
+            v-model="ps"
+            label="Parmi les psaumes"
+            color="green"
+            value="ps"
+          ></v-radio
+          ><v-radio
+            type="radio"
+            id="all"
+            name="drone"
+            v-model="gosp"
+            label="Dans l'évangile"
+            color="blue"
+            value="gosp"
+          ></v-radio>
+        </v-radio-group>
       </div>
     </div>
   </div>
@@ -40,7 +57,27 @@ export default {
       all: false,
       gosp: false,
       ps: false,
+      livres: "all",
     };
+  },
+  methods: {
+    BookBooleanActivator() {
+      if (this.livres === "all") {
+        this.all = true;
+        this.gosp = false;
+        this.ps = false;
+      }
+      if (this.livres === "gosp") {
+        this.all = false;
+        this.gosp = true;
+        this.ps = false;
+      }
+      if (this.livres === "ps") {
+        this.all = false;
+        this.gosp = false;
+        this.ps = true;
+      }
+    },
   },
 };
 </script>

@@ -88,18 +88,8 @@ padding: 5px;
  display: flex;
  flex-direction: row;
 }
-.colorCircle {
-    width: 15px; 
-    height: 15px;
-    border-radius: 50%; 
-    border: 1px solid black;
-    margin: 0px;
-    padding: 0px;
-    color: white;
-}
-img {
-    margin: 50px;
-}
+
+
 
 input {
     border: 1px solid black;
@@ -120,10 +110,6 @@ h1 {
     padding: 20px;
     font-size: large;
     background: white;
-    // background: linear-gradient(125deg,
-    //        rgba(2, 0, 36, 1) 1%,
-    //        rgba(9, 9, 121, 1) 10%,
-    //        rgba(0, 212, 255, 1) 100%);
     color: black;
     border: 4px dashed midnightblue;
     cursor: pointer;
@@ -134,6 +120,10 @@ h1 {
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
 }
+
+ input[type='radio'] {
+     transform: scale(1.5);
+ }
 
 @keyframes spin {
     0% {
@@ -153,9 +143,11 @@ h1 {
 
 // header, cross size
 .cross {
-    width: 60px;
+    width: 70px;
 }
-
+img {
+    margin: 50px;
+}
 .back {
     width: 30px;
     padding: 0px;
