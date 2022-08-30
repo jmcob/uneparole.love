@@ -9,13 +9,7 @@
     flex-direction: column;
     align-items: center;
 }
-img {
-margin: 50px;
-}
 
-input {
-border: 1px solid black;
-}
 .login {
 background-color: crimson;
 color: white;
@@ -96,6 +90,16 @@ padding: 5px;
     margin: 0px;
     padding: 0px;
     color: white;
+}
+img {
+    margin: 50px;
+}
+
+input {
+    border: 1px solid black;
+}
+a {
+    text-decoration: none;
 }
 
 h1 {
