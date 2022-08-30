@@ -1,48 +1,10 @@
 <template>
+  <UneParole :uneref="this.uneref" :uneparole="this.uneparole" />
+  <BlueButton :animation="this.animation" :DisplayParole="this.DisplayParole" />
   <div class="about info center" id="infos">
-    <div id="infoContainer">{{ this.date }}, {{ this.desInfos.fete }}</div>
     <br />
+    <div id="infoContainer">{{ this.date }}, {{ this.desInfos.fete }}</div>
   </div>
-  <v-tabs
-    v-model="tab"
-    background-color="white-accent-4"
-    centered
-    stacked
-    slider-color="midnightblue"
-  >
-    <v-tab class="text-body-1" value="tab-2">
-      <v-icon>mdi-calendar-range</v-icon>
-      Evangile du jour
-    </v-tab>
-
-    <v-tab class="text-body-1" value="tab-1">
-      <v-icon>mdi-book-cross</v-icon>
-      Une Parole
-    </v-tab>
-  </v-tabs>
-
-  <v-window v-model="tab">
-    <v-window-item value="tab-2">
-      <v-card>
-        <br />
-        <EvangileDuJour />
-      </v-card>
-    </v-window-item>
-  </v-window>
-
-  <v-window v-model="tab">
-    <v-window-item value="tab-1">
-      <v-card class="center">
-        <br />
-        <UneParole :uneref="this.uneref" :uneparole="this.uneparole" />
-        <br />
-        <BlueButton
-          :animation="this.animation"
-          :DisplayParole="this.DisplayParole"
-        />
-      </v-card>
-    </v-window-item>
-  </v-window>
 </template>
 
 <script>

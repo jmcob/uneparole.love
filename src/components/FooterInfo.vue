@@ -2,22 +2,25 @@
   <v-footer>
     <v-card elevation="0" rounded="0" width="100%" class="white text-center">
       <v-card-text>
+        <router-link to="/evangile">
+          <v-btn class="mx-2" icon="mdi-calendar-range" variant="plain"></v-btn
+        ></router-link>
         <router-link to="/about">
           <v-btn
-            class="mx-4"
+            class="mx-2"
             icon="mdi-information-outline"
             variant="plain"
           ></v-btn
         ></router-link>
         <router-link to="/contact">
           <v-btn
-            class="mx-4"
+            class="mx-2"
             icon="mdi-lightbulb-on-outline"
             variant="plain"
           ></v-btn
         ></router-link>
         <a href="https://www.uneparole.love/pains/153xuneparole.pdf">
-          <v-btn class="mx-4" icon="mdi-printer" variant="plain"></v-btn
+          <v-btn class="mx-2" icon="mdi-printer" variant="plain"></v-btn
         ></a>
         <span
           @click="
@@ -26,7 +29,7 @@
               : DisplayParole()
           "
         >
-          <v-btn class="mx-4" icon="mdi-reload" variant="plain"></v-btn>
+          <v-btn class="mx-2" icon="mdi-reload" variant="plain"></v-btn>
         </span>
       </v-card-text>
 
