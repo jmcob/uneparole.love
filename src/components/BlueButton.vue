@@ -13,17 +13,17 @@
 
       <div>
         <input type="radio" id="all" name="drone" v-model="all" checked />
-        <label for="all">Dans toute la Bible</label>
+        <label for="all"> Dans toute la Bible</label>
       </div>
 
       <div>
         <input type="radio" id="ps" name="drone" v-model="ps" />
-        <label for="ps">Parmi les psaumes</label>
+        <label for="ps"> Parmi les psaumes</label>
       </div>
 
       <div>
         <input type="radio" id="gosp" name="drone" v-model="gosp" />
-        <label for="gosp">Dans l'évangile</label>
+        <label for="gosp"> Dans l'évangile</label>
       </div>
     </div>
   </div>
