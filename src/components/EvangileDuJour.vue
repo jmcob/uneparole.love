@@ -1,13 +1,10 @@
 <template>
   <div id="evangileDuJour">
-    <p class="about info">
-      <span
-        class="colorCircle"
-        :style="{ backgroundColor: `${this.color}`, color: `${this.color}` }"
-        >:-D</span
-      >
+    <p class="about info date-gospel">
+    <h2>Evangile du jour</h2>
+    <br>
       {{ this.todayTemplate }} <br />
-      {{ this.desInfos.jour_liturgique_nom }}
+      {{ this.desInfos.fete }}
     </p>
     <br />
     <p><span v-html="this.uneparole.contenu"></span></p>
@@ -52,7 +49,7 @@ export default {
         this.desInfos = res.data.informations;
       });
     },
-    timesColor() {
+     timesColor() {
       if (this.desInfos.couleur === "vert") this.color = "green";
       if (this.desInfos.couleur === "violet") this.color = "purple";
       if (this.desInfos.couleur === "rouge") this.color = "red";
