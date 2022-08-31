@@ -37,12 +37,17 @@ export default {
   data: () => ({
     items: [
       {
+        text: "Accueil",
+        icon: "mdi-home",
+        route: "/",
+      },
+      {
         text: "Evangile du jour",
         icon: "mdi-calendar-range",
         route: "/evangile",
       },
       {
-        text: "D'où vient ce site?",
+        text: "D'où vient ce site ?",
         icon: "mdi-information-outline",
         route: "/about",
       },
@@ -55,11 +60,6 @@ export default {
         text: "Impression (pour l'église)",
         icon: "mdi-printer",
         route: "/impression",
-      },
-      {
-        text: "Accueil d'uneparole",
-        icon: "mdi-home",
-        route: "/",
       },
     ],
   }),
