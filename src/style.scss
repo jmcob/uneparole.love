@@ -117,7 +117,7 @@ h1 {
     font-size: large;
     background: white;
     color: midnightblue;
-    border: 5px dashed lightblue;
+    border: 2px solid lightblue;
     cursor: pointer;
     border-radius: 50%;
     font-family: "Karla", sans-serif;
@@ -125,6 +125,9 @@ h1 {
     animation-duration: 700ms;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+    &:hover {
+        background-color:lightskyblue;
+    }
 }
 
 .buttons {
