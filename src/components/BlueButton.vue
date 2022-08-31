@@ -33,6 +33,12 @@
           ></v-radio>
         </v-radio-group>
       </div>
+      <v-btn
+        @click="BookBooleanActivator(), DisplayParole(all, ps, gosp)"
+        color="green"
+        variant="outlined"
+        >Et je serai guéri !</v-btn
+      >
     </div>
   </div>
 </template>
