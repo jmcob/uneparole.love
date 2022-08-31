@@ -1,6 +1,17 @@
 <template>
   <UneParole :uneref="this.uneref" :uneparole="this.uneparole" />
   <BlueButton :animation="this.animation" :DisplayParole="this.DisplayParole" />
+  <div
+    v-show="this.$store.state.wordClick"
+    @click="
+      this.$store.state.wordClick
+        ? (this.$store.state.wordClick = !this.$store.state.wordClick)
+        : DisplayParole()
+    "
+  >
+    <br />
+    <v-btn icon="mdi-reload" prepend></v-btn>
+  </div>
   <div class="about info center" id="infos">
     <br />
     <div id="infoContainer">{{ this.date }}, {{ this.desInfos.fete }}</div>
