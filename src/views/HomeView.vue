@@ -52,6 +52,8 @@ export default {
       this.$store.state.nt = [];
       this.$store.state.querySnapshot.forEach((doc, index) => {
         // doc.data() is never undefined for query doc snapshots
+        this.paroles.push(doc.data().parole);
+        this.refs.push(doc.data().ref);
         // count for informations view
         if (doc.data().ps) this.$store.state.ps.push(doc.data().ps);
         if (doc.data().gosp) this.$store.state.gosp.push(doc.data().gosp);

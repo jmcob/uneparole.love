@@ -6,6 +6,7 @@ import GospelView from "./views/GospelView.vue";
 import MonthView from "./views/MonthView.vue";
 import LogInView from "./views/LogInView.vue";
 import PrintView from "./views/PrintView.vue";
+import ImpressionEglise from "./views/ImpressionEglise.vue";
 
 export default createRouter({
   history: createWebHistory(),
@@ -39,6 +40,11 @@ export default createRouter({
       path: "/print",
 
       component: PrintView,
+    },
+    {
+      path: "/impression",
+
+      component: ImpressionEglise,
     },
     {
       // path: "*",

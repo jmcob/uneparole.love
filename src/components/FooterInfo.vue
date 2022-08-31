@@ -1,37 +1,23 @@
 <template>
   <v-footer>
     <v-card elevation="0" rounded="0" width="100%" class="white text-center">
-      <v-card-text>
-        <router-link to="/evangile">
-          <v-btn class="mx-2" icon="mdi-calendar-range" variant="plain"></v-btn
-        ></router-link>
-        <router-link to="/about">
-          <v-btn
-            class="mx-2"
-            icon="mdi-information-outline"
-            variant="plain"
-          ></v-btn
-        ></router-link>
-        <router-link to="/contact">
-          <v-btn
-            class="mx-2"
-            icon="mdi-lightbulb-on-outline"
-            variant="plain"
-          ></v-btn
-        ></router-link>
-        <a href="https://www.uneparole.love/pains/153xuneparole.pdf">
-          <v-btn class="mx-2" icon="mdi-printer" variant="plain"></v-btn
-        ></a>
-        <span
-          @click="
-            this.$store.state.wordClick
-              ? (this.$store.state.wordClick = !this.$store.state.wordClick)
-              : DisplayParole()
-          "
+      <v-list density="compact">
+        <v-list-subheader>Menu</v-list-subheader>
+
+        <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          :value="item"
+          :to="item.route"
+          active-color="indigo"
         >
-          <v-btn class="mx-2" icon="mdi-reload" variant="plain"></v-btn>
-        </span>
-      </v-card-text>
+          <template v-slot:prepend>
+            <v-icon :icon="item.icon"></v-icon>
+          </template>
+
+          <v-list-item-title v-text="item.text"></v-list-item-title>
+        </v-list-item>
+      </v-list>
 
       <v-divider></v-divider>
 
@@ -48,5 +34,40 @@
 <script>
 export default {
   props: { DisplayParole: Function },
+  data: () => ({
+    items: [
+      {
+        text: "Evangile du jour",
+        icon: "mdi-calendar-range",
+        route: "/evangile",
+      },
+      {
+        text: "D'où vient ce site?",
+        icon: "mdi-information-outline",
+        route: "/about",
+      },
+      {
+        text: "Soumettre une parole",
+        icon: "mdi-lightbulb-on-outline",
+        route: "/contact",
+      },
+      {
+        text: "Impression (pour l'église)",
+        icon: "mdi-printer",
+        route: "/impression",
+      },
+      {
+        text: "Accueil d'uneparole",
+        icon: "mdi-home",
+        route: "/",
+      },
+    ],
+  }),
 };
 </script>
+<style scoped>
+v-footer {
+  display: flex;
+  flex-direction: column;
+}
+</style>
