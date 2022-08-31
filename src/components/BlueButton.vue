@@ -7,7 +7,7 @@
         :style="{ animationName: 'spin' }"
         class="button"
       >
-        <button>Dis seulement une parole</button>
+        <button>Dis seulement une parole ...</button>
       </h1>
       <br />
 
@@ -37,7 +37,8 @@
         @click="BookBooleanActivator(), DisplayParole(all, ps, gosp)"
         color="green"
         variant="outlined"
-        >Et je serai guéri !</v-btn
+        class="text-body-1"
+        >... et je serai guéri !</v-btn
       >
     </div>
   </div>
