@@ -15,27 +15,18 @@
         <v-radio-group v-model="livres" column>
           <v-radio
             type="radio"
-            id="all"
-            name="drone"
-            checked
             label="Dans toute la Bible"
-            color="orange"
+            color="indigo"
             value="all"
           ></v-radio>
           <v-radio
             type="radio"
-            id="all"
-            name="drone"
-            v-model="ps"
             label="Parmi les psaumes"
-            color="green"
+            color="orange"
             value="ps"
           ></v-radio
           ><v-radio
             type="radio"
-            id="all"
-            name="drone"
-            v-model="gosp"
             label="Dans l'évangile"
             color="blue"
             value="gosp"
