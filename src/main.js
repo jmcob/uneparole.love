@@ -20,6 +20,7 @@ const store = createStore({
       nt: [],
       querySnapshot: {},
       wordClick: false,
+      outOfHome: false,
     };
   },
   mutations: {

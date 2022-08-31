@@ -30,5 +30,8 @@ import FooterInfo from "../components/FooterInfo.vue";
 
 export default {
   components: { HeaderCross, Arrow, FooterInfo },
+  created() {
+    this.$store.state.outOfHome = true;
+  },
 };
 </script>

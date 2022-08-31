@@ -63,6 +63,9 @@
 
 <script>
 export default {
+  created() {
+    this.$store.state.outOfHome = true;
+  },
   computed: {
     // arrow functions can make the code very succinct!
     wordcount() {

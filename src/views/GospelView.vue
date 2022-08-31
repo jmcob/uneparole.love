@@ -15,5 +15,8 @@ import Arrow from "../components/Arrow.vue";
 
 export default {
   components: { HeaderCross, EvangileDuJour, FooterInfo, Arrow },
+  created() {
+    this.$store.state.outOfHome = true;
+  },
 };
 </script>

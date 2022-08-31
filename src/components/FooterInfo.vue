@@ -3,7 +3,23 @@
     <v-card elevation="0" rounded="0" width="100%" class="white text-center">
       <v-list density="compact">
         <v-list-subheader>Menu</v-list-subheader>
-
+        <v-list-item v-if="this.$store.state.outOfHome" to="/">
+          <template v-slot:prepend> <v-icon icon="mdi-home"></v-icon></template>
+          <v-list-item-title v-text="item.text"></v-list-item-title
+        ></v-list-item>
+        <v-list-item
+          v-else
+          active-color="indigo"
+          v-show="this.$store.state.wordClick"
+          @click="
+            this.$store.state.wordClick
+              ? (this.$store.state.wordClick = !this.$store.state.wordClick)
+              : DisplayParole(all, ps, gosp)
+          "
+        >
+          <template v-slot:prepend> <v-icon icon="mdi-home"></v-icon></template>
+          <v-list-item-title v-text="item.text"></v-list-item-title
+        ></v-list-item>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
@@ -35,12 +51,8 @@
 export default {
   props: { DisplayParole: Function },
   data: () => ({
+    item: { text: "Accueil" },
     items: [
-      {
-        text: "Accueil",
-        icon: "mdi-home",
-        route: "/",
-      },
       {
         text: "Evangile du jour",
         icon: "mdi-calendar-range",
