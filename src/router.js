@@ -7,6 +7,7 @@ import MonthView from "./views/MonthView.vue";
 import LogInView from "./views/LogInView.vue";
 import PrintView from "./views/PrintView.vue";
 import ImpressionEglise from "./views/ImpressionEglise.vue";
+import Confidentialite from "./views/Confidentialite.vue";
 
 export default createRouter({
   history: createWebHistory(),
@@ -45,6 +46,11 @@ export default createRouter({
       path: "/impression",
 
       component: ImpressionEglise,
+    },
+    {
+      path: "/privacy",
+
+      component: Confidentialite,
     },
     {
       // path: "*",

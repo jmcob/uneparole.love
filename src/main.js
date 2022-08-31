@@ -18,12 +18,16 @@ const store = createStore({
       gosp: [],
       at: [],
       nt: [],
+      // le fichier des paroles telechargée brut :
       querySnapshot: {},
+      // si la parole est demandée :
       wordClick: false,
+      // si nous ne sommes pas sur la page d'accueil :
       outOfHome: false,
     };
   },
   mutations: {
+    // pour sauvegarder un user dans le Localstorage
     whoAmI(state) {
       if (localStorage.getItem("user")) {
         state.user = JSON.parse(localStorage.getItem("user"));
