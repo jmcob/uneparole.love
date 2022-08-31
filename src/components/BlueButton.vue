@@ -1,7 +1,7 @@
 <template>
   <div class="button-container">
     <div v-if="this.$store.state.wordClick"></div>
-    <div v-else>
+    <div class="buttons" v-else>
       <h1
         @click="BookBooleanActivator(), DisplayParole(all, ps, gosp)"
         :style="{ animationName: 'spin' }"

@@ -26,6 +26,12 @@ padding: 5px;
     max-width: 500px;
 }
 
+.button-container {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
 // about section
 
 #about {
@@ -110,7 +116,7 @@ h1 {
     padding: 20px;
     font-size: large;
     background: white;
-    color: black;
+    color: midnightblue;
     border: 5px dashed lightblue;
     cursor: pointer;
     border-radius: 50%;
@@ -119,6 +125,12 @@ h1 {
     animation-duration: 700ms;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
+}
+
+.buttons {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
 }
 
  input[type='radio'] {
