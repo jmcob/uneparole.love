@@ -2,8 +2,9 @@
   <div class="informations">
     <div class="count">
     <h2>Informations du site</h2>
+    <br>
     <h3>L'idée initiale</h3>
-    <p>Tirer une parole a l'Eglise, c'est bien. Mais si elle est trop courte, si on ne la ressitue pas dans son contexte, cela peut porter a confusion. <br><br> Nous avons donc choisi des textes un peu plus long dans l'ensemble, <strong>entre 1 et 5 versets tirés a quatre épingles qui ne disent "que ce qu'ils veulent dire"</strong>. <br><br> Ce n'est pas Jésus qui vous parle directement, c'est un tout petit algorithme qui met les paroles au hasard. Dieu est partout, même dans le hasard, certes, mais aussi dans nos intelligences devant sa parole !</p>
+    <p>Tirer une parole à l'Eglise, c'est bien. Mais si elle est trop courte, si on ne la ressitue pas dans son contexte, cela peut porter a confusion. <br><br> Nous avons donc choisi des textes un peu plus long dans l'ensemble, <strong>entre 1 et 5 versets tirés a quatre épingles qui ne disent "que ce qu'ils veulent dire"</strong>. <br><br> Ce n'est pas Jésus qui vous parle directement, c'est un tout petit algorithme qui met les paroles au hasard. Dieu est partout, même dans le hasard, certes, mais aussi dans nos intelligences devant sa parole !</p>
         <div class="adoration">
     <h3>Une parole pour adorer</h3>
       <p>
