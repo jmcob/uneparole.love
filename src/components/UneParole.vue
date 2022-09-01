@@ -8,12 +8,14 @@
       Choisir une police plus petite
     </p>
     <br />
-    <p><span v-html="uneparole"></span></p>
-    <br />
+    <div class="papier">
+      <p><span v-html="uneparole"></span></p>
+      <br />
 
-    <p class="ref">
-      <em>{{ uneref }}</em>
-    </p>
+      <p class="ref">
+        <em>{{ uneref }}</em>
+      </p>
+    </div>
     <br />
     <p class="center info">Si cette parole vous plaît, portez la en prière.</p>
   </div>
@@ -23,12 +25,14 @@
     </p>
     <br />
     <div id="uneparole">
-      <p><span v-html="uneparole"></span></p>
-      <br />
+      <div class="papier">
+        <p><span v-html="uneparole"></span></p>
+        <br />
 
-      <p class="ref">
-        <em>{{ uneref }}</em>
-      </p>
+        <p class="ref">
+          <em>{{ uneref }}</em>
+        </p>
+      </div>
       <br />
       <p class="center info">
         Si cette parole vous plaît, portez la en prière.
