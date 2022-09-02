@@ -4,14 +4,7 @@
       <img src="../assets/cross.svg" class="cross" alt="Une croix" />
     </router-link>
   </h1>
-  <h1
-    v-else
-    @click="
-      this.$store.state.wordClick
-        ? (this.$store.state.wordClick = !this.$store.state.wordClick)
-        : DisplayParole(all, ps, gosp)
-    "
-  >
+  <h1 v-else>
     <img src="../assets/cross.svg" class="cross" alt="La croix" />
   </h1>
 </template>
