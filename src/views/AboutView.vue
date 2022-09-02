@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="cadre about info">
-      <HeaderCross />
+      <HeaderCross :DisplayParole="this.DisplayParole" />
       <Arrow />
       <Informations />
       <FooterInfo />

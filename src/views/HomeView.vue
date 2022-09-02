@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="cadre">
-      <HeaderCross />
+      <HeaderCross :DisplayParole="this.DisplayParole" />
       <NavBar
         :animation="this.animation"
         :DisplayParole="this.DisplayParole"

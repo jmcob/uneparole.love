@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <div class="cadre">
-      <HeaderCross />
+      <HeaderCross :DisplayParole="this.DisplayParole" />
       <Arrow />
       <h2>Imprimer pour l'Eglise</h2>
       <br />

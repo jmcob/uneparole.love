@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <HeaderCross />
+    <HeaderCross :DisplayParole="this.DisplayParole" />
     <Arrow />
     <EvangileDuJour />
     <FooterInfo />
