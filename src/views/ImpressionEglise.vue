@@ -7,11 +7,11 @@
       <br />
       <p>
         <br />
-        <a href="https://www.uneparole.love/pains/153xuneparole.pdf"
-          >153 paroles a imprimer pour une utilisation en Eglise</a
+        <a href="https://www.uneparole.love/pains/256paroles.pdf"
+          >256 paroles a imprimer pour une utilisation en Eglise</a
         >
         Ce sont les 153 premières paroles sélectionnées en aout 2022, dont 92
-        psaumes. Idéales pour l'adoration ou une soirée en communauté.
+        psaumes, ainsi que des paroles qui ont été sélectionnées au fur et a mesure. Idéales pour l'adoration ou une soirée en communauté.
         <br />
         <br />
         Les psaumes ont été choisis par la coordinatrice de l'adoration

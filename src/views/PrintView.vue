@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import paroles from "../json/paroles.json";
+
 export default {
     data() {
         return {
@@ -19,9 +21,9 @@ export default {
     },
     methods: {
         forEachParoles() {
-            this.$store.state.querySnapshot.forEach((doc, index) => {
-                this.paroles.push(doc.data().parole);
-                this.refs.push(doc.data().ref);
+            paroles.forEach((parole) => {
+                this.paroles.push(parole.parole);
+                this.refs.push(parole.ref);
             });
             this.paroles.forEach((parole, index) => {
                 parole = parole.replaceAll(/\\n/g, " ");
@@ -39,7 +41,7 @@ export default {
     font-family: "Times New Roman", Times, serif;
     font-size: 13pt;
     width: 10cm;
-    height: 9.41cm;
+    height: 9.38cm;
     padding: 1mm;
     border: 1px dashed black;
     overflow: hidden;
