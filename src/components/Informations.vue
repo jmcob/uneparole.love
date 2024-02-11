@@ -35,7 +35,7 @@
         >.
       </p>
       <p>
-        <a href="https://www.uneparole.love/pains/256paroles.pdf"
+        <a href="https://www.uneparole.com/pains/256paroles.pdf"
           >256 paroles en PDF</a
         >
         pour une utilisation en église.
