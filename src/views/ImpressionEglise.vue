@@ -7,7 +7,7 @@
       <br />
       <p>
         <br />
-        <a href="https://www.uneparole.love/pains/256paroles.pdf"
+        <a href="https://www.uneparole.com/pains/256paroles.pdf"
           >256 paroles a imprimer pour une utilisation en Eglise</a
         >
         Ce sont les 153 premières paroles sélectionnées en aout 2022, dont 92
